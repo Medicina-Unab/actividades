@@ -1,0 +1,1407 @@
+[
+    {
+        "tematica": "Infecciones virales hepáticas, latentes y oncogénicas",
+        "indicadores": [
+            {
+                "indicador": "Identifica los virus hepáticos, latentes y oncogénicos de mayor relevancia clínica y los relaciona con las enfermedades infecciosas correspondientes.",
+                "preguntas": [
+                    {
+                        "id": "1",
+                        "pregunta": "Un paciente de 35 años, con antecedentes de viaje a una zona sin acceso a agua potable, presenta ictericia, fatiga y orina oscura. ¿Cuál de los siguientes virus es el agente causal más probable y cuál es su riesgo de evolucionar a cronicidad?",
+                        "alternativas": {
+                            "a": "Virus de la Hepatitis B (VHB); alto riesgo de cronicidad.",
+                            "b": "Virus de la Hepatitis C (VHC); moderado riesgo de cronicidad.",
+                            "c": "Virus de la Hepatitis A (VHA); no evoluciona a cronicidad.",
+                            "d": "Virus de Epstein-Barr (EBV); alto riesgo de linfoma.",
+                            "e": "Virus de la Hepatitis A (VHA); alto riesgo de carcinoma hepatocelular."
+                        },
+                        "respuesta": "c",
+                        "justificacion": "El VHA se asocia fuertemente a la falta de agua salubre y transmisión fecal-oral. A diferencia de las variantes B y C, no causa hepatopatía crónica."
+                    },
+                    {
+                        "id": "2",
+                        "pregunta": "Un adolescente acude a consulta por fiebre, faringitis, fatiga intensa y adenopatías (inflamación de ganglios linfáticos). A largo plazo, ¿a qué complicación oncogénica se asocia de forma directa el patógeno responsable de este cuadro?",
+                        "alternativas": {
+                            "a": "Carcinoma hepatocelular",
+                            "b": "Cáncer cervicouterino",
+                            "c": "Sarcoma de Kaposi",
+                            "d": "Linfomas y tumores epiteliales",
+                            "e": "Adenocarcinoma gástrico"
+                        },
+                        "respuesta": "d",
+                        "justificacion": "El cuadro clínico corresponde a mononucleosis infecciosa, causada por el Virus de Epstein-Barr (EBV), el cual establece latencia en linfocitos B y está directamente vinculado al desarrollo de linfomas y tumores epiteliales."
+                    },
+                    {
+                        "id": "3",
+                        "pregunta": "Un paciente de 70 años desarrolla una erupción cutánea vesicular dolorosa que sigue el trayecto de un dermatoma en el hemitórax derecho. ¿Cuál es el mecanismo biológico que explica la aparición de esta enfermedad?",
+                        "alternativas": {
+                            "a": "Infección primaria aguda por el Virus del Herpes Simple tipo 1 (HSV-1).",
+                            "b": "Reactivación del Virus Varicela-Zóster (VZV) latente en los ganglios sensoriales.",
+                            "c": "Infección oportunista por VIH en etapa de SIDA.",
+                            "d": "Transformación maligna inducida por el VPH.",
+                            "e": "Reactivación del citomegalovirus (CMV) en tejido epitelial."
+                        },
+                        "respuesta": "b",
+                        "justificacion": "El cuadro describe un herpes zóster, que ocurre por la reactivación del VZV (un alfaherpesvirus) que permaneció en estado de latencia en los ganglios sensoriales tras la primoinfección por varicela."
+                    },
+                    {
+                        "id": "4",
+                        "pregunta": "En un estudio epidemiológico de pacientes con cáncer de ano y pene, se busca identificar el agente etiológico viral más prevalente. ¿Qué patógeno debe ser considerado el principal sospechoso?",
+                        "alternativas": {
+                            "a": "Virus del Papiloma Humano (VPH)",
+                            "b": "Virus de Epstein-Barr (EBV)",
+                            "c": "Virus de la Inmunodeficiencia Humana (VIH)",
+                            "d": "Virus del Herpes Simple tipo 2 (HSV-2)",
+                            "e": "Virus de la Hepatitis B (VHB)"
+                        },
+                        "respuesta": "a",
+                        "justificacion": "El VPH no solo es responsable de cánceres cervicouterinos, sino que también está fuertemente asociado y causa protección la vacuna frente al cáncer de ano, pene y otras neoplasias orofaríngeas."
+                    },
+                    {
+                        "id": "5",
+                        "pregunta": "Un paciente fallece por una demencia rápidamente progresiva. La biopsia cerebral revela vacuolización (aspecto espongiforme) y ausencia de respuesta inflamatoria o presencia de ácidos nucleicos virales. ¿Cuál es la naturaleza del agente infeccioso?",
+                        "alternativas": {
+                            "a": "Un retrovirus con transcriptasa reversa.",
+                            "b": "Un virus de ADN bicatenario latente.",
+                            "c": "Una proteína con mal plegamiento rica en láminas beta (PrPSc).",
+                            "d": "Un virus ARN de cadena simple positiva.",
+                            "e": "Un alfaherpesvirus neurotrópico."
+                        },
+                        "respuesta": "c",
+                        "justificacion": "El cuadro es compatible con una Encefalopatía Espongiforme Transmisible (como la enfermedad de Creutzfeldt-Jakob), causada por un prión, el cual es una proteína infecciosa mal plegada (PrPSc) que carece de ADN o ARN."
+                    }
+                ]
+            },
+            {
+                "indicador": "Diagnostica casos clínicos integrando síntomas, curvas serológicas y pruebas moleculares de infecciones virales persistentes y hepáticas.",
+                "preguntas": [
+                    {
+                        "id": "6",
+                        "pregunta": "Se evalúan los exámenes de sangre de un paciente asintomático. Presenta HBsAg (+), HBeAg (-), Anti-HBc total (+), Anti-HBc IgM (-) y Anti-HBs (-). ¿Cuál es el diagnóstico clínico más probable?",
+                        "alternativas": {
+                            "a": "Infección aguda por VHB en período de ventana.",
+                            "b": "Inmunidad conferida por vacunación contra VHB.",
+                            "c": "Hepatitis B crónica.",
+                            "d": "Infección previa resuelta por VHB.",
+                            "e": "Falso positivo, el paciente no ha sido expuesto al VHB."
+                        },
+                        "respuesta": "c",
+                        "justificacion": "El paciente tiene HBsAg positivo (infección activa) y Anti-HBc total positivo con IgM negativo, lo que descarta una infección aguda y confirma una Hepatitis B crónica, ya que el sistema inmune no logró eliminar el virus y el HBsAg persiste."
+                    },
+                    {
+                        "id": "7",
+                        "pregunta": "Un paciente con antecedentes de uso de drogas intravenosas da positivo para anticuerpos anti-HCV en un tamizaje. Se solicita una prueba molecular que resulta positiva para HCV ARN. ¿Qué indica la integración de estos resultados?",
+                        "alternativas": {
+                            "a": "El paciente tuvo una infección en el pasado y ya está resuelta.",
+                            "b": "El paciente presenta inmunidad debido a una vacuna previa.",
+                            "c": "El paciente tiene una infección activa y replicación viral por VHC.",
+                            "d": "Los resultados son contradictorios y requieren una biopsia hepática.",
+                            "e": "El anticuerpo neutralizó completamente al ARN viral."
+                        },
+                        "respuesta": "c",
+                        "justificacion": "Los anticuerpos anti-HCV indican exposición al virus, pero la presencia del HCV ARN detectado por pruebas moleculares confirma directamente la infección activa y la replicación viral en la sangre."
+                    },
+                    {
+                        "id": "8",
+                        "pregunta": "Un paciente acude con fiebre, dolor abdominal, pérdida de peso severa y diagnóstico reciente de neumonía por Pneumocystis jirovecii. Su recuento de CD4 es de 150 cél/mm³. Según la evolución clínica de su infección, ¿en qué fase se encuentra?",
+                        "alternativas": {
+                            "a": "Fase de infección aguda.",
+                            "b": "Fase de latencia clínica.",
+                            "c": "Fase de SIDA (Síndrome de Inmunodeficiencia Adquirida).",
+                            "d": "Período de eclipse virológico.",
+                            "e": "Curación virológica espontánea."
+                        },
+                        "respuesta": "c",
+                        "justificacion": "El paciente presenta un recuento de CD4 inferior a 200 cél/mm³ y una infección oportunista (Pneumocystis jirovecii), lo cual es el criterio clínico e inmunológico definitorio de la progresión del VIH a la etapa de SIDA."
+                    },
+                    {
+                        "id": "9",
+                        "pregunta": "Un niño de 5 años presenta fiebre, ictericia y coloración oscura en la orina. El panel serológico revela IgM anti-HAV positivo y HBsAg negativo. ¿Qué condición patológica cursa el paciente?",
+                        "alternativas": {
+                            "a": "Hepatitis A aguda.",
+                            "b": "Hepatitis B crónica.",
+                            "c": "Hepatitis C aguda.",
+                            "d": "Coinfección aguda por VHA y VHB.",
+                            "e": "Infección previa y curada por VHA."
+                        },
+                        "respuesta": "a",
+                        "justificacion": "La detección de anticuerpos IgM anti-HAV es el 'gold standard' y confirma una infección aguda e indicativa de un cuadro reciente por el Virus de la Hepatitis A, mientras que el HBsAg negativo descarta la infección activa por VHB."
+                    },
+                    {
+                        "id": "10",
+                        "pregunta": "A un servicio de urgencia ingresa un paciente con alteraciones conductuales y convulsiones. Se sospecha una encefalitis herpética. ¿Cuál es el método diagnóstico de elección por su alta sensibilidad y especificidad en este caso?",
+                        "alternativas": {
+                            "a": "Serología de anticuerpos IgG/IgM en sangre.",
+                            "b": "Cultivo celular de lesiones cutáneas.",
+                            "c": "Reacción en Cadena de la Polimerasa (PCR) en líquido cefalorraquídeo (LCR).",
+                            "d": "Elastografía hepática.",
+                            "e": "Detección de antígeno p24 en LCR."
+                        },
+                        "respuesta": "c",
+                        "justificacion": "Para la afectación del Sistema Nervioso Central (como la encefalitis, mielitis o parálisis facial) asociada a herpesvirus, la PCR en LCR es la prueba de elección para confirmar la infección molecularmente."
+                    }
+                ]
+            },
+            {
+                "indicador": "Identifica los componentes estructurales o genéticos de los agentes virales con potencial oncogénico",
+                "preguntas": [
+                    {
+                        "id": "11",
+                        "pregunta": "En una biopsia cervical se detecta una transformación maligna celular. A nivel molecular, ¿cuáles son los principales genes virales tempranos del VPH responsables de esta proliferación descontrolada?",
+                        "alternativas": {
+                            "a": "Genes L1 y L2.",
+                            "b": "Genes NS3 y NS5A.",
+                            "c": "Genes E6 y E7.",
+                            "d": "Genes gag, pol y env.",
+                            "e": "Genes de la transcriptasa reversa."
+                        },
+                        "respuesta": "c",
+                        "justificacion": "En el genoma del VPH, los genes tempranos E6 y E7 actúan como los principales oncogenes que controlan la oncogénesis al eliminar los controles del ciclo celular."
+                    },
+                    {
+                        "id": "12",
+                        "pregunta": "Al analizar la estructura del virus de la Hepatitis B (VHB) en relación a su diagnóstico y patogenia, ¿cuál es el componente de su membrana externa formado por lípidos y proteínas que persiste en la sangre en la infección crónica?",
+                        "alternativas": {
+                            "a": "Antígeno del core (HBcAg).",
+                            "b": "ADN polimerasa viral.",
+                            "c": "Antígeno de superficie (HBsAg).",
+                            "d": "Transcriptasa reversa.",
+                            "e": "Glicoproteína gp120."
+                        },
+                        "respuesta": "c",
+                        "justificacion": "La membrana externa del VHB, compuesta por lípidos y proteínas, se denomina 'antígeno de superficie' o HBsAg, y su persistencia por más de 6 meses es la marca de la cronicidad que puede llevar a cirrosis o hepatocarcinoma."
+                    },
+                    {
+                        "id": "13",
+                        "pregunta": "Para la profilaxis del Virus del Papiloma Humano (VPH), se utilizan vacunas basadas en partículas similares al virus (VLPs). ¿Qué componente estructural del VPH imitan estas vacunas para inducir anticuerpos sin riesgo infeccioso?",
+                        "alternativas": {
+                            "a": "El ADN circular bicatenario.",
+                            "b": "La proteína menor L2.",
+                            "c": "Las oncoproteínas E6 y E7.",
+                            "d": "La proteína mayoritaria de la cápside L1.",
+                            "e": "La región reguladora LCR."
+                        },
+                        "respuesta": "d",
+                        "justificacion": "Las vacunas contra el VPH están basadas en la Proteína L1, que es la proteína mayoritaria de la cápside externa responsable del ensamblaje y la inducción de la respuesta de anticuerpos protectores."
+                    },
+                    {
+                        "id": "14",
+                        "pregunta": "El VIH posee envoltura lipídica con proteínas esenciales para su ingreso a los linfocitos T con potencial de causar disfunción celular crónica. ¿Cuáles son las glicoproteínas virales de superficie encargadas de unirse al receptor CD4 y al correceptor CCR5?",
+                        "alternativas": {
+                            "a": "E1 y E2.",
+                            "b": "gp120 y gp41.",
+                            "c": "gC, gD, gH y gL.",
+                            "d": "NS5A y NS5B.",
+                            "e": "HBsAg."
+                        },
+                        "respuesta": "b",
+                        "justificacion": "La estructura del VIH incluye en su envuelta lipídica a las glicoproteínas gp120 y gp41, las cuales son estructuralmente esenciales para mediar la unión y fusión con el receptor CD4 y el correceptor CCR5 de las células huésped."
+                    },
+                    {
+                        "id": "15",
+                        "pregunta": "Al analizar la ultraestructura de la familia Herpesviridae bajo microscopía electrónica, se identifica una estructura proteica única y exclusiva situada entre la nucleocápside icosaédrica y la envoltura lipídica. ¿A qué componente corresponde?",
+                        "alternativas": {
+                            "a": "Matriz (p17).",
+                            "b": "Cápside proteica L1.",
+                            "c": "Transcriptasa reversa.",
+                            "d": "Tegumento proteico.",
+                            "e": "Cápside de 72 capsómeros."
+                        },
+                        "respuesta": "d",
+                        "justificacion": "Los herpesvirus (incluidos el HSV, VZV y el oncogénico EBV) se caracterizan estructuralmente por poseer un tegumento proteico único y exclusivo situado entre la cápside y la envoltura lipídica."
+                    }
+                ]
+            },
+            {
+                "indicador": "Explica el mecanismo patogénico viral de transformación maligna en el hospedero.",
+                "preguntas": [
+                    {
+                        "id": "16",
+                        "pregunta": "¿Cuál es el mecanismo celular fundamental a través del cual los genotipos de alto riesgo del Virus del Papiloma Humano (como VPH 16 y 18) inducen la transformación maligna en el epitelio cervical?",
+                        "alternativas": {
+                            "a": "Integración del virus en el genoma celular para formar un provirus de ARN que destruye directamente las células infectadas.",
+                            "b": "Expresión de proteínas oncogénicas E6 y E7 que eliminan los controles del ciclo celular, permitiendo la proliferación anormal.",
+                            "c": "Inducción del mal plegamiento en forma de lámina beta de proteínas celulares preexistentes.",
+                            "d": "Infección lítica masiva de macrófagos y linfocitos que genera inmunosupresión sistémica.",
+                            "e": "Reactivación desde los ganglios sensoriales desencadenando inflamación aguda recurrente en el epitelio."
+                        },
+                        "respuesta": "b",
+                        "justificacion": "En el VPH, la patogenia oncogénica se debe a que las oncoproteínas virales E6 y E7 inhiben y eliminan los controles normales del ciclo celular, permitiendo la proliferación descontrolada y la transformación maligna."
+                    },
+                    {
+                        "id": "17",
+                        "pregunta": "Un paciente con infección crónica por VHB desarrolla un carcinoma hepatocelular tras años de evolución. Según la patogenia del VHB, ¿cuál es el evento patogénico principal que lleva a esta complicación neoplásica?",
+                        "alternativas": {
+                            "a": "La destrucción aguda y fulminante de más del 90% del hígado en las primeras 24 horas.",
+                            "b": "El secuestro de la Vitamina B12 por el virus dentro de los hepatocitos.",
+                            "c": "La falla del sistema inmune en eliminar el virus, manteniendo una inflamación continua y crónica en el hígado.",
+                            "d": "La producción directa de la oncoproteína E7 por parte del HBsAg.",
+                            "e": "El depósito de proteínas priónicas PrPSc en el citoplasma de las células hepáticas."
+                        },
+                        "respuesta": "c",
+                        "justificacion": "La progresión de la infección crónica por VHB a cirrosis y carcinoma hepatocelular se explica clínicamente por la incapacidad del sistema inmune para eliminar el virus, lo que genera una inflamación hepática continua y crónica."
+                    },
+                    {
+                        "id": "18",
+                        "pregunta": "En el contexto del VIH, aunque el virus en sí mismo no tiene genes directamente oncogénicos, los pacientes no tratados tienen alto riesgo de desarrollar cánceres como el Sarcoma de Kaposi. ¿Qué mecanismo explica patogénicamente este fenómeno?",
+                        "alternativas": {
+                            "a": "El VIH inserta el gen de la proteasa en el ADN de las células endoteliales, transformándolas directamente.",
+                            "b": "El VIH infecta y destruye los linfocitos CD4, generando disfunción inmunológica severa que permite el desarrollo de infecciones y cánceres oportunistas.",
+                            "c": "Las glicoproteínas gp120 actúan como factores de crecimiento endotelial directo.",
+                            "d": "El virus agota los niveles de colesterol celular estimulando hiperplasia compensatoria.",
+                            "e": "El VIH actúa de forma sinérgica con las partículas priónicas circulantes en la sangre."
+                        },
+                        "respuesta": "b",
+                        "justificacion": "La patogenia del VIH consiste en la infección y destrucción progresiva de linfocitos CD4, generando una inmunosupresión crónica severa que abre la puerta a cánceres oportunistas como el Sarcoma de Kaposi en etapa de SIDA."
+                    },
+                    {
+                        "id": "19",
+                        "pregunta": "El Virus de Epstein-Barr (EBV) es capaz de inmortalizar células y fue el primer virus humano directamente vinculado a la génesis de tumores. ¿Cómo ejecuta este proceso de transformación celular?",
+                        "alternativas": {
+                            "a": "Fagocitando las células natural killer y reprogramándolas para dividirse.",
+                            "b": "Modificando los canales iónicos neuronales provocando despolarización continua.",
+                            "c": "Expresando proteínas oncogénicas en los linfocitos B que activan la proliferación celular y favorecen la supervivencia tumoral.",
+                            "d": "Insertando el genoma de un alfaherpesvirus dentro del ADN mitocondrial.",
+                            "e": "Deteniendo completamente el ensamblaje de ribosomas celulares."
+                        },
+                        "respuesta": "c",
+                        "justificacion": "La oncogénesis del EBV ocurre porque, una vez establecida la infección y latencia en linfocitos B y/o epitelio, expresa proteínas oncogénicas específicas que fuerzan la activación de la proliferación celular y aseguran la supervivencia del tumor."
+                    },
+                    {
+                        "id": "20",
+                        "pregunta": "A nivel subcelular, las Encefalopatías Espongiformes Transmisibles inducen neurodegeneración irreversible sin la necesidad de integrar genes virales. ¿Cómo ocurre molecularmente este proceso patogénico?",
+                        "alternativas": {
+                            "a": "La transcripción inversa de ARN a ADN dentro del soma neuronal.",
+                            "b": "El metabolismo del ácido hialurónico por parte de proteasas virales.",
+                            "c": "La interacción y conversión progresiva de la proteína priónica normal (PrPC, en alfa-hélice) en su forma anormal (PrPSc, rica en láminas beta).",
+                            "d": "La producción incontrolada de interferones que lisan a los astrocitos.",
+                            "e": "El ensamblaje de la cápside viral que ocupa físicamente todo el citoplasma celular."
+                        },
+                        "respuesta": "c",
+                        "justificacion": "Los priones actúan a través del mal plegamiento de las proteínas del huésped. La proteína anormal (PrPSc) rica en láminas beta interactúa con la normal (PrPC) y la convierte patológicamente, formando agregados insolubles tóxicos que dañan irreversiblemente la neurona."
+                    }
+                ]
+            },
+            {
+                "indicador": "Aplica estrategias de prevención y manejo terapéutico de infecciones virales hepáticas, latentes y asociadas a cáncer, de forma fundamentada",
+                "preguntas": [
+                    {
+                        "id": "21",
+                        "pregunta": "Una mujer embarazada, con diagnóstico previo de infección crónica por VHB, acaba de dar a luz. Para evitar que la infección viral persista e incremente el riesgo oncológico en el neonato, ¿cuál es la medida preventiva de urgencia dictada por los protocolos?",
+                        "alternativas": {
+                            "a": "Iniciar inmediatamente tratamiento en el recién nacido con Inhibidores de Proteasa.",
+                            "b": "Administrar la primera dosis de la vacuna contra VHB dentro de las primeras 24 horas de vida.",
+                            "c": "Esperar a los 9-10 años de edad para aplicar la vacuna nonavalente.",
+                            "d": "Aplicar la vacuna combinada MMRV (ProQuad) durante la primera semana de vida.",
+                            "e": "Prohibir la lactancia materna exclusiva sin otra intervención."
+                        },
+                        "respuesta": "b",
+                        "justificacion": "La transmisión maternofilial cronifica en hasta el 95% de los lactantes infectados. La medida clave para la prevención es administrar la primera dosis de la vacuna contra VHB segura y eficaz en las primeras 24 horas de vida."
+                    },
+                    {
+                        "id": "22",
+                        "pregunta": "Un paciente con infección crónica por VHC (genotipo 1) es derivado a infectología para iniciar manejo farmacológico. Con el objetivo de conseguir una curación completa, ¿qué clase de tratamiento debe ser indicado según las directrices de la OMS?",
+                        "alternativas": {
+                            "a": "Aciclovir o Valaciclovir por vía oral de por vida.",
+                            "b": "Antivíricos de acción directa (AAD) pangenotípicos, como la combinación de sofosbuvir y daclatasvir por 12 a 24 semanas.",
+                            "c": "Terapia CAR-T dirigida genéticamente contra los hepatocitos infectados.",
+                            "d": "Vacuna terapéutica de ARNm aplicada mensualmente.",
+                            "e": "Tenofovir en monoterapia crónica para frenar la progresión del daño hepático."
+                        },
+                        "respuesta": "b",
+                        "justificacion": "El manejo de la hepatitis C ha sido transformado radicalmente por los antivíricos de acción directa (AAD) como sofosbuvir y daclatasvir, recomendados por la OMS, los cuales logran curar a la inmensa mayoría de los pacientes en un corto periodo."
+                    },
+                    {
+                        "id": "23",
+                        "pregunta": "En un colegio chileno, se planifica vacunar obligatoriamente a niños y niñas de 4° básico (9-10 años). Los padres de un escolar varón preguntan al médico el fundamento clínico de inmunizar a su hijo contra el VPH, si el foco principal suele ser el cáncer cervicouterino. ¿Cuál es la respuesta clínica correcta?",
+                        "alternativas": {
+                            "a": "La vacuna en hombres se administra únicamente para prevenir el contagio hacia las mujeres, sin beneficio directo al individuo vacunado.",
+                            "b": "La inmunización con la vacuna nonavalente previene en los varones el cáncer de ano, pene y tumores orofaríngeos, además de verrugas genitales (VPH 6 y 11).",
+                            "c": "La vacunación en niños erradica infecciones crónicas hepáticas preexistentes por VPH.",
+                            "d": "Es para evitar las mialgias y la neumonía severa características de la infección diseminada por VPH en adultos.",
+                            "e": "En los hombres el VPH induce Encefalopatías Espongiformes que deben evitarse a tiempo."
+                        },
+                        "respuesta": "b",
+                        "justificacion": "Las políticas de salud pública extienden la vacuna nonavalente a los niños porque el VPH no solo es oncológico para la mujer, sino que en hombres protege de forma comprobada frente al cáncer de ano, pene y neoplasias relacionadas, además de las verrugas."
+                    },
+                    {
+                        "id": "24",
+                        "pregunta": "Un paciente adulto con diagnóstico de VIH lleva un año en Tratamiento Antirretroviral (TAR) con un esquema que incluye inhibidores de transcriptasa reversa y de integrasa. En sus últimos dos controles trimestrales su carga viral es 'indetectable'. Él consulta sobre el riesgo de transmitir la infección a su pareja seronegativa. ¿Qué concepto epidemiológico y terapéutico aplica en este caso?",
+                        "alternativas": {
+                            "a": "La carga viral indetectable significa que la prueba falló; el riesgo de transmisión sigue siendo del 100%.",
+                            "b": "El paciente ha curado definitivamente su infección y puede donar sangre y abandonar el tratamiento.",
+                            "c": "Indetectable = Intransmisible (I=I): el riesgo de transmitir el VIH por vía sexual es nulo mientras mantenga el tratamiento.",
+                            "d": "El paciente aún tiene altos niveles de antígeno p24, por lo que es extremadamente contagioso.",
+                            "e": "Solo está a salvo si además la pareja toma Inhibidores de Proteasa como profilaxis permanente."
+                        },
+                        "respuesta": "c",
+                        "justificacion": "Las personas con infección por VIH que mantienen una carga viral indetectable gracias al TAR sostenido logran la pauta Indetectable = Intransmisible (I=I), y no transmiten el VIH a sus parejas sexuales."
+                    },
+                    {
+                        "id": "25",
+                        "pregunta": "Un adulto mayor es diagnosticado con un brote agudo severo de herpes zóster. Para limitar el daño, reducir la duración de la neuralgia y bloquear la replicación del virus reactivado, el médico prescribe valaciclovir. ¿Cuál es el mecanismo de acción de este fármaco en el contexto de esta familia viral?",
+                        "alternativas": {
+                            "a": "Inhibe directamente la entrada del virus bloqueando las glicoproteínas de fusión de membrana gC y gD.",
+                            "b": "Estimula la apoptosis programada de las neuronas de los ganglios de la raíz dorsal.",
+                            "c": "Inhibe la acción de la transcriptasa reversa durante la transcripción del ADN latente.",
+                            "d": "Actúa inhibiendo competitivamente a la ADN polimerasa viral de la familia Herpesviridae.",
+                            "e": "Destruye directamente los agregados proteicos amiloides formados en el nervio periférico."
+                        },
+                        "respuesta": "d",
+                        "justificacion": "Fármacos antivirales para herpesvirus como el aciclovir y sus profármacos (valaciclovir) operan como inhibidores de la enzima ADN polimerasa viral celular, impidiendo la replicación lítica durante la reactivación."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "tematica": "Generalidades de Parasitologia. Infecciones por protozoos",
+        "indicadores": [
+            {
+                "indicador": "Diferencia los tipos de hospedadores, ciclos biológicos y relaciones biológicas de los parásitos, aplicándolos a la cadena de transmisión.",
+                "preguntas": [
+                    {
+                        "id": "1",
+                        "pregunta": "Un niño se infecta con Taenia solium al ingerir carne de cerdo mal cocida que contiene cisticercos (fase larvaria). En este escenario epidemiológico, ¿qué rol cumple el cerdo en el ciclo de transmisión del parásito?",
+                        "alternativas": {
+                            "a": "Hospedador definitivo, porque aloja la fase adulta del helminto.",
+                            "b": "Hospedador paraténico, porque solo transporta al parásito sin permitir su desarrollo.",
+                            "c": "Hospedador intermediario, porque alberga las fases larvarias o asexuales del parásito.",
+                            "d": "Hospedador accidental, porque el cerdo no es parte natural del ciclo de vida del parásito.",
+                            "e": "Vector mecánico, porque transporta pasivamente los quistes hacia el humano."
+                        },
+                        "respuesta": "c",
+                        "justificacion": "El hospedador intermediario es el organismo que alberga las fases larvarias o asexuales de un parásito, función que cumple el cerdo para el desarrollo de cisticercos de Taenia solium."
+                    },
+                    {
+                        "id": "2",
+                        "pregunta": "En el ciclo de transmisión de Trypanosoma cruzi, el parásito forzosamente debe desarrollarse y multiplicarse en el intestino de la vinchuca antes de adquirir la capacidad de infectar a un mamífero. ¿Cómo se clasifica este tipo de ciclo biológico y qué tipo de vector es la vinchuca?",
+                        "alternativas": {
+                            "a": "Ciclo monoxénico / Vector mecánico",
+                            "b": "Ciclo heteroxénico / Vector biológico",
+                            "c": "Ciclo monoxénico / Vector biológico",
+                            "d": "Ciclo heteroxénico / Vector mecánico",
+                            "e": "Ciclo endémico / Hospedador accidental"
+                        },
+                        "respuesta": "b",
+                        "justificacion": "Es un ciclo heteroxénico porque requiere dos o más hospedadores para completarse (vinchuca y mamífero). La vinchuca es un vector biológico porque el parásito se desarrolla y multiplica activamente en ella."
+                    },
+                    {
+                        "id": "3",
+                        "pregunta": "En el colon humano, algunas bacterias sintetizan vitamina K que el hospedero absorbe, mientras las bacterias obtienen nutrientes, beneficiando a ambos. En contraste, Giardia intestinalis se adhiere al duodeno alterando la absorción de nutrientes y causando diarrea. Según las definiciones ecológicas, ¿qué relaciones biológicas representan respectivamente?",
+                        "alternativas": {
+                            "a": "Simbiosis y Comensalismo",
+                            "b": "Comensalismo y Mutualismo",
+                            "c": "Mutualismo y Parasitismo",
+                            "d": "Oportunismo y Parasitismo",
+                            "e": "Mutualismo y Comensalismo"
+                        },
+                        "respuesta": "c",
+                        "justificacion": "El mutualismo ocurre cuando ambos organismos se benefician mutuamente (bacterias y humano), mientras que el parasitismo ocurre cuando uno se beneficia (Giardia) y el hospedador resulta perjudicado con daño celular o clínico."
+                    },
+                    {
+                        "id": "4",
+                        "pregunta": "Una mujer embarazada sana se infecta con Toxoplasma gondii tras limpiar la caja de arena de su gato. El parásito atraviesa la barrera placentaria y genera un cuadro grave en el feto. Considerando que el parásito normalmente mantiene su ciclo entre felinos y roedores silvestres, ¿qué tipo de hospedador representa el humano en esta cadena?",
+                        "alternativas": {
+                            "a": "Hospedador definitivo",
+                            "b": "Hospedador intermediario obligado",
+                            "c": "Hospedador paraténico",
+                            "d": "Hospedador accidental",
+                            "e": "Vector biológico"
+                        },
+                        "respuesta": "d",
+                        "justificacion": "El humano es un hospedador accidental, es decir, un organismo no habitual en el ciclo normal del parásito que puede infectarse y en el cual la presentación clínica se puede agravar, especialmente en el embarazo."
+                    },
+                    {
+                        "id": "5",
+                        "pregunta": "En la transmisión de la malaria (Plasmodium spp.), los gametocitos ingeridos por el mosquito Anopheles se fusionan en su intestino para llevar a cabo la reproducción sexual completa del protozoo. Bajo esta estricta definición parasitológica, ¿qué clasificación recibe el mosquito Anopheles?",
+                        "alternativas": {
+                            "a": "Hospedador definitivo",
+                            "b": "Hospedador accidental",
+                            "c": "Hospedador intermediario",
+                            "d": "Vector exclusivamente mecánico",
+                            "e": "Reservorio asintomático"
+                        },
+                        "respuesta": "a",
+                        "justificacion": "El hospedador definitivo se define estrictamente como aquel organismo donde el parásito completa su fase sexual de reproducción, proceso que en el caso de Plasmodium ocurre dentro del mosquito Anopheles."
+                    }
+                ]
+            },
+            {
+                "indicador": "Distingue los conceptos de infección e infestación asociándolos correctamente a la localización anatómica interna o externa del patógeno",
+                "preguntas": [
+                    {
+                        "id": "6",
+                        "pregunta": "Un preescolar acude a la clínica por prurito nocturno intenso y excoriaciones en las manos. El médico diagnostica Sarna, causada por el ácaro Sarcoptes scabiei, el cual ha excavado túneles en la capa más superficial de la epidermis. ¿Bajo qué concepto clínico se debe catalogar este cuadro?",
+                        "alternativas": {
+                            "a": "Infección, porque el ácaro provoca una fuerte respuesta inflamatoria mediada por anticuerpos.",
+                            "b": "Infestación, debido a que el parásito se encuentra en superficies corporales externas sin invadir tejidos internos profundos.",
+                            "c": "Parasitosis oportunista, debido a que el ácaro aprovecha la inmadurez inmunológica del preescolar.",
+                            "d": "Infección, dado que el agente es capaz de multiplicarse formando huevos en los túneles.",
+                            "e": "Simbiosis parasitaria, ya que el parásito no causa una enfermedad sistémica."
+                        },
+                        "respuesta": "b",
+                        "justificacion": "La infestación se define como la presencia de parásitos (como artrópodos o ectoparásitos) en superficies corporales o cavidades externas sin necesariamente invadir o replicarse en tejidos internos u órganos."
+                    },
+                    {
+                        "id": "7",
+                        "pregunta": "Un paciente que retornó recientemente de la cuenca amazónica ingresa con fiebre, escalofríos y anemia severa. Los exámenes revelan trofozoítos de Plasmodium falciparum replicándose y rompiendo sus glóbulos rojos. A nivel de patogenia y localización, ¿qué concepto clínico define correctamente esta interacción?",
+                        "alternativas": {
+                            "a": "Infestación hemática",
+                            "b": "Contaminación accidental",
+                            "c": "Comensalismo oportunista",
+                            "d": "Infestación intracelular",
+                            "e": "Infección"
+                        },
+                        "respuesta": "e",
+                        "justificacion": "La invasión, colonización y replicación de microorganismos o parásitos en los tejidos, cavidades internas o en la sangre del hospedador (como Plasmodium en eritrocitos) se define médicamente como infección."
+                    },
+                    {
+                        "id": "8",
+                        "pregunta": "En un campamento de verano, la enfermera detecta un brote de pediculosis (piojos) en el cuero cabelludo de cinco niños, y simultáneamente deriva al hospital a un adulto con disentería severa por invasión de Entamoeba histolytica en la mucosa del colon. Para el reporte médico epidemiológico, ¿cómo se deben clasificar ambas condiciones respectivamente?",
+                        "alternativas": {
+                            "a": "La pediculosis es una infección cutánea y la disentería es una infestación colónica.",
+                            "b": "Ambos cuadros son infecciones, ya que desencadenan respuesta clínica en el hospedador.",
+                            "c": "La pediculosis corresponde a una infestación y la disentería a una infección.",
+                            "d": "Ambas son infestaciones, ya que involucran parásitos no bacterianos ni virales.",
+                            "e": "La pediculosis es una ectoinfección y la disentería es un ectoparasitismo."
+                        },
+                        "respuesta": "c",
+                        "justificacion": "La pediculosis (piojos) ocurre en la superficie (pelo/piel), por lo tanto es una infestación. La disentería amebiana involucra la invasión y destrucción del tejido interno del colon, por lo que se define como infección."
+                    },
+                    {
+                        "id": "9",
+                        "pregunta": "¿Cuál es la característica fisiopatológica fundamental que diferencia clínicamente a una 'infección' de una 'infestación' por agentes parasitarios?",
+                        "alternativas": {
+                            "a": "El tamaño del agente patógeno, siendo los macroscópicos causantes de infestación.",
+                            "b": "La severidad de los síntomas, donde la infestación siempre es asintomática.",
+                            "c": "El tipo de material genético (ADN o ARN) del parásito invasor.",
+                            "d": "La invasión profunda, colonización y replicación del patógeno dentro de tejidos y cavidades internas.",
+                            "e": "La capacidad del parásito de ser transmitido exclusivamente por un vector biológico."
+                        },
+                        "respuesta": "d",
+                        "justificacion": "La diferencia fundamental radica en la localización anatómica y profundidad: la infección implica invasión, colonización y replicación del patógeno en tejidos o cavidades internas, mientras que la infestación es superficial o externa."
+                    },
+                    {
+                        "id": "10",
+                        "pregunta": "Al analizar una resonancia cerebral de un paciente inmunodeprimido y su posterior biopsia, se evidencian múltiples lesiones encefálicas repletas de taquizoítos replicándose velozmente pertenecientes al protozoo Toxoplasma gondii. Desde el punto de vista de la terminología médica, este escenario es un ejemplo de:",
+                        "alternativas": {
+                            "a": "Infestación oportunista profunda.",
+                            "b": "Infección, por invasión activa y replicación en un órgano interno (SNC).",
+                            "c": "Comensalismo cerebral descontrolado.",
+                            "d": "Infestación latente con daño reactivo.",
+                            "e": "Simbiosis patológica intracelular."
+                        },
+                        "respuesta": "b",
+                        "justificacion": "Al encontrarse el patógeno (Toxoplasma) multiplicándose activamente e invadiendo un órgano interno (el Sistema Nervioso Central), corresponde médicamente al concepto patogénico de infección."
+                    }
+                ]
+            },
+            {
+                "indicador": "Vincula las formas biológicas de los protozoos (quiste y trofozoíto) con sus respectivas funciones de resistencia ambiental o patogénesis tisular.",
+                "preguntas": [
+                    {
+                        "id": "11",
+                        "pregunta": "En un estudio epidemiológico de un brote de Giardia intestinalis, se descubre que el agua de bebida estaba contaminada. El agente parasitario logró sobrevivir semanas en el agua a pesar de que esta tenía las concentraciones normales de cloro. ¿Qué forma biológica del protozoo es la responsable de esta supervivencia ambiental?",
+                        "alternativas": {
+                            "a": "El esporozoíto flagelado.",
+                            "b": "El merozoíto metabólicamente inactivo.",
+                            "c": "El trofozoíto vegetativo.",
+                            "d": "El quiste de protección.",
+                            "e": "El amastigote intracelular."
+                        },
+                        "respuesta": "d",
+                        "justificacion": "Los quistes (y ooquistes en apicomplejos) poseen una pared protectora que les confiere la función de supervivencia ambiental y resistencia a condiciones adversas, incluida la cloración del agua."
+                    },
+                    {
+                        "id": "12",
+                        "pregunta": "Durante una colonoscopía en un paciente con fiebre y diarrea con sangre, se toma una biopsia de una úlcera intestinal profunda. En la microscopía se observan organismos unicelulares activos que fagocitan glóbulos rojos del paciente. ¿A qué forma biológica específica de Entamoeba histolytica corresponde este hallazgo patogénico?",
+                        "alternativas": {
+                            "a": "Quiste tetranucleado",
+                            "b": "Ooquiste inmaduro",
+                            "c": "Trofozoíto",
+                            "d": "Esporozoíto",
+                            "e": "Bradizoíto"
+                        },
+                        "respuesta": "c",
+                        "justificacion": "El trofozoíto es la forma vegetativa activa, móvil, con intenso metabolismo, responsable de la multiplicación y patogénesis tisular invasiva (como causar úlceras y engullir eritrocitos)."
+                    },
+                    {
+                        "id": "13",
+                        "pregunta": "Trichomonas vaginalis se transmite casi exclusivamente por contacto sexual directo. Clínicamente y epidemiológicamente no se contrae al compartir objetos inanimados secos debido a la rápida desecación del parásito fuera del cuerpo humano. ¿Qué característica evolutiva explica esta fragilidad ambiental?",
+                        "alternativas": {
+                            "a": "Es un protozoo estrictamente intracelular durante toda su vida.",
+                            "b": "Carece de forma de quiste de resistencia en su ciclo biológico.",
+                            "c": "Sus ooquistes son rápidamente destruidos por los rayos UV.",
+                            "d": "Es un helminto multicelular que requiere un huésped intermediario.",
+                            "e": "Su disco ventral adhesivo se destruye en presencia de oxígeno."
+                        },
+                        "respuesta": "b",
+                        "justificacion": "Trichomonas vaginalis es un protozoo que se presenta únicamente en forma de trofozoíto flagelado (forma vegetativa frágil) y carece evolutivamente de la forma de resistencia ambiental, que es el quiste."
+                    },
+                    {
+                        "id": "14",
+                        "pregunta": "Para la prevención de la toxoplasmosis congénita, se indica a las mujeres gestantes no consumir carne insuficientemente cocida y evitar limpiar las heces frescas de felinos (gatos). ¿A qué forma biológica altamente resistente, excretada por el hospedador definitivo, se busca evitar la exposición en la arena del gato?",
+                        "alternativas": {
+                            "a": "Al taquizoíto flagelado.",
+                            "b": "Al quiste tisular con bradizoítos.",
+                            "c": "Al trofozoíto invasivo.",
+                            "d": "Al ooquiste ambiental.",
+                            "e": "Al tripomastigote metacíclico."
+                        },
+                        "respuesta": "d",
+                        "justificacion": "En el ciclo de Toxoplasma gondii, los gatos (hospedadores definitivos) excretan ooquistes en sus heces, los cuales constituyen la forma de resistencia ambiental infectante mediante la cual puede ocurrir el contagio directo."
+                    },
+                    {
+                        "id": "15",
+                        "pregunta": "Al analizar la deposición acuosa (diarreica) de un paciente sintomático con Giardiasis, el laboratorista observa predominantemente formas móviles con forma de pera. Sin embargo, en una muestra sólida de un paciente portador asintomático observa solo estructuras ovaladas de pared gruesa. Respectivamente, ¿qué formas biológicas se detectaron?",
+                        "alternativas": {
+                            "a": "Quistes y ooquistes.",
+                            "b": "Trofozoítos y quistes.",
+                            "c": "Merozoítos y esporozoítos.",
+                            "d": "Quistes y trofozoítos.",
+                            "e": "Amastigotes y tripomastigotes."
+                        },
+                        "respuesta": "b",
+                        "justificacion": "En el tránsito rápido por la diarrea acuosa, el parásito activo no alcanza a transformarse y se expulsan trofozoítos (forma vegetativa móvil). En deposiciones sólidas, el parásito tiene tiempo para completar la quistificación, expulsando quistes (estructuras ovaladas de pared gruesa para resistir)."
+                    }
+                ]
+            },
+            {
+                "indicador": "Explica los mecanismos de virulencia específicos que gatillan el daño clínico en el hospedador.",
+                "preguntas": [
+                    {
+                        "id": "16",
+                        "pregunta": "Un paciente que retornó de un campamento en la montaña presenta diarrea esteatorreica (con alta presencia de grasa), intensa flatulencia y severa pérdida de peso. El diagnóstico confirma Giardiasis. Biológicamente, ¿qué mecanismo de virulencia es el responsable directo de la malabsorción de nutrientes y de estos síntomas clínicos?",
+                        "alternativas": {
+                            "a": "La fagocitosis directa de células epiteliales sanas por parte del trofozoíto.",
+                            "b": "La secreción masiva de ameboporos que necrosan y causan perforación colónica.",
+                            "c": "La adhesión del parásito mediante su disco ventral a los enterocitos, provocando aplanamiento de las vellosidades duodenales.",
+                            "d": "La multiplicación intracelular del parásito dentro de las células de Kupffer en el hígado.",
+                            "e": "La producción de toxinas extracelulares de acción sistémica neurotóxica."
+                        },
+                        "respuesta": "c",
+                        "justificacion": "La Giardia intestinalis se adhiere fuertemente al epitelio duodenal mediante una estructura de anclaje (el disco adhesivo ventral). Esto genera mecánicamente un aplanamiento de las vellosidades y disbiosis, lo que impide la correcta absorción de nutrientes, causando diarrea acuosa y esteatorrea."
+                    },
+                    {
+                        "id": "17",
+                        "pregunta": "A diferencia de su variante comensal no patógena (E. dispar), Entamoeba histolytica tiene la capacidad clínica de causar disentería amebiana profunda y abscesos en el hígado. ¿Cuáles son los factores de virulencia específicos de E. histolytica que median este daño directo y destructivo al tejido?",
+                        "alternativas": {
+                            "a": "Los discos ventrales que bloquean la absorción de vitamina B12.",
+                            "b": "Las lectinas de adhesión, asociadas a la secreción de cisteína-proteasas y formación de ameboporos citotóxicos.",
+                            "c": "La capacidad de variar rápidamente sus antígenos de superficie (PfEMP1).",
+                            "d": "La secreción exclusiva de la enzima trans-sialidasa para invasión endocítica.",
+                            "e": "La formación de vacuolas parasitóforas mediadas por proteínas ROP y GRAs."
+                        },
+                        "respuesta": "b",
+                        "justificacion": "E. histolytica causa daño invasivo directo porque sus lectinas se adhieren al epitelio, secreta cisteína-proteasas para degradar la matriz del tejido, e inserta ameboporos que producen lisis celular y necrosis masiva en forma de 'botón de camisa'."
+                    },
+                    {
+                        "id": "18",
+                        "pregunta": "En la miocardiopatía aguda por la enfermedad de Chagas, Trypanosoma cruzi debe internalizarse en las células musculares cardíacas (miocitos) para esconderse de los anticuerpos circulantes, replicarse intracelularmente como amastigote y posteriormente destruir la célula. ¿Qué molécula o factor de virulencia utiliza el parásito específicamente para facilitar activamente esta entrada celular?",
+                        "alternativas": {
+                            "a": "El disco adhesivo suctorio.",
+                            "b": "La proteína PfEMP1.",
+                            "c": "La enzima trans-sialidasa.",
+                            "d": "Las cisteína-proteasas.",
+                            "e": "La cápside proteica P24."
+                        },
+                        "respuesta": "c",
+                        "justificacion": "En el mecanismo patogénico de Trypanosoma cruzi, la invasión celular intracelular (clave para la patogénesis de la fase aguda y crónica) se facilita activamente mediante la enzima parasitaria trans-sialidasa."
+                    },
+                    {
+                        "id": "19",
+                        "pregunta": "Una complicación crítica y potencialmente mortal de la infección por Plasmodium falciparum es la malaria cerebral. Esta condición ocurre por la obstrucción microvascular masiva en el cerebro. ¿Qué factor de virulencia media patogénicamente este secuestro vascular y formación de rosetas (rosetting) de glóbulos rojos infectados?",
+                        "alternativas": {
+                            "a": "La lectina Gal/GalNAc.",
+                            "b": "Las proteínas ROP y GRAs.",
+                            "c": "La toxina extracelular ameboporo.",
+                            "d": "La proteína de superficie del eritrocito modificada PfEMP1.",
+                            "e": "Los componentes fibrilares de la pared del ooquiste ambiental."
+                        },
+                        "respuesta": "d",
+                        "justificacion": "Plasmodium falciparum modifica al glóbulo rojo hospedero expresando la proteína PfEMP1 en su superficie. Esto permite la evasión inmune, la formación de agregados de eritrocitos (rosetting) y la adherencia al endotelio capilar (secuestro vascular)."
+                    },
+                    {
+                        "id": "20",
+                        "pregunta": "Para poder alojarse crónicamente en el cerebro sin ser destruido, Toxoplasma gondii penetra de manera activa las células y se rodea de una membrana propia formando la 'vacuola parasitófora', evitando así la fusión con el lisosoma celular destructivo. A nivel molecular, ¿qué componentes estructurales del parásito orquestan este refinado escape inmunológico?",
+                        "alternativas": {
+                            "a": "Las lipasas y fosfolipasas extracelulares masivas.",
+                            "b": "Las proteínas inyectadas por los organelos apicales ROP (rhoptry) y GRAs (granule).",
+                            "c": "Los canales formadores de poros (ameboporos).",
+                            "d": "La trans-sialidasa del citoesqueleto subicular.",
+                            "e": "La enzima transcriptasa reversa intracelular."
+                        },
+                        "respuesta": "b",
+                        "justificacion": "La invasión y evasión inmune de Toxoplasma ocurre mediante la inyección activa de proteínas desde organelos especializados llamados ROP y GRAs. Estas modifican la vacuola parasitófora, impidiendo que el lisosoma hospedero se fusione y destruya al parásito."
+                    }
+                ]
+            },
+            {
+                "indicador": "Selecciona el método diagnóstico idóneo según la fase clínica de la protozoosis y las normativas de vigilancia epidemiológica.",
+                "preguntas": [
+                    {
+                        "id": "21",
+                        "pregunta": "Una paciente gestante de 12 semanas, en su control rutinario prenatal, arroja niveles serológicos positivos tanto para anticuerpos IgM como para IgG contra Toxoplasma gondii. Debido a que la infección debe diferenciarse entre aguda (alto riesgo fetal) o preexistente crónica (sin riesgo), ¿cuál es el examen de laboratorio secundario idóneo para esclarecer esta fase clínica?",
+                        "alternativas": {
+                            "a": "Microscopía electrónica de líquido amniótico.",
+                            "b": "Frotis sanguíneo teñido con Giemsa (Gota gruesa).",
+                            "c": "Examen coproparasitario seriado de la embarazada.",
+                            "d": "Prueba de avidez para la Inmunoglobulina G (IgG).",
+                            "e": "Cultivo parasitario de células de Kupffer."
+                        },
+                        "respuesta": "d",
+                        "justificacion": "Cuando las pruebas serológicas muestran IgM e IgG positivas, se solicita el test de avidez de la IgG. Una avidez baja indica que la infección es reciente (fase aguda, coincidente con el embarazo y con alto riesgo fetal), mientras que una alta avidez confirma que la infección fue antigua y crónica."
+                    },
+                    {
+                        "id": "22",
+                        "pregunta": "En un banco de sangre, un donante asintomático resulta positivo a dos pruebas serológicas diferentes de anticuerpos contra Trypanosoma cruzi (ELISA y Test Rápido). Ante esta confirmación de Enfermedad de Chagas crónica, además de rechazar la donación, ¿qué mandato normativo de vigilancia epidemiológica debe cumplir el laboratorio inmediatamente en Chile?",
+                        "alternativas": {
+                            "a": "Realizar fumigación obligatoria con insecticidas del domicilio del paciente antes de notificar al paciente.",
+                            "b": "Notificar la patología obligatoriamente a la Autoridad Sanitaria a través del sistema informático EPIVIGILA.",
+                            "c": "Indicar eutanasia preventiva de las mascotas peridomésticas.",
+                            "d": "Aislar en una sala de presión negativa al paciente para evitar brotes aéreos intrahospitalarios.",
+                            "e": "Decretar alerta sanitaria en la comuna de residencia y cierre de fronteras en la región."
+                        },
+                        "respuesta": "b",
+                        "justificacion": "La enfermedad de Chagas (T. cruzi) es una patología sujeta a vigilancia estricta y de notificación obligatoria, cuyo reporte debe realizarse a la Autoridad Sanitaria usando el sistema oficial EPIVIGILA para iniciar protocolos de salud pública."
+                    },
+                    {
+                        "id": "23",
+                        "pregunta": "Un hombre de 45 años, recién regresado de la selva amazónica boliviana, acude a urgencias cursando fiebre muy elevada recurrente, escalofríos y esplenomegalia. Ante la alta sospecha clínica de malaria (Plasmodium) en fase eritrocítica aguda, ¿cuál es el método de diagnóstico laboratorial rápido, directo e idóneo para observar al parásito y orientar la terapia de urgencia?",
+                        "alternativas": {
+                            "a": "Test de avidez de anticuerpos IgG.",
+                            "b": "Examen directo microscópico de deposiciones.",
+                            "c": "Frotis de sangre periférica o técnica de Gota Gruesa.",
+                            "d": "Coproparasitario seriado de 3 días.",
+                            "e": "Tomografía Computarizada (TAC) de cráneo con contraste."
+                        },
+                        "respuesta": "c",
+                        "justificacion": "En la sospecha de malaria aguda, donde los parásitos se replican en sangre provocando los paroxismos de fiebre, el frotis sanguíneo y la gota gruesa son los métodos microscópicos de detección directa idóneos para ver al parásito en el eritrocito y determinar especie y parasitemia."
+                    },
+                    {
+                        "id": "24",
+                        "pregunta": "Un paciente anciano, originario de una zona rural del norte del país, se evalúa por insuficiencia cardiaca progresiva y arritmias. El cardiólogo sospecha de una miocardiopatía asociada a una fase crónica de la Enfermedad de Chagas adquirida hace décadas. Debido a que en la fase crónica la cantidad de parásitos circulantes en la sangre es ínfima, ¿cuál es el método de laboratorio de elección recomendado para confirmar el diagnóstico?",
+                        "alternativas": {
+                            "a": "Frotis directo de gota gruesa bajo microscopía.",
+                            "b": "Reacción en Cadena de la Polimerasa (PCR) para medir carga viral rápida.",
+                            "c": "Cultivo de líquido cefalorraquídeo.",
+                            "d": "Serología para detección de anticuerpos IgG mediante 2 pruebas diferentes.",
+                            "e": "Detección de ameboporos mediante ELISA."
+                        },
+                        "respuesta": "d",
+                        "justificacion": "En la fase crónica de Chagas, los métodos directos (como el frotis) tienen muy baja sensibilidad porque la parasitemia es casi nula. El diagnóstico idóneo en esta etapa latente/crónica se basa en confirmar la infección previa detectando anticuerpos (Serología) mediante dos pruebas serológicas diferentes."
+                    },
+                    {
+                        "id": "25",
+                        "pregunta": "A una consulta pediátrica llega una niña con distensión abdominal persistente y diarrea crónica de un mes de evolución. Tras sospechar de un cuadro de giardiasis intestinal, el médico solicita estudio de heces. Dado que Giardia intestinalis libera sus formas de resistencia de manera irregular y fluctuante en el tiempo, ¿qué protocolo diagnóstico específico debe indicarse para elevar la sensibilidad diagnóstica microscópica?",
+                        "alternativas": {
+                            "a": "Examen de gota gruesa seriada durante un episodio de fiebre nocturna.",
+                            "b": "Xenodiagnóstico mediante exposición de la paciente a insectos triatominos limpios.",
+                            "c": "Examen coproparasitario seriado, recolectando 3 muestras en 3 días diferentes.",
+                            "d": "Prueba de Inmunofluorescencia Indirecta (IFI) en suero para medir IgG.",
+                            "e": "Test de avidez plaquetaria de antígenos."
+                        },
+                        "respuesta": "c",
+                        "justificacion": "Dado que la excreción fecal de quistes de parásitos entéricos como Giardia es irregular o intermitente, la normativa diagnóstica idónea exige un examen coproparasitario seriado (habitualmente 3 muestras en días distintos) para aumentar la sensibilidad y probabilidad de capturar visualmente al protozoo."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "tematica": "Helmintos y Artrópodos de importancia médica",
+        "indicadores": [
+            {
+                "indicador": "Identifica nematodos y cestodos parásitos y sus respectivos mecanismos de transmisión y profilaxis.",
+                "preguntas": [
+                    {
+                        "id": "1",
+                        "pregunta": "Un brote de Trichinelosis afecta a un grupo familiar en una zona rural. Al realizar la investigación epidemiológica, ¿cuál es el mecanismo de transmisión más probable y qué medida profiláctica específica falló en este grupo?",
+                        "alternativas": {
+                            "a": "Fecal-oral por consumo de aguas servidas; falló la cloración del agua.",
+                            "b": "Carnivorismo por ingesta de carne de cerdo o jabalí mal cocida con quistes; falló la cocción adecuada y el control veterinario.",
+                            "c": "Contacto directo con heces de perro; falló la desparasitación canina.",
+                            "d": "Penetración percutánea de larvas; falló el uso de calzado protector.",
+                            "e": "Consumo de pescado marino crudo; falló la congelación industrial."
+                        },
+                        "respuesta": "b",
+                        "justificacion": "Trichinella spiralis se transmite por carnivorismo al ingerir carne de cerdo o jabalí cruda o insuficientemente cocida que contiene quistes larvarios. La profilaxis requiere consumo de carne bien cocida y control veterinario."
+                    },
+                    {
+                        "id": "2",
+                        "pregunta": "En una escuela preescolar, varios niños presentan prurito anal nocturno. Se diagnostica infección por Enterobius vermicularis. ¿Cuál es el principal mecanismo de transmisión que perpetúa el contagio en este entorno y cómo debe prevenirse?",
+                        "alternativas": {
+                            "a": "Transmisión por vectores biológicos; requiere uso de repelentes DEET.",
+                            "b": "Consumo de carne de vacuno con cisticercos; se previene cocinando la carne a >65°C.",
+                            "c": "Transmisión autoinfectante 'ano-mano-boca' y fómites (ropa); se previene con lavado de manos, uñas cortas y tratamiento a toda la familia simultáneamente.",
+                            "d": "Consumo de verduras contaminadas con huevos; requiere lavado de frutas y verduras.",
+                            "e": "Inhalación de huevos embrionados; requiere uso de mascarillas en espacios cerrados."
+                        },
+                        "respuesta": "c",
+                        "justificacion": "Enterobius vermicularis se transmite frecuentemente por autoinfección ('ano-mano-boca') y fómites como la ropa o sábanas. La prevención exige lavado de manos, mantener uñas cortas, lavar la ropa de cama y tratar a todos los contactos simultáneamente."
+                    },
+                    {
+                        "id": "3",
+                        "pregunta": "Un paciente es diagnosticado con Teniasis intestinal por Taenia saginata. Al realizar la educación sanitaria, el médico le explica el mecanismo por el cual adquirió el parásito. ¿Cuál es la vía de infección correcta para este cestodo?",
+                        "alternativas": {
+                            "a": "Ingesta de carne de cerdo con cisticercos.",
+                            "b": "Ingesta de huevos de Taenia presentes en el suelo o agua.",
+                            "c": "Ingesta de carne de vacuno cruda o mal cocida que contiene cisticercos.",
+                            "d": "Consumo de vísceras infectadas con quistes hidatídicos.",
+                            "e": "Picadura de un vector mecánico."
+                        },
+                        "respuesta": "c",
+                        "justificacion": "Taenia saginata (tenia del vacuno) se transmite al humano (hospedador definitivo) exclusivamente por la ingesta de carne de vacuno cruda o mal cocida que contiene cisticercos."
+                    },
+                    {
+                        "id": "4",
+                        "pregunta": "Para la geohelmintiasis causada por Ascaris lumbricoides, el saneamiento ambiental es la medida profiláctica clave. ¿Cuál es la forma infectante que el ser humano ingiere a través de alimentos o agua contaminada con tierra?",
+                        "alternativas": {
+                            "a": "El cisticerco.",
+                            "b": "La larva plerocercoide.",
+                            "c": "El huevo embrionado.",
+                            "d": "El trofozoíto.",
+                            "e": "El proglótide grávido."
+                        },
+                        "respuesta": "c",
+                        "justificacion": "El ciclo de transmisión de Ascaris lumbricoides comienza con la ingesta (vía fecal-oral) de huevos embrionados presentes en el suelo o agua contaminada por heces."
+                    }
+                ]
+            },
+            {
+                "indicador": "Diferencia las manifestaciones clínicas de las helmintosis intestinales y tisulares según los mecanismos de daño mecánico, expoliativo o inmunoalérgico.",
+                "preguntas": [
+                    {
+                        "id": "5",
+                        "pregunta": "Un paciente pediátrico con alta carga de Ascaris lumbricoides acude a urgencias por dolor abdominal agudo y ausencia de tránsito intestinal, requiriendo cirugía por obstrucción. ¿Qué tipo de mecanismo de daño explica directamente esta complicación?",
+                        "alternativas": {
+                            "a": "Mecanismo expoliativo.",
+                            "b": "Mecanismo tóxico.",
+                            "c": "Mecanismo inmunoalérgico.",
+                            "d": "Mecanismo mecánico.",
+                            "e": "Mecanismo enzimático."
+                        },
+                        "respuesta": "d",
+                        "justificacion": "La obstrucción intestinal por Ascaris lumbricoides es un claro ejemplo de daño mecánico, donde la masa de gusanos cilíndricos en la luz intestinal causa compresión y bloqueo físico."
+                    },
+                    {
+                        "id": "6",
+                        "pregunta": "Un paciente que suele consumir sushi de salmón crudo es diagnosticado con difilobotriasis (Dibothriocephalus latus) tras presentar fatiga extrema y palidez. Los exámenes revelan anemia megaloblástica. ¿Qué mecanismo patogénico es responsable de esta complicación crítica?",
+                        "alternativas": {
+                            "a": "Daño mecánico por obstrucción biliar.",
+                            "b": "Mecanismo expoliativo, ya que el parásito compite activamente y secuestra la Vitamina B12 del huésped.",
+                            "c": "Daño inmunoalérgico que destruye los glóbulos rojos (hemólisis).",
+                            "d": "Secreción de toxinas que deprimen la médula ósea.",
+                            "e": "Mecanismo traumático al perforar la mucosa gástrica."
+                        },
+                        "respuesta": "b",
+                        "justificacion": "El Dibothriocephalus latus puede causar una complicación crítica llamada anemia perniciosa/megaloblástica mediante un mecanismo expoliativo, ya que el parásito secuestra y compite fuertemente por la Vitamina B12 en el intestino."
+                    },
+                    {
+                        "id": "7",
+                        "pregunta": "Durante una intervención quirúrgica para resecar un quiste hidatídico hepático (Echinococcus granulosus), ocurre un derrame accidental del líquido del quiste en la cavidad peritoneal. El paciente sufre inmediatamente un shock profundo. ¿Qué mecanismo patogénico explica este evento súbito?",
+                        "alternativas": {
+                            "a": "Mecanismo mecánico por aumento súbito de la presión abdominal.",
+                            "b": "Mecanismo inmunoalérgico desencadenando una reacción anafiláctica severa por los antígenos parasitarios.",
+                            "c": "Mecanismo expoliativo agudo de electrolitos.",
+                            "d": "Daño tóxico directo sobre el miocardio.",
+                            "e": "Neurotoxicidad periférica."
+                        },
+                        "respuesta": "b",
+                        "justificacion": "La ruptura de un quiste hidatídico libera líquido con antígenos de Echinococcus que el sistema inmune reconoce masivamente, desencadenando un mecanismo inmunoalérgico de hipersensibilidad (reacción anafiláctica severa o shock)."
+                    },
+                    {
+                        "id": "8",
+                        "pregunta": "Una fase del ciclo vital de Ascaris lumbricoides implica el paso por los alvéolos pulmonares, donde el sistema inmune del paciente reacciona provocando tos, disnea y el Síndrome de Löeffler. ¿Qué marcador de laboratorio es característico de esta respuesta inmune sistémica?",
+                        "alternativas": {
+                            "a": "Neutrofilia severa.",
+                            "b": "Presencia de quistes en esputo.",
+                            "c": "Eosinofilia marcada.",
+                            "d": "Linfopenia.",
+                            "e": "Aumento de transaminasas hepáticas."
+                        },
+                        "respuesta": "c",
+                        "justificacion": "Durante la migración pulmonar y tisular de helmintos como Ascaris lumbricoides, la infiltración tisular y la respuesta inmune Th2 provocan una marcada eosinofilia (Síndrome de Löeffler) como marcador de la infección."
+                    }
+                ]
+            },
+            {
+                "indicador": "Interpreta exámenes coproparasitológicos, pruebas de imagen y biomarcadores para el diagnóstico certero de hidatidosis, teniasis o nematodiasis.",
+                "preguntas": [
+                    {
+                        "id": "9",
+                        "pregunta": "Un paciente agricultor presenta dolor crónico en hipocondrio derecho y hepatomegalia. La ecografía (Eco) revela un gran quiste multilocular en el hígado. Para confirmar la sospecha de hidatidosis y evitar punciones riesgosas, ¿qué examen complementario de laboratorio es el indicado?",
+                        "alternativas": {
+                            "a": "Test de Graham (Cinta adhesiva).",
+                            "b": "Examen coproparasitológico seriado (EPSD).",
+                            "c": "Pruebas serológicas (ELISA o Western blot) para buscar anticuerpos.",
+                            "d": "Hemocultivo bacteriano.",
+                            "e": "Frotis de sangre periférica."
+                        },
+                        "respuesta": "c",
+                        "justificacion": "Para la hidatidosis (Echinococcus granulosus), el diagnóstico se realiza combinando imagenología (Eco, TAC, RMN) con serología (ELISA, Western blot) para confirmar la respuesta de anticuerpos contra los antígenos del quiste, debido a que no se eliminan huevos en las heces humanas."
+                    },
+                    {
+                        "id": "10",
+                        "pregunta": "Un niño acude al médico con intenso prurito perianal que empeora en la noche. Para confirmar el diagnóstico de infección por Enterobius vermicularis, ¿cuál es el examen diagnóstico de primera línea y en qué momento debe realizarse?",
+                        "alternativas": {
+                            "a": "Muestra de sangre venosa obtenida al anochecer.",
+                            "b": "Test de Graham (Cinta adhesiva transparente aplicada en la zona perianal) realizado al despertar, antes de la higiene.",
+                            "c": "Examen coproparasitológico Método PAF con 3 muestras en días alternos.",
+                            "d": "Biopsia de la mucosa rectal.",
+                            "e": "Detección de IgE total en suero."
+                        },
+                        "respuesta": "b",
+                        "justificacion": "El Test de Graham, que utiliza una cinta adhesiva transparente aplicada en la zona perianal al despertar (antes del baño), es el método de elección para atrapar y visualizar microscópicamente los huevos que la hembra de E. vermicularis deposita durante la noche."
+                    },
+                    {
+                        "id": "11",
+                        "pregunta": "Un paciente que consumió carne de cerdo cruda hace 3 semanas presenta fiebre, mialgias intensas y edema palpebral. Su hemograma destaca una eosinofilia superior al 20%. Si la serología ELISA es inconcluyente para Trichinella spiralis, ¿qué prueba invasiva puede confirmar directamente la patología tisular?",
+                        "alternativas": {
+                            "a": "Biopsia muscular para observar la larva enquistada en el músculo estriado.",
+                            "b": "Punción lumbar para análisis de LCR.",
+                            "c": "Colangiopancreatografía retrógrada endoscópica (CPRE).",
+                            "d": "Aspirado de médula ósea.",
+                            "e": "Examen macroscópico de heces."
+                        },
+                        "respuesta": "a",
+                        "justificacion": "El diagnóstico de Trichinella spiralis se apoya en la clínica, alta eosinofilia y serología. Sin embargo, si existen dudas, la biopsia muscular permite la confirmación directa al visualizar la larva de T. spiralis enquistada en el tejido muscular estriado."
+                    },
+                    {
+                        "id": "12",
+                        "pregunta": "Un paciente con convulsiones de inicio reciente y antecedentes de haber habitado en una zona con higiene deficiente y crianza de cerdos, es sometido a una Tomografía Computarizada (TAC) cerebral. El hallazgo muestra múltiples lesiones quísticas calcificadas en el tejido nervioso. ¿Qué infección causó este cuadro neurológico?",
+                        "alternativas": {
+                            "a": "Ascaridiasis tisular.",
+                            "b": "Hidatidosis cerebral por Echinococcus granulosus.",
+                            "c": "Neurocisticercosis por larvas de Taenia solium.",
+                            "d": "Encefalitis por Taenia saginata.",
+                            "e": "Meningitis por Trichinella spiralis."
+                        },
+                        "respuesta": "c",
+                        "justificacion": "La presencia de lesiones quísticas en el Sistema Nervioso Central acompañadas de crisis epilépticas, en un paciente expuesto a huevos de Taenia solium, es el cuadro clínico e imagenológico clásico de la neurocisticercosis."
+                    }
+                ]
+            },
+            {
+                "indicador": "Distingue el rol patogénico de los artrópodos como ectoparásitos o vectores biológicos/mecánicos para fundamentar estrategias integradas de control.",
+                "preguntas": [
+                    {
+                        "id": "13",
+                        "pregunta": "En un hospital se observa que moscas comunes transportan pasivamente bacterias entéricas desde los desechos hasta las bandejas de comida de los pacientes, provocando un brote diarreico. ¿Qué rol patogénico están cumpliendo las moscas en este caso?",
+                        "alternativas": {
+                            "a": "Ectoparásitos hematófagos.",
+                            "b": "Vectores biológicos, ya que las bacterias se multiplican en su interior.",
+                            "c": "Vectores mecánicos, debido al transporte del patógeno sin desarrollo biológico en el insecto.",
+                            "d": "Huéspedes definitivos del agente causal.",
+                            "e": "Patógenos por inoculación tóxica."
+                        },
+                        "respuesta": "c",
+                        "justificacion": "Las moscas actúan como vectores mecánicos cuando transportan patógenos de forma pasiva (por fómites/contacto) sin que el agente infeccioso experimente desarrollo o multiplicación biológica en su interior."
+                    },
+                    {
+                        "id": "14",
+                        "pregunta": "El Aedes aegypti es responsable de transmitir el virus del Dengue. Para infectar a un humano sano, el virus debe replicarse dentro del mosquito tras haber picado a una persona enferma. Según esto, ¿cómo se clasifica funcionalmente a este artrópodo y qué estrategia de control es primordial?",
+                        "alternativas": {
+                            "a": "Vector mecánico; se controla hirviendo el agua de consumo.",
+                            "b": "Ectoparásito permanente; se controla con cremas acaricidas en el humano.",
+                            "c": "Hospedador paraténico; se controla vacunando al mosquito.",
+                            "d": "Vector biológico; requiere control focalizado eliminando criaderos (aguas estancadas) y uso de repelentes.",
+                            "e": "Arácnido vector; se controla sellando rincones oscuros de la vivienda."
+                        },
+                        "respuesta": "d",
+                        "justificacion": "El mosquito es un vector biológico porque el agente (virus del Dengue) requiere multiplicarse en él antes de ser transmitido. El control integrado de este tipo de vector requiere eliminación de criaderos (aguas estancadas) y uso de repelentes."
+                    },
+                    {
+                        "id": "15",
+                        "pregunta": "Los piojos de la cabeza (Pediculus humanus capitis) residen en el cuero cabelludo humano, alimentándose de sangre (hematofagia) y causando intenso prurito. ¿Cuál es su rol patogénico directo?",
+                        "alternativas": {
+                            "a": "Son vectores biológicos del virus del Zika.",
+                            "b": "Son vectores mecánicos de helmintos intestinales.",
+                            "c": "Son ectoparásitos que causan infestación y excoriaciones cutáneas.",
+                            "d": "Son insectos inoculadores de neurotoxinas letales.",
+                            "e": "Son endoparásitos tisulares."
+                        },
+                        "respuesta": "c",
+                        "justificacion": "Los piojos (Pediculus humanus) son ectoparásitos obligados que viven en la superficie externa del huésped, alimentándose de su sangre y causando infestación directa (pediculosis) con prurito severo y excoriaciones."
+                    },
+                    {
+                        "id": "16",
+                        "pregunta": "Después de un campamento en un área boscosa, una persona presenta fiebre y un rash cutáneo. Se le detecta una garrapata adherida a la piel que transmitió la bacteria causante de la enfermedad de Lyme (Borrelia burgdorferi). ¿Qué medida de prevención específica es prioritaria para estos vectores?",
+                        "alternativas": {
+                            "a": "Tratamiento profiláctico con albendazol antes del campamento.",
+                            "b": "Uso de ropa protectora (mangas largas), repelentes con DEET y revisión (inspección) corporal post-exposición.",
+                            "c": "Limpieza exhaustiva del interior del hogar y detrás de los cuadros.",
+                            "d": "Erradicación de moscas domésticas en el área.",
+                            "e": "Cocción de todos los alimentos a más de 65°C."
+                        },
+                        "respuesta": "b",
+                        "justificacion": "Las garrapatas, al ser vectores biológicos que habitan zonas de pastos altos, se previenen mediante el uso de ropa protectora, repelentes en la piel expuesta y, fundamentalmente, la inspección corporal post-exposición para su extracción temprana."
+                    }
+                ]
+            },
+            {
+                "indicador": "Compara los perfiles clínicos, cargas parasitarias y riesgos de contagio entre la sarna común y la sarna noruega.",
+                "preguntas": [
+                    {
+                        "id": "17",
+                        "pregunta": "Al comparar a dos pacientes diagnosticados con Sarcoptes scabiei, el paciente A presenta pequeñas erupciones y un picor nocturno insoportable, mientras el paciente B tiene extensas placas costrosas engrosadas y apenas siente picor. Basándose en los perfiles clínicos de la Sarna, ¿qué variante padece el paciente B y cuál es su carga parasitaria?",
+                        "alternativas": {
+                            "a": "Sarna común; carga menor a 20 ácaros.",
+                            "b": "Sarna Noruega (costrosa); carga masiva de miles a millones de ácaros.",
+                            "c": "Sarna común; carga masiva de millones de ácaros.",
+                            "d": "Sarna Noruega; carga menor a 20 ácaros.",
+                            "e": "Pediculosis corporis severa; carga de miles de huevos."
+                        },
+                        "respuesta": "b",
+                        "justificacion": "La Sarna Noruega (costrosa) se caracteriza clínicamente por costras gruesas, la frecuente ausencia de prurito (picor) y una carga parasitaria masiva de miles o millones de ácaros, a diferencia de la sarna común."
+                    },
+                    {
+                        "id": "18",
+                        "pregunta": "¿Qué diferencia fundamental existe entre la Sarna Común y la Sarna Noruega en cuanto al perfil de riesgo del paciente afectado y sus complicaciones sistémicas?",
+                        "alternativas": {
+                            "a": "La sarna común afecta a personas inmunodeprimidas causando alto riesgo de sepsis, la noruega afecta a sanos sin complicaciones.",
+                            "b": "La sarna común solo ocurre en niños, la noruega solo en adultos mayores.",
+                            "c": "La Sarna Noruega afecta mayormente a inmunodeprimidos, con alto riesgo de sepsis por infecciones bacterianas graves, mientras la común afecta a población general con complicaciones leves.",
+                            "d": "Ambas variantes presentan el mismo perfil en el huésped, variando solo en la especie del ácaro infectante.",
+                            "e": "La sarna común requiere hospitalización inmediata por neurotoxicidad, la noruega se trata ambulatoriamente."
+                        },
+                        "respuesta": "c",
+                        "justificacion": "La Sarna Noruega suele presentarse en individuos inmunocomprometidos o bajo tratamientos específicos. Debido a la carga masiva y disrupción de la barrera cutánea (costras), conlleva un riesgo alto de sepsis e infecciones bacterianas letales."
+                    },
+                    {
+                        "id": "19",
+                        "pregunta": "Un brote de escabiosis en un asilo de ancianos se propaga con una velocidad inusual; gran parte del personal médico se contagia simplemente por manipular temporalmente las sábanas de un paciente índice que tiene costras hiperqueratósicas. ¿A qué factor epidemiológico de la Sarna Noruega se debe esta rápida transmisión por fómites?",
+                        "alternativas": {
+                            "a": "A que el ácaro mutó y ahora vuela como un mosquito.",
+                            "b": "Al nivel de contagio moderado que requiere contacto íntimo prolongado de piel con piel.",
+                            "c": "A la ausencia del síntoma de picor, lo que hace que el personal no se lave las manos.",
+                            "d": "A que la Sarna Noruega es altamente contagiosa debido a la descamación de la piel que contiene miles de ácaros viables en ropas y sábanas.",
+                            "e": "A que se transmite mediante garrapatas presentes en las camas."
+                        },
+                        "respuesta": "d",
+                        "justificacion": "La Sarna Noruega es altamente contagiosa (incluso a través de fómites como sábanas o ropa y contacto casual) debido a la descamación masiva que libera miles de ácaros viables al entorno inmediato del paciente."
+                    },
+                    {
+                        "id": "20",
+                        "pregunta": "En un diagnóstico diferencial dermatológico, un médico debe distinguir entre Sarna Clásica y Sarna Costrosa. ¿Cuál es un hallazgo clínico que suele estar AUMENTADO en la Sarna Clásica pero AUSENTE o muy disminuido en la Sarna Noruega?",
+                        "alternativas": {
+                            "a": "La carga total de ácaros Sarcoptes scabiei en la epidermis.",
+                            "b": "El grosor de las placas costrosas en las extremidades.",
+                            "c": "El síntoma de picazón (prurito) habitual e intensa.",
+                            "d": "La probabilidad de diseminar masivamente la enfermedad por la ropa.",
+                            "e": "La presencia de infecciones bacterianas secundarias severas."
+                        },
+                        "respuesta": "c",
+                        "justificacion": "A pesar de tener muchísimos menos ácaros, la Sarna Común produce una picazón intensa por hipersensibilidad. En contraste, en la Sarna Noruega (costrosa), debido a la inmunosupresión o daño neurológico del paciente, el prurito está a menudo ausente."
+                    }
+                ]
+            },
+            {
+                "indicador": "Diagnostica y maneja clínicamente el loxoscelismo y latrodectismo diferenciando la acción del veneno (necrotizante/hemolítico vs. neurotóxico) y su entorno.",
+                "preguntas": [
+                    {
+                        "id": "21",
+                        "pregunta": "Un agricultor es picado mientras cosechaba trigo al aire libre en un día de verano. En pocas horas presenta dolor local intenso, calambres abdominales severos, rigidez muscular, taquicardia y sudoración profusa. No hay necrosis en la piel. ¿Qué arácnido y tipo de veneno son responsables de este cuadro clínico (Latrodectismo)?",
+                        "alternativas": {
+                            "a": "Loxosceles laeta / Veneno dermonecrótico.",
+                            "b": "Latrodectus mactans (Viuda negra) / Veneno neurotóxico (Alfa-latrotoxina).",
+                            "c": "Sarcoptes scabiei / Veneno enzimático hemolítico.",
+                            "d": "Garrapata (Ixodes) / Toxina bacteriana.",
+                            "e": "Latrodectus mactans / Esfingomielinasa D."
+                        },
+                        "respuesta": "b",
+                        "justificacion": "El accidente por Latrodectus mactans (araña de trigo) ocurre frecuentemente en entornos silvestres. Su veneno es neurotóxico (alfa-latrotoxina) y provoca liberación masiva de neurotransmisores, causando calambres, rigidez, taquicardia y dolor sin necrosis."
+                    },
+                    {
+                        "id": "22",
+                        "pregunta": "Una mujer acude de madrugada tras ser mordida por una araña al ponerse ropa de un clóset oscuro en su hogar. A las 12 horas presenta una placa livedoide dolorosa en la extremidad y su orina se torna oscura (hemoglobinuria) por la destrucción de glóbulos rojos. ¿Qué enzima del veneno de este arácnido causa estos efectos necróticos y viscerales?",
+                        "alternativas": {
+                            "a": "Acetilcolinesterasa.",
+                            "b": "Alfa-latrotoxina.",
+                            "c": "Esfingomielinasa D.",
+                            "d": "Cisteína-proteasa amebiana.",
+                            "e": "Hialuronidasa bacteriana."
+                        },
+                        "respuesta": "c",
+                        "justificacion": "El cuadro clínico intradomiciliario con necrosis cutánea (placa livedoide) y hemólisis sistémica corresponde a Loxoscelismo (Loxosceles laeta o araña de rincón). Su toxina principal es la Esfingomielinasa D, que destruye las membranas celulares y causa dermonecrosis y hemólisis intravascular."
+                    },
+                    {
+                        "id": "23",
+                        "pregunta": "Para la prevención del Loxoscelismo en zonas endémicas (como Chile), es fundamental comprender el hábitat de la especie Loxosceles laeta. ¿Cuál de las siguientes acciones preventivas es la más eficaz y acorde al comportamiento de este artrópodo?",
+                        "alternativas": {
+                            "a": "Uso de repelentes DEET al caminar por bosques y matorrales durante el verano.",
+                            "b": "Revisar y limpiar rincones oscuros en las viviendas, sacudir la ropa antes de vestirse y separar camas de las paredes.",
+                            "c": "Cocinar adecuadamente las carnes para inactivar el veneno ingerido.",
+                            "d": "Uso de guantes gruesos exclusivamente durante la cosecha agrícola de trigo.",
+                            "e": "Evitar bañar a perros y gatos domésticos para no alterar la tela de la araña."
+                        },
+                        "respuesta": "b",
+                        "justificacion": "Loxosceles laeta (araña de rincón) es de hábito intradomiciliario, nocturno y se oculta en zonas oscuras y detrás de muebles/ropa. La prevención se centra en el aseo del hogar, sacudir ropa y calzado, y evitar acumulación en rincones."
+                    },
+                    {
+                        "id": "24",
+                        "pregunta": "Ante un paciente que ingresa por una mordedura de araña Viuda Negra (Latrodectus mactans) confirmada, presentando un síndrome neurotóxico severo (taquicardia, hipertensión y calambres abdominales). ¿Cuál es la intervención terapéutica de primera línea para neutralizar sistémicamente este veneno?",
+                        "alternativas": {
+                            "a": "Dapsona oral (50-100 mg/día).",
+                            "b": "Administración de Antiveneno específico (suero antilatrodectus equino).",
+                            "c": "Cirugía inmediata de escarectomía de la lesión.",
+                            "d": "Punción-Aspiración de la glándula venenosa en el paciente.",
+                            "e": "Tratamiento tópico únicamente con lavado y corticoides locales."
+                        },
+                        "respuesta": "b",
+                        "justificacion": "El tratamiento principal y de primera línea para el latrodectismo severo (acción neurotóxica) es la administración precoz del antiveneno específico (de origen equino), apoyado con analgesia y miorrelajantes como benzodiacepinas."
+                    },
+                    {
+                        "id": "25",
+                        "pregunta": "El Loxoscelismo puede evolucionar a una forma sistémica muy grave conocida como Loxoscelismo Visceral. ¿Qué triada de complicaciones médicas, derivadas directamente de la acción de la Esfingomielinasa D, amenaza la vida del paciente en este cuadro?",
+                        "alternativas": {
+                            "a": "Bradicardia profunda, paro respiratorio y crisis epilépticas.",
+                            "b": "Hemólisis intravascular, coagulación intravascular diseminada e insuficiencia renal aguda.",
+                            "c": "Obstrucción intestinal, perforación gástrica y anemia megaloblástica.",
+                            "d": "Anafilaxia súbita, broncoespasmo y edema de glotis.",
+                            "e": "Infiltración eosinofílica pulmonar masiva, neumonía y ceguera."
+                        },
+                        "respuesta": "b",
+                        "justificacion": "El Loxoscelismo Visceral (o cutáneo-visceral) ocurre cuando el veneno hemolítico-necrotizante alcanza el torrente sanguíneo, provocando la destrucción de eritrocitos (hemólisis), alteraciones de la coagulación y daño renal (insuficiencia renal) por la sobrecarga de hemoglobina."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "tematica": "Inmunología",
+        "indicadores": [
+            {
+                "indicador": "Mecanismos de defensa (Respuesta inmune inespecífica y específica), concepto general de vacunas, comparación de vacunas vivas atenuadas y vacunas muertas o inactivadas y procesos inmunopatológicos. (Relacionar / Aplicar)",
+                "preguntas": [
+                    {
+                        "id": "1",
+                        "pregunta": "Un paciente presenta una herida infectada con formación de pus. A nivel celular celular de la respuesta innata, ¿qué leucocito es el principal responsable de fagocitar masivamente a los microorganismos, morir en el proceso y formar esta secreción purulenta?",
+                        "alternativas": {
+                            "a": "Macrófago",
+                            "b": "Linfocito T citotóxico",
+                            "c": "Célula dendrítica",
+                            "d": "Neutrófilo",
+                            "e": "Linfocito B"
+                        },
+                        "respuesta": "d",
+                        "justificacion": "Los neutrófilos son células de vida media corta que fagocitan microorganismos y generalmente mueren, acumulándose para formar el pus."
+                    },
+                    {
+                        "id": "2",
+                        "pregunta": "Durante una infección bacteriana, el sistema del complemento de un paciente se activa por la vía alternativa. ¿Cuál es el resultado final directo de la cascada del complemento sobre la membrana del patógeno invasor?",
+                        "alternativas": {
+                            "a": "Producción de anticuerpos monoclonales.",
+                            "b": "Lisis del patógeno mediante la formación del Complejo de Ataque de Membrana (MAC).",
+                            "c": "Inhibición de la replicación del ADN viral.",
+                            "d": "Transformación del linfocito B en célula plasmática.",
+                            "e": "Maduración de los linfocitos T en el timo."
+                        },
+                        "respuesta": "b",
+                        "justificacion": "El sistema del complemento converge en la formación de los componentes terminales (C5b6789), que forman el complejo de ataque de la membrana, logrando la lisis de ciertos patógenos."
+                    },
+                    {
+                        "id": "3",
+                        "pregunta": "Un paciente sufre un corte profundo, lo que desencadena una respuesta inflamatoria local. Durante el reclutamiento vascular, los neutrófilos salen del torrente sanguíneo hacia el tejido infectado. ¿Cómo se denomina este proceso físico de salida a través de la pared vascular?",
+                        "alternativas": {
+                            "a": "Opsonización",
+                            "b": "Marginación",
+                            "c": "Diapédesis (Emigración)",
+                            "d": "Quimiotaxis",
+                            "e": "Fagocitosis"
+                        },
+                        "respuesta": "c",
+                        "justificacion": "La emigración o diapédesis es el proceso donde los fagocitos se exprimen físicamente a través de la pared vascular para salir del torrente sanguíneo hacia el tejido."
+                    },
+                    {
+                        "id": "4",
+                        "pregunta": "Un microorganismo logra evadir los neutrófilos, pero es capturado por un monocito tisular. A diferencia de los neutrófilos, el monocito no muere tras fagocitar, sino que procesa al agente. ¿En qué tipo celular funcional se convierte para conectar la inmunidad innata con la adquirida?",
+                        "alternativas": {
+                            "a": "En un Linfocito T de memoria.",
+                            "b": "En una Célula Presentadora de Antígenos (APC).",
+                            "c": "En una Célula Plasmática productora de anticuerpos.",
+                            "d": "En un mastocito liberador de histamina.",
+                            "e": "En un eritrocito."
+                        },
+                        "respuesta": "b",
+                        "justificacion": "Los monocitos (macrófagos) tienen vida larga; al fagocitar no mueren, sino que procesan al agente infeccioso y se convierten en 'células presentadoras de antígenos' (APC)."
+                    },
+                    {
+                        "id": "5",
+                        "pregunta": "Para que se inicie la respuesta inmune específica celular, un linfocito T (LT) debe reconocer el antígeno. ¿Qué condición estricta exige el linfocito T para lograr este reconocimiento, a diferencia del linfocito B?",
+                        "alternativas": {
+                            "a": "El antígeno debe estar libre y soluble en el plasma sanguíneo.",
+                            "b": "Requiere que el antígeno sea reconocido directamente por sus inmunoglobulinas de superficie.",
+                            "c": "Requiere que el antígeno (péptido) sea presentado por moléculas de histocompatibilidad (MHC) en una célula presentadora.",
+                            "d": "Necesita la activación previa exclusiva del sistema del complemento.",
+                            "e": "Requiere la presencia de IgE en su membrana."
+                        },
+                        "respuesta": "c",
+                        "justificacion": "A diferencia del linfocito B, el linfocito T requiere que el antígeno sea procesado y presentado en el complejo mayor de histocompatibilidad (MHC) por una Célula Presentadora de Antígenos (APC)."
+                    },
+                    {
+                        "id": "6",
+                        "pregunta": "Se administra suero antiofídico (que contiene anticuerpos preformados en caballos) a un paciente mordido por una serpiente venenosa. Según la clasificación de la inmunidad, ¿qué tipo de mecanismo de defensa se está aplicando?",
+                        "alternativas": {
+                            "a": "Inmunidad adquirida natural activa.",
+                            "b": "Inmunidad adquirida natural pasiva.",
+                            "c": "Inmunidad innata de barrera química.",
+                            "d": "Inmunidad adquirida artificial activa.",
+                            "e": "Inmunidad adquirida artificial pasiva."
+                        },
+                        "respuesta": "e",
+                        "justificacion": "La administración de anticuerpos traspasados de otro animal o persona (como un suero) corresponde a una inmunidad adquirida de tipo artificial y pasiva."
+                    },
+                    {
+                        "id": "7",
+                        "pregunta": "Un neonato recién nacido está protegido durante sus primeros meses de vida contra diversas infecciones sin haber recibido vacunas aún ni enfermado. ¿Qué mecanismo inmunológico otorga esta protección y qué inmunoglobulina es la principal involucrada?",
+                        "alternativas": {
+                            "a": "Inmunidad artificial activa mediada por IgA.",
+                            "b": "Inmunidad natural pasiva mediada por IgG (que atraviesa la placenta).",
+                            "c": "Inmunidad artificial pasiva mediada por IgM.",
+                            "d": "Inmunidad natural activa mediada por IgE.",
+                            "e": "Inmunidad inespecífica celular mediada por Linfocitos T citotóxicos."
+                        },
+                        "respuesta": "b",
+                        "justificacion": "Los anticuerpos pasados al infante (por ejemplo, a través de la placenta) confieren inmunidad natural pasiva; la IgG es la inmunoglobulina que puede atravesar la placenta y proteger al feto."
+                    },
+                    {
+                        "id": "8",
+                        "pregunta": "Al analizar la curva serológica de un paciente expuesto por segunda vez al mismo virus (contacto secundario), se observa un alza de anticuerpos extremadamente rápida. ¿Cuál es el perfil característico de esta respuesta inmune secundaria?",
+                        "alternativas": {
+                            "a": "Latencia prolongada de 4 a 7 días con bajos niveles de Ac.",
+                            "b": "Aumento predominante de IgM y desaparición rápida de anticuerpos.",
+                            "c": "Latencia corta (1 a 3 días), mayor concentración de Ac y un nivel de IgG mucho mayor que IgM.",
+                            "d": "Respuesta mediada exclusivamente por el sistema del complemento sin involucrar Linfocitos B.",
+                            "e": "No se producen anticuerpos debido al agotamiento clonal."
+                        },
+                        "respuesta": "c",
+                        "justificacion": "La respuesta inmune secundaria se produce en el segundo contacto con el antígeno, tiene una latencia corta (1 a 3 días), alcanza mayor concentración de anticuerpos, y el nivel de IgG es marcadamente superior al de IgM."
+                    },
+                    {
+                        "id": "9",
+                        "pregunta": "El personal médico revisa el perfil de anticuerpos de un paciente con sospecha de una infección parasitaria intestinal severa (helmintiasis). ¿Qué clase de inmunoglobulina (Ig) se espera encontrar fuertemente elevada por su alta afinidad para eliminar gusanos y mediar alergias?",
+                        "alternativas": {
+                            "a": "IgA",
+                            "b": "IgM",
+                            "c": "IgG",
+                            "d": "IgD",
+                            "e": "IgE"
+                        },
+                        "respuesta": "e",
+                        "justificacion": "La IgE es de alta afinidad, su función principal es mediar en los procesos alérgicos y eliminar parásitos, en particular gusanos."
+                    },
+                    {
+                        "id": "10",
+                        "pregunta": "En las mucosas del tracto respiratorio y digestivo, así como en la leche materna, existe una barrera de anticuerpos que neutraliza los patógenos antes de que ingresen. Posee una 'pieza secretora' que evita su degradación. ¿De qué inmunoglobulina se trata?",
+                        "alternativas": {
+                            "a": "IgA",
+                            "b": "IgE",
+                            "c": "IgM",
+                            "d": "IgG",
+                            "e": "IgD"
+                        },
+                        "respuesta": "a",
+                        "justificacion": "La IgA está presente en saliva, moco, leche y mucosas, y su pieza secretora la protege de ser degradada en esos ambientes."
+                    },
+                    {
+                        "id": "11",
+                        "pregunta": "Se requiere diseñar un programa de vacunación para pacientes inmunocomprometidos. Al revisar las opciones, se deben excluir aquellas vacunas que utilicen microorganismos que han perdido virulencia pero que aún poseen cierto grado de patogenicidad y capacidad replicativa. ¿Qué tipo de vacunas están contraindicadas en este grupo?",
+                        "alternativas": {
+                            "a": "Vacunas de subunidades recombinantes.",
+                            "b": "Vacunas muertas o inactivadas.",
+                            "c": "Vacunas toxoides.",
+                            "d": "Vacunas conjugadas de polisacáridos.",
+                            "e": "Vacunas vivas atenuadas."
+                        },
+                        "respuesta": "e",
+                        "justificacion": "Las vacunas vivas atenuadas utilizan patógenos debilitados que pueden causar enfermedad en personas inmunocomprometidas o embarazadas debido a su cierto grado de patogenicidad y capacidad de generar una infección real leve."
+                    },
+                    {
+                        "id": "12",
+                        "pregunta": "A diferencia de las vacunas vivas atenuadas, las vacunas muertas o inactivadas presentan ciertas ventajas logísticas y de seguridad, pero también tienen desventajas en su respuesta inmune. ¿Cuál es la característica propia de las vacunas inactivadas?",
+                        "alternativas": {
+                            "a": "Se aplican generalmente en dosis única porque estimulan una respuesta celular intensa.",
+                            "b": "Contienen microorganismos completos o fracciones purificadas, requieren diversas dosis y generan principalmente inmunidad humoral.",
+                            "c": "Generan la misma patogenicidad que la infección natural.",
+                            "d": "Son extremadamente lábiles y no toleran variaciones de temperatura.",
+                            "e": "Estimulan una respuesta inmunitaria más intensa y duradera que las atenuadas."
+                        },
+                        "respuesta": "b",
+                        "justificacion": "Las vacunas muertas o inactivadas consisten en patógenos completos o fracciones sin capacidad de causar enfermedad, son más estables, pero generan una respuesta menos intensa (humoral) y por ende requieren de diversas dosis de refuerzo."
+                    },
+                    {
+                        "id": "13",
+                        "pregunta": "En la prevención del Tétanos se utiliza una vacuna que no contiene a la bacteria causante, sino la toxina bacteriana que ha sido inactivada químicamente. ¿Qué tipo de vacuna corresponde a este mecanismo biológico?",
+                        "alternativas": {
+                            "a": "Vacuna viva atenuada.",
+                            "b": "Vacuna de subunidades polisacáridas.",
+                            "c": "Vacuna de ARNm.",
+                            "d": "Vacuna toxoide.",
+                            "e": "Vacuna viral inactivada."
+                        },
+                        "respuesta": "d",
+                        "justificacion": "Las vacunas toxoides emplean toxinas bacterianas inactivadas (toxoides) que se usan como antígeno, siendo muy estables y sin provocar la enfermedad, como es el caso del toxoide tetánico."
+                    },
+                    {
+                        "id": "14",
+                        "pregunta": "Durante una clase de clínica inmunológica, se presenta el caso de un paciente cuyo sistema inmune pierde la tolerancia y comienza a generar una respuesta agresiva frente a sus propios tejidos y antígenos corporales. ¿Qué proceso inmunopatológico explica esta etiología?",
+                        "alternativas": {
+                            "a": "Inmunodeficiencia primaria.",
+                            "b": "Alergia o atopia.",
+                            "c": "Autoinmunidad.",
+                            "d": "Hipersensibilidad de primer contacto.",
+                            "e": "Respuesta secundaria pasiva."
+                        },
+                        "respuesta": "c",
+                        "justificacion": "La autoinmunidad ocurre cuando el sistema inmune falla en discriminar lo propio y desencadena una respuesta inmunitaria frente a lo propio (antígenos autólogos)."
+                    },
+                    {
+                        "id": "15",
+                        "pregunta": "Tras ser picado por segunda vez por una abeja, un paciente sufre una reacción anafiláctica masiva y rápida con edema tisular grave. ¿Cuál es el concepto fisiopatológico exacto que define esta respuesta inmunitaria exagerada que genera lesión en un segundo contacto?",
+                        "alternativas": {
+                            "a": "Inmunodeficiencia secundaria.",
+                            "b": "Autoinmunidad transitoria.",
+                            "c": "Hipersensibilidad.",
+                            "d": "Respuesta inespecífica fagocítica.",
+                            "e": "Vacunación pasiva."
+                        },
+                        "respuesta": "c",
+                        "justificacion": "La hipersensibilidad corresponde a una respuesta inmunitaria exagerada del organismo que causa lesión tisular y que se manifiesta en el individuo precisamente en el segundo contacto con el antígeno."
+                    },
+                    {
+                        "id": "16",
+                        "pregunta": "Un paciente presenta recuentos anormalmente bajos de Linfocitos T helper (Th). A nivel de la respuesta humoral adaptativa, ¿qué consecuencia directa y crítica tendrá este déficit sobre el comportamiento de los Linfocitos B?",
+                        "alternativas": {
+                            "a": "Los Linfocitos B se transformarán directamente en macrófagos tisulares.",
+                            "b": "Los Linfocitos B no podrán secretar citoquinas citotóxicas para inducir apoptosis.",
+                            "c": "Los Linfocitos B no recibirán las linfocinas necesarias para proliferar y diferenciarse en células plasmáticas productoras de anticuerpos.",
+                            "d": "Los Linfocitos B comenzarán a fagocitar bacterias de forma inespecífica.",
+                            "e": "La producción de inmunoglobulinas aumentará compensatoriamente de forma masiva."
+                        },
+                        "respuesta": "c",
+                        "justificacion": "El linfocito B requiere las citoquinas/linfocinas inducidas por el Linfocito Th (T helper) para poder activarse, proliferar y diferenciarse en una célula plasmática capaz de sintetizar anticuerpos."
+                    },
+                    {
+                        "id": "17",
+                        "pregunta": "En el contexto clínico, un paciente padece una infección viral donde las células hospedadoras están infectadas intracelularmente. ¿Qué célula de la inmunidad específica es la encargada de reconocer y eliminar directamente estas células infectadas o tumorales?",
+                        "alternativas": {
+                            "a": "El Linfocito T citotóxico (Tc).",
+                            "b": "El Linfocito T helper (Th).",
+                            "c": "El mastocito.",
+                            "d": "El eosinófilo.",
+                            "e": "La Célula Plasmática."
+                        },
+                        "respuesta": "a",
+                        "justificacion": "Los Linfocitos Tc (citotóxicos) tienen la función especializada de eliminar células que están infectadas por virus o células de tipo tumoral dentro de la inmunidad específica celular."
+                    },
+                    {
+                        "id": "18",
+                        "pregunta": "Durante una prueba de laboratorio, se administran vacunas de subunidades a ratones experimentales. Este tipo de vacuna solo contiene antígenos purificados (proteínas o polisacáridos). ¿Qué ventaja de bioseguridad presentan estas vacunas frente a las vivas atenuadas?",
+                        "alternativas": {
+                            "a": "Estimulan una gran respuesta celular sin necesidad de refuerzos.",
+                            "b": "Son seguras y estables ya que no contienen componentes vivos, eliminando el riesgo de causar la enfermedad.",
+                            "c": "Son lábiles y generan protección pasiva.",
+                            "d": "Inactivan directamente a los macrófagos, evitando la inflamación.",
+                            "e": "Poseen un cierto grado de patogenicidad que mejora la memoria inmunológica."
+                        },
+                        "respuesta": "b",
+                        "justificacion": "Las vacunas de subunidades carecen de componentes vivos, basándose solo en antígenos purificados, por lo que son seguras, estables y no pueden causar la enfermedad en el receptor, a diferencia de las vivas atenuadas."
+                    },
+                    {
+                        "id": "19",
+                        "pregunta": "Un paciente sufre del síndrome de inmunodeficiencia, caracterizado por una 'respuesta disminuida' ante estímulos antigénicos. Según las bases del sistema inmune, ¿en qué órganos primarios pudo haber ocurrido un defecto en el origen o maduración inicial de sus linfocitos?",
+                        "alternativas": {
+                            "a": "Adenoides, amígdalas y placas de Peyer.",
+                            "b": "Ganglios linfáticos y Bazo.",
+                            "c": "Piel y mucosas.",
+                            "d": "Médula ósea y Timo.",
+                            "e": "Sistema nervioso central y periférico."
+                        },
+                        "respuesta": "d",
+                        "justificacion": "Los órganos linfoides primarios, donde ocurren el origen, desarrollo y maduración de las células del sistema inmune (como la médula ósea y el timo para los linfocitos T), son esenciales para la inmunocompetencia."
+                    },
+                    {
+                        "id": "20",
+                        "pregunta": "Tras una infección, las bacterias son endocitadas por un macrófago. Para lograr su destrucción y posterior presentación antigénica, ¿qué orgánulo intracelular debe fusionarse con la vacuola fagocítica?",
+                        "alternativas": {
+                            "a": "El Retículo Endoplasmático Liso.",
+                            "b": "El núcleo celular.",
+                            "c": "El fagolisosoma (fusión de lisosomas).",
+                            "d": "La mitocondria.",
+                            "e": "El complejo de ataque de membrana (MAC)."
+                        },
+                        "respuesta": "c",
+                        "justificacion": "En el diagrama de fagocitosis, tras la endocitosis, la destrucción del antígeno o bacteria ocurre dentro del macrófago mediante la formación de fagolisosomas."
+                    },
+                    {
+                        "id": "21",
+                        "pregunta": "Si un individuo entra en contacto con el virus de la influenza y sufre la enfermedad, desarrolla memoria inmunológica natural. Semanas después, una serología revelará altos niveles de una Inmunoglobulina pentamérica que fue la 'primera en producirse' frente al virus. ¿Qué anticuerpo es este?",
+                        "alternativas": {
+                            "a": "IgG",
+                            "b": "IgA",
+                            "c": "IgM",
+                            "d": "IgD",
+                            "e": "IgE"
+                        },
+                        "respuesta": "c",
+                        "justificacion": "La IgM es la inmunoglobulina que actúa como primera línea en producirse, tiene estructura pentamérica y carece de región bisagra."
+                    },
+                    {
+                        "id": "22",
+                        "pregunta": "Al analizar las barreras naturales de la inmunidad innata, un paciente en tratamiento crónico con antiácidos potentes que alcalinizan el estómago presenta infecciones intestinales a repetición. ¿Qué barrera química inespecífica ha sido alterada clínicamente?",
+                        "alternativas": {
+                            "a": "La lisozima salival.",
+                            "b": "La barrera biológica de la microbiota.",
+                            "c": "El bajo pH (ácido 2-4) del estómago, que normalmente detiene a la mayoría de microorganismos.",
+                            "d": "El sistema del complemento por vía clásica.",
+                            "e": "La producción de anticuerpos IgA secretores."
+                        },
+                        "respuesta": "c",
+                        "justificacion": "El ácido del estómago (con un pH de 2-4) es una barrera inespecífica natural química crucial que detiene a la mayoría de microorganismos ingeridos."
+                    },
+                    {
+                        "id": "23",
+                        "pregunta": "Una persona padece alergia estacional al polen (rinitis alérgica). Desde el punto de vista inmunopatológico general, ¿cómo se clasifica el mecanismo etiológico que gatilla sus síntomas?",
+                        "alternativas": {
+                            "a": "Como una respuesta inmunitaria deficiente ante antígenos peligrosos.",
+                            "b": "Como una respuesta autoinmune contra sus propias células epiteliales.",
+                            "c": "Como una respuesta inmunitaria excesiva (hipersensibilidad) frente a un estímulo antigénico externo.",
+                            "d": "Como una inflamación exclusiva por lisis de patógenos en el complemento.",
+                            "e": "Como una inmunización artificial pasiva exagerada."
+                        },
+                        "respuesta": "c",
+                        "justificacion": "Las alergias se originan por un estímulo antigénico externo que desencadena una respuesta inmunitaria excesiva del Sistema Inmune."
+                    },
+                    {
+                        "id": "24",
+                        "pregunta": "¿Qué diferencia crítica existe estructuralmente entre los receptores que permiten a los Linfocitos B (LB) y Linfocitos T (LT) identificar a su antígeno específico?",
+                        "alternativas": {
+                            "a": "El LT usa moléculas del complemento, mientras que el LB usa lisozimas.",
+                            "b": "El receptor del LB es una inmunoglobulina de superficie (BCR), mientras que el del LT es el receptor TCR.",
+                            "c": "Ambos usan inmunoglobulinas circulantes libres en plasma.",
+                            "d": "El LB requiere del complejo MHC, el LT usa Inmunoglobulinas clase IgD.",
+                            "e": "El LT no posee receptores específicos, depende enteramente de los macrófagos."
+                        },
+                        "respuesta": "b",
+                        "justificacion": "En la respuesta inmune específica, el receptor para el antígeno en el Linfocito T es el TCR (T-cell receptor), mientras que en el Linfocito B el receptor es una inmunoglobulina de superficie o BCR (B-cell receptor)."
+                    },
+                    {
+                        "id": "25",
+                        "pregunta": "La inmunidad específica o adquirida es un sistema sofisticado. ¿Qué característica fundamental define a la respuesta inmune adaptativa y justifica la aplicación poblacional de vacunas?",
+                        "alternativas": {
+                            "a": "Es efectiva de forma instantánea contra cualquier toxina o antígeno desde el nacimiento.",
+                            "b": "Es inespecífica, respondiendo siempre con la misma intensidad ante cualquier agente.",
+                            "c": "Se caracteriza por ser efectiva, selectiva y poseer memoria ante aquellos antígenos específicos frente a los cuales se ha iniciado y desarrollado.",
+                            "d": "Depende exclusivamente de barreras físicas como la piel y las mucosas.",
+                            "e": "Se origina por la transferencia pasiva de linfocitos desde el medio ambiente."
+                        },
+                        "respuesta": "c",
+                        "justificacion": "La respuesta inmune específica se caracteriza porque es efectiva ante aquellos antígenos específicos frente a los cuales se ha iniciado y desarrollado (dejando células de memoria, principio base de la vacunación)."
+                    }
+                ]
+            }
+        ]
+    }
+]

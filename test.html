@@ -1,0 +1,2179 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNAB - Simulador de Microbiología y Virología</title>
+    <meta name="description"
+        content="Autoevaluación y simulador de preguntas de microbiología y virología para Medicina UNAB.">
+
+    <!-- Premium Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- FontAwesome for Premium Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Match the current global design variables and enhance them -->
+    <style>
+        :root {
+            /* Palette - High Contrast */
+            --unab-blue: #001f3f;
+            --unab-blue-light: #003366;
+            --unab-red: #dc2626;
+            --unab-red-light: #ef4444;
+            --primary-color: var(--unab-blue);
+            --secondary-color: var(--unab-red);
+
+            /* Neutral Tones */
+            --bg-body: #f8fafc;
+            --bg-surface: #ffffff;
+            --bg-surface-glass: rgba(255, 255, 255, 0.85);
+            --text-primary: #0f172a;
+            --text-secondary: #475569;
+            --text-muted: #64748b;
+            --border-color: #cbd5e1;
+
+            /* Feedback colors - Curated HSL */
+            --success-color: #0d9488;
+            /* Elegant Teal */
+            --success-bg: #f0fdfa;
+            --success-border: #99f6e4;
+            --error-color: #e11d48;
+            /* Premium Rose/Crimson */
+            --error-bg: #fff1f2;
+            --error-border: #fecdd3;
+            --warning-color: #d97706;
+            --warning-bg: #fffbeb;
+
+            /* Modern Shadows & Effects */
+            --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+            --shadow-md: 0 4px 12px -1px rgb(0 0 0 / 0.08), 0 2px 4px -2px rgb(0 0 0 / 0.04);
+            --shadow-lg: 0 12px 24px -4px rgb(0 0 0 / 0.1), 0 4px 12px -4px rgb(0 0 0 / 0.06);
+            --shadow-glow: 0 0 20px rgba(0, 31, 63, 0.1);
+
+            --radius-md: 0.75rem;
+            --radius-lg: 1.25rem;
+            --radius-xl: 1.75rem;
+            --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        [data-theme="dark"] {
+            --unab-blue: #38bdf8;
+            --unab-blue-light: #0ea5e9;
+            --unab-red: #f87171;
+            --primary-color: #f8fafc;
+
+            --bg-body: #090d16;
+            /* True dark background */
+            --bg-surface: #131b2e;
+            /* Slate/Navy deep surface */
+            --bg-surface-glass: rgba(19, 27, 46, 0.85);
+            --text-primary: #f8fafc;
+            --text-secondary: #94a3b8;
+            --text-muted: #64748b;
+            --border-color: #1e293b;
+
+            --success-color: #2dd4bf;
+            --success-bg: rgba(13, 148, 136, 0.15);
+            --success-border: rgba(45, 212, 191, 0.25);
+
+            --error-color: #fb7185;
+            --error-bg: rgba(225, 29, 72, 0.15);
+            --error-border: rgba(251, 113, 133, 0.25);
+
+            --warning-color: #fbbf24;
+            --warning-bg: rgba(217, 119, 6, 0.15);
+
+            --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.3);
+            --shadow-md: 0 4px 12px -1px rgb(0 0 0 / 0.5);
+            --shadow-lg: 0 12px 24px -4px rgb(0 0 0 / 0.6);
+            --shadow-glow: 0 0 20px rgba(56, 189, 248, 0.1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', 'Inter', system-ui, sans-serif;
+            background-color: var(--bg-body);
+            color: var(--text-primary);
+            line-height: 1.6;
+            background-image:
+                radial-gradient(at 0% 0%, rgba(0, 31, 63, 0.05) 0px, transparent 40%),
+                radial-gradient(at 100% 0%, rgba(220, 38, 38, 0.03) 0px, transparent 40%);
+            background-attachment: fixed;
+            transition: background-color 0.3s ease;
+        }
+
+        /* Glassmorphic Header */
+        .main-header {
+            background: var(--bg-surface-glass);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-bottom: 1px solid var(--border-color);
+            box-shadow: var(--shadow-sm);
+            padding: 1rem 2rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            transition: var(--transition);
+        }
+
+        .header-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            max-width: 1280px;
+            margin: 0 auto;
+            gap: 1rem;
+        }
+
+        .brand-link {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .logo {
+            height: 48px;
+            width: auto;
+            filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+            transition: transform 0.3s ease;
+        }
+
+        .brand-link:hover .logo {
+            transform: scale(1.05);
+        }
+
+        .header-text h1 {
+            font-family: 'Outfit', sans-serif;
+            font-size: 1.25rem;
+            color: var(--unab-blue);
+            font-weight: 800;
+            letter-spacing: -0.02em;
+            line-height: 1.1;
+        }
+
+        .header-text p {
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+            font-weight: 600;
+        }
+
+        .header-actions {
+            display: flex;
+            align-items: center;
+            gap: 0.85rem;
+        }
+
+        .back-btn {
+            background: transparent;
+            border: 1px solid var(--border-color);
+            color: var(--text-secondary);
+            padding: 0.6rem 1.25rem;
+            border-radius: 9999px;
+            font-weight: 600;
+            font-size: 0.85rem;
+            cursor: pointer;
+            transition: var(--transition);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            text-decoration: none;
+        }
+
+        .back-btn:hover {
+            color: var(--unab-blue);
+            border-color: var(--unab-blue);
+            background-color: rgba(0, 31, 63, 0.03);
+            transform: translateX(-2px);
+        }
+
+        .theme-toggle {
+            background: var(--bg-surface);
+            border: 1px solid var(--border-color);
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            color: var(--text-secondary);
+            transition: var(--transition);
+            font-size: 1rem;
+        }
+
+        .theme-toggle:hover {
+            border-color: var(--unab-blue);
+            transform: scale(1.05);
+        }
+
+        /* Container Layout */
+        .app-container {
+            max-width: 1280px;
+            margin: 2.5rem auto;
+            padding: 0 1.5rem;
+            display: grid;
+            grid-template-columns: 350px 1fr;
+            gap: 2.5rem;
+            align-items: start;
+        }
+
+        /* Sidebar selectors */
+        .selector-panel {
+            background: var(--bg-surface);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-lg);
+            padding: 1.75rem;
+            box-shadow: var(--shadow-md);
+            position: sticky;
+            top: 110px;
+            transition: var(--transition);
+        }
+
+        .panel-title {
+            font-family: 'Outfit', sans-serif;
+            font-size: 1.15rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            color: var(--unab-blue);
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 0.75rem;
+        }
+
+        .form-section {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-section label {
+            display: block;
+            font-size: 0.85rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--text-secondary);
+            margin-bottom: 0.6rem;
+        }
+
+        /* Custom Selector inputs */
+        .custom-select-wrapper {
+            position: relative;
+        }
+
+        .custom-select {
+            width: 100%;
+            padding: 0.85rem 1rem;
+            border: 1px solid var(--border-color);
+            background-color: var(--bg-body);
+            color: var(--text-primary);
+            border-radius: var(--radius-md);
+            font-family: inherit;
+            font-size: 0.95rem;
+            font-weight: 500;
+            appearance: none;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .custom-select:focus {
+            outline: none;
+            border-color: var(--unab-blue);
+            box-shadow: var(--shadow-glow);
+            background-color: var(--bg-surface);
+        }
+
+        .custom-select-wrapper::after {
+            content: "\f078";
+            font-family: "Font Awesome 6 Free";
+            font-weight: 900;
+            position: absolute;
+            right: 1.25rem;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--text-muted);
+            pointer-events: none;
+            font-size: 0.8rem;
+            transition: var(--transition);
+        }
+
+        .custom-select-wrapper:hover::after {
+            color: var(--unab-blue);
+        }
+
+        /* Mode Selector Tab */
+        .mode-switch-container {
+            display: flex;
+            background-color: var(--bg-body);
+            border: 1px solid var(--border-color);
+            padding: 0.3rem;
+            border-radius: 9999px;
+            margin-top: 1rem;
+        }
+
+        .mode-tab {
+            flex: 1;
+            text-align: center;
+            padding: 0.6rem;
+            font-size: 0.85rem;
+            font-weight: 700;
+            cursor: pointer;
+            border-radius: 9999px;
+            color: var(--text-secondary);
+            transition: var(--transition);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            border: none;
+            background: transparent;
+        }
+
+        .mode-tab.active {
+            background-color: var(--unab-blue-light);
+            color: white;
+            box-shadow: var(--shadow-sm);
+        }
+
+        [data-theme="dark"] .mode-tab.active {
+            background-color: var(--unab-blue-light);
+            color: #000;
+            font-weight: 800;
+        }
+
+        [data-theme="dark"] .mode-tab.active i {
+            color: #000;
+        }
+
+        /* Info Block */
+        .info-card {
+            background: rgba(0, 31, 63, 0.03);
+            border-left: 3px solid var(--unab-blue-light);
+            padding: 1rem;
+            border-radius: 0 var(--radius-md) var(--radius-md) 0;
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            margin-top: 1.5rem;
+        }
+
+        .info-card i {
+            margin-right: 0.35rem;
+            color: var(--unab-blue-light);
+        }
+
+        /* Workspace Area */
+        .workspace {
+            min-height: 500px;
+        }
+
+        /* Waiting/Empty State */
+        .empty-state {
+            background: var(--bg-surface);
+            border: 2px dashed var(--border-color);
+            border-radius: var(--radius-lg);
+            padding: 5rem 2rem;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            box-shadow: var(--shadow-sm);
+            height: 100%;
+        }
+
+        .empty-state-icon {
+            font-size: 4rem;
+            color: var(--unab-blue-light);
+            margin-bottom: 1.5rem;
+            opacity: 0.8;
+            animation: float 4s ease-in-out infinite;
+        }
+
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: translateY(0px) rotate(0deg);
+            }
+
+            50% {
+                transform: translateY(-12px) rotate(5deg);
+            }
+        }
+
+        .empty-state h3 {
+            font-family: 'Outfit', sans-serif;
+            font-size: 1.5rem;
+            margin-bottom: 0.75rem;
+            color: var(--text-primary);
+        }
+
+        .empty-state p {
+            color: var(--text-muted);
+            max-width: 450px;
+            margin-bottom: 1.5rem;
+            font-size: 0.95rem;
+        }
+
+        /* Dynamic Indicator Cards container in empty/dashboard state */
+        .indicators-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1rem;
+            width: 100%;
+            max-width: 600px;
+            margin-top: 1.5rem;
+            text-align: left;
+        }
+
+        .indicator-card {
+            background: var(--bg-surface);
+            border: 1px solid var(--border-color);
+            padding: 1.15rem;
+            border-radius: var(--radius-md);
+            cursor: pointer;
+            transition: var(--transition);
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .indicator-card:hover {
+            transform: translateY(-2px);
+            border-color: var(--unab-blue-light);
+            box-shadow: var(--shadow-md);
+        }
+
+        .indicator-icon {
+            background: rgba(0, 31, 63, 0.05);
+            width: 38px;
+            height: 38px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--unab-blue-light);
+            flex-shrink: 0;
+            font-size: 0.95rem;
+        }
+
+        .indicator-details {
+            flex-grow: 1;
+        }
+
+        .indicator-details h4 {
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            line-height: 1.4;
+            margin-bottom: 0.35rem;
+        }
+
+        .indicator-details span {
+            font-size: 0.75rem;
+            font-weight: 700;
+            color: var(--text-muted);
+            background: var(--bg-body);
+            padding: 0.15rem 0.5rem;
+            border-radius: 9999px;
+            border: 1px solid var(--border-color);
+        }
+
+        /* Loader block */
+        .spinner-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 5rem 2rem;
+            background: var(--bg-surface);
+            border-radius: var(--radius-lg);
+            border: 1px solid var(--border-color);
+            box-shadow: var(--shadow-md);
+        }
+
+        .spinner {
+            width: 50px;
+            height: 50px;
+            border: 4px solid var(--border-color);
+            border-left-color: var(--unab-blue-light);
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin-bottom: 1.5rem;
+        }
+
+        @keyframes spin {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        /* File Upload Interface (CORS Fallback) */
+        .upload-fallback-container {
+            background: var(--bg-surface);
+            border: 2px dashed var(--unab-blue-light);
+            border-radius: var(--radius-lg);
+            padding: 2.5rem;
+            text-align: center;
+            max-width: 600px;
+            margin: 2rem auto;
+            box-shadow: var(--shadow-lg);
+            animation: fadeIn 0.4s ease-out;
+        }
+
+        .upload-fallback-container h3 {
+            font-family: 'Outfit', sans-serif;
+            font-size: 1.35rem;
+            color: var(--text-primary);
+            margin-bottom: 0.5rem;
+        }
+
+        .upload-fallback-container p {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            margin-bottom: 1.5rem;
+        }
+
+        .file-drop-zone {
+            border: 1px dashed var(--border-color);
+            padding: 2rem;
+            border-radius: var(--radius-md);
+            background: var(--bg-body);
+            cursor: pointer;
+            transition: var(--transition);
+            margin-bottom: 1.25rem;
+        }
+
+        .file-drop-zone:hover {
+            border-color: var(--unab-blue-light);
+            background: rgba(0, 31, 63, 0.02);
+        }
+
+        .file-drop-zone i {
+            font-size: 2.5rem;
+            color: var(--text-muted);
+            margin-bottom: 1rem;
+        }
+
+        .file-input {
+            display: none;
+        }
+
+        .btn-upload-trigger {
+            background: var(--unab-blue);
+            color: white;
+            border: none;
+            padding: 0.6rem 1.25rem;
+            border-radius: 9999px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition);
+            font-size: 0.85rem;
+        }
+
+        .btn-upload-trigger:hover {
+            background: var(--unab-blue-light);
+            transform: translateY(-1px);
+        }
+
+        .btn-demo-data {
+            background: transparent;
+            border: 1px solid var(--border-color);
+            color: var(--text-secondary);
+            padding: 0.5rem 1.25rem;
+            border-radius: 9999px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition);
+            margin-top: 0.75rem;
+            font-size: 0.8rem;
+        }
+
+        .btn-demo-data:hover {
+            color: var(--unab-blue);
+            border-color: var(--unab-blue);
+            background: var(--bg-body);
+        }
+
+        /* Studio Mode UI */
+        .studio-header {
+            background: var(--bg-surface);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-lg);
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            box-shadow: var(--shadow-sm);
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .title-bar h2 {
+            font-family: 'Outfit', sans-serif;
+            font-size: 1.35rem;
+            color: var(--unab-blue);
+            margin-bottom: 0.25rem;
+        }
+
+        .title-bar p {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            font-weight: 500;
+        }
+
+        .studio-controls {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .search-wrapper {
+            position: relative;
+            flex-grow: 1;
+        }
+
+        .search-wrapper i {
+            position: absolute;
+            left: 1rem;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--text-muted);
+        }
+
+        .search-input {
+            width: 100%;
+            padding: 0.65rem 1rem 0.65rem 2.5rem;
+            border: 1px solid var(--border-color);
+            border-radius: 9999px;
+            background: var(--bg-body);
+            color: var(--text-primary);
+            font-family: inherit;
+            font-size: 0.875rem;
+            transition: var(--transition);
+        }
+
+        .search-input:focus {
+            outline: none;
+            border-color: var(--unab-blue-light);
+            background: var(--bg-surface);
+        }
+
+        .stats-badge {
+            background: rgba(0, 31, 63, 0.05);
+            color: var(--unab-blue-light);
+            padding: 0.4rem 1rem;
+            border-radius: 9999px;
+            font-size: 0.8rem;
+            font-weight: 700;
+            border: 1px solid var(--border-color);
+            white-space: nowrap;
+        }
+
+        /* Question Cards (Studio Mode) */
+        .question-card-studio {
+            background: var(--bg-surface);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-lg);
+            padding: 2rem;
+            margin-bottom: 1.5rem;
+            box-shadow: var(--shadow-sm);
+            transition: var(--transition);
+            position: relative;
+            overflow: hidden;
+            animation: slideUp 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .question-card-studio:hover {
+            box-shadow: var(--shadow-md);
+        }
+
+        .q-number-badge {
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: var(--unab-blue);
+            color: white;
+            padding: 0.3rem 1rem 0.4rem 1rem;
+            border-radius: 0 0 var(--radius-md) 0;
+            font-size: 0.75rem;
+            font-weight: 800;
+            letter-spacing: 0.05em;
+        }
+
+        [data-theme="dark"] .q-number-badge {
+            background: var(--unab-blue-light);
+            color: #000;
+        }
+
+        .q-text {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin: 0.75rem 0 1.25rem 0;
+            line-height: 1.4;
+        }
+
+        .options-list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 0.6rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .option-item-studio {
+            padding: 0.75rem 1.15rem;
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-md);
+            font-size: 0.9rem;
+            font-weight: 500;
+            color: var(--text-secondary);
+            background: var(--bg-body);
+            display: flex;
+            gap: 0.75rem;
+            align-items: center;
+        }
+
+        .option-item-studio.correct {
+            border-color: var(--success-border);
+            background-color: var(--success-bg);
+            color: var(--success-color);
+            font-weight: 600;
+        }
+
+        .option-prefix-studio {
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            background: rgba(0, 31, 63, 0.05);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.75rem;
+            font-weight: 700;
+            color: var(--text-muted);
+            flex-shrink: 0;
+        }
+
+        .option-item-studio.correct .option-prefix-studio {
+            background-color: var(--success-color);
+            color: white;
+        }
+
+        /* Show/Hide Reveal Block */
+        .reveal-action-container {
+            border-top: 1px solid var(--border-color);
+            padding-top: 1.25rem;
+        }
+
+        .btn-reveal {
+            background: transparent;
+            border: 1px solid var(--unab-blue-light);
+            color: var(--unab-blue-light);
+            padding: 0.5rem 1.25rem;
+            border-radius: var(--radius-md);
+            font-weight: 700;
+            font-size: 0.85rem;
+            cursor: pointer;
+            transition: var(--transition);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .btn-reveal:hover {
+            background-color: var(--unab-blue-light);
+            color: white;
+        }
+
+        [data-theme="dark"] .btn-reveal:hover {
+            color: #000;
+        }
+
+        .revealed-content {
+            display: none;
+            margin-top: 1rem;
+            padding: 1.25rem;
+            border-radius: var(--radius-md);
+            background-color: var(--bg-body);
+            border-left: 4px solid var(--success-color);
+            animation: slideDown 0.3s ease-out;
+        }
+
+        @keyframes slideDown {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .revealed-content h5 {
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--success-color);
+            margin-bottom: 0.5rem;
+            font-weight: 800;
+        }
+
+        .revealed-content p {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            line-height: 1.5;
+        }
+
+        /* Quiz Mode UI */
+        .quiz-container {
+            background: var(--bg-surface);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-lg);
+            padding: 2.5rem;
+            box-shadow: var(--shadow-lg);
+            animation: fadeIn 0.4s ease-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* Quiz Progress Bar */
+        .quiz-progress-section {
+            margin-bottom: 2rem;
+        }
+
+        .progress-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.85rem;
+            font-weight: 700;
+            color: var(--text-muted);
+            margin-bottom: 0.5rem;
+        }
+
+        .progress-track {
+            height: 8px;
+            background-color: var(--bg-body);
+            border-radius: 9999px;
+            overflow: hidden;
+            border: 1px solid var(--border-color);
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, var(--unab-blue) 0%, var(--unab-blue-light) 100%);
+            border-radius: 9999px;
+            width: 0%;
+            transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        [data-theme="dark"] .progress-fill {
+            background: linear-gradient(90deg, var(--unab-blue-light) 0%, #a855f7 100%);
+        }
+
+        /* Quiz Question card */
+        .quiz-q-box {
+            margin-bottom: 2rem;
+        }
+
+        .quiz-q-num {
+            font-size: 0.8rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: var(--unab-blue-light);
+            margin-bottom: 0.5rem;
+        }
+
+        .quiz-q-text {
+            font-family: 'Outfit', sans-serif;
+            font-size: 1.35rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            line-height: 1.35;
+        }
+
+        /* Quiz Option Item Buttons */
+        .quiz-options-list {
+            display: flex;
+            flex-direction: column;
+            gap: 0.85rem;
+            margin-bottom: 2rem;
+        }
+
+        .quiz-option-btn {
+            width: 100%;
+            padding: 1rem 1.5rem;
+            border: 1px solid var(--border-color);
+            background: var(--bg-body);
+            color: var(--text-secondary);
+            border-radius: var(--radius-md);
+            font-family: inherit;
+            font-size: 0.95rem;
+            font-weight: 600;
+            cursor: pointer;
+            text-align: left;
+            transition: var(--transition);
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+        }
+
+        .quiz-option-btn:hover:not(:disabled) {
+            transform: translateY(-2px);
+            border-color: var(--unab-blue-light);
+            box-shadow: var(--shadow-md);
+            color: var(--text-primary);
+            background: var(--bg-surface);
+        }
+
+        .quiz-option-btn:active:not(:disabled) {
+            transform: translateY(0);
+        }
+
+        .quiz-option-btn:disabled {
+            cursor: default;
+        }
+
+        .option-prefix-quiz {
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            background: rgba(0, 31, 63, 0.05);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.8rem;
+            font-weight: 800;
+            color: var(--text-muted);
+            flex-shrink: 0;
+            transition: var(--transition);
+        }
+
+        /* Option button states */
+        .quiz-option-btn.selected {
+            border-color: var(--unab-blue-light);
+            background-color: rgba(0, 31, 63, 0.03);
+            color: var(--unab-blue);
+        }
+
+        .quiz-option-btn.selected .option-prefix-quiz {
+            background-color: var(--unab-blue-light);
+            color: white;
+        }
+
+        .quiz-option-btn.correct {
+            border-color: var(--success-border);
+            background-color: var(--success-bg);
+            color: var(--success-color);
+            box-shadow: 0 0 15px rgba(13, 148, 136, 0.1);
+        }
+
+        .quiz-option-btn.correct .option-prefix-quiz {
+            background-color: var(--success-color);
+            color: white;
+        }
+
+        .quiz-option-btn.wrong {
+            border-color: var(--error-border);
+            background-color: var(--error-bg);
+            color: var(--error-color);
+        }
+
+        .quiz-option-btn.wrong .option-prefix-quiz {
+            background-color: var(--error-color);
+            color: white;
+        }
+
+        /* Feedback sliding drawer inside Quiz card */
+        .quiz-feedback-drawer {
+            display: none;
+            padding: 1.5rem;
+            border-radius: var(--radius-md);
+            margin-bottom: 2rem;
+            animation: slideUp 0.3s ease-out;
+            border: 1px solid var(--border-color);
+        }
+
+        .quiz-feedback-drawer.correct {
+            background-color: var(--success-bg);
+            border-color: var(--success-border);
+            border-left: 5px solid var(--success-color);
+        }
+
+        .quiz-feedback-drawer.wrong {
+            background-color: var(--error-bg);
+            border-color: var(--error-border);
+            border-left: 5px solid var(--error-color);
+        }
+
+        .feedback-title {
+            font-size: 1rem;
+            font-weight: 800;
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .quiz-feedback-drawer.correct .feedback-title {
+            color: var(--success-color);
+        }
+
+        .quiz-feedback-drawer.wrong .feedback-title {
+            color: var(--error-color);
+        }
+
+        .feedback-body {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            line-height: 1.5;
+        }
+
+        /* Quiz Action Buttons (Next/Verify) */
+        .quiz-actions {
+            display: flex;
+            justify-content: flex-end;
+            gap: 1rem;
+        }
+
+        .btn-quiz-action {
+            background: linear-gradient(135deg, var(--unab-blue) 0%, var(--unab-blue-light) 100%);
+            color: white;
+            border: none;
+            padding: 0.85rem 2rem;
+            border-radius: 9999px;
+            font-family: inherit;
+            font-size: 0.95rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: var(--transition);
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+            box-shadow: 0 4px 12px rgba(0, 31, 63, 0.2);
+        }
+
+        .btn-quiz-action:hover:not(:disabled) {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 16px rgba(0, 31, 63, 0.3);
+        }
+
+        .btn-quiz-action:disabled {
+            background: var(--border-color);
+            color: var(--text-muted);
+            cursor: not-allowed;
+            box-shadow: none;
+        }
+
+        /* Scoreboard / Results Screen */
+        .results-panel {
+            background: var(--bg-surface);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-lg);
+            padding: 3rem 2rem;
+            text-align: center;
+            box-shadow: var(--shadow-lg);
+            animation: fadeIn 0.4s ease-out;
+        }
+
+        .results-badge-container {
+            position: relative;
+            width: 140px;
+            height: 140px;
+            margin: 0 auto 1.5rem auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Circular dynamic score track */
+        .circle-progress-svg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 140px;
+            height: 140px;
+            transform: rotate(-90deg);
+        }
+
+        .circle-bg {
+            fill: none;
+            stroke: var(--bg-body);
+            stroke-width: 8;
+        }
+
+        .circle-value {
+            fill: none;
+            stroke: var(--unab-blue-light);
+            stroke-width: 8;
+            stroke-linecap: round;
+            stroke-dasharray: 408.4;
+            stroke-dashoffset: 408.4;
+            transition: stroke-dashoffset 1.5s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .results-score-text {
+            font-family: 'Outfit', sans-serif;
+            font-size: 2.2rem;
+            font-weight: 800;
+            color: var(--text-primary);
+            line-height: 1;
+            z-index: 2;
+        }
+
+        .results-score-text span {
+            font-size: 1rem;
+            color: var(--text-muted);
+            font-weight: 600;
+        }
+
+        .results-rank {
+            font-family: 'Outfit', sans-serif;
+            font-size: 1.6rem;
+            font-weight: 800;
+            color: var(--unab-blue-light);
+            margin-bottom: 0.5rem;
+        }
+
+        .results-desc {
+            font-size: 0.95rem;
+            color: var(--text-secondary);
+            max-width: 500px;
+            margin: 0 auto 2rem auto;
+        }
+
+        /* Stats Grid */
+        .results-stats-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1rem;
+            max-width: 500px;
+            margin: 0 auto 2rem auto;
+        }
+
+        .stat-box {
+            background: var(--bg-body);
+            border: 1px solid var(--border-color);
+            padding: 1rem 0.5rem;
+            border-radius: var(--radius-md);
+        }
+
+        .stat-box span {
+            display: block;
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--text-muted);
+            margin-bottom: 0.25rem;
+        }
+
+        .stat-box strong {
+            font-family: 'Outfit', sans-serif;
+            font-size: 1.35rem;
+            font-weight: 800;
+            color: var(--text-primary);
+        }
+
+        .stat-box.success strong {
+            color: var(--success-color);
+        }
+
+        .stat-box.error strong {
+            color: var(--error-color);
+        }
+
+        .btn-restart {
+            background: linear-gradient(135deg, var(--unab-blue) 0%, var(--unab-blue-light) 100%);
+            color: white;
+            border: none;
+            padding: 0.85rem 2.5rem;
+            border-radius: 9999px;
+            font-family: inherit;
+            font-size: 1rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: var(--transition);
+            box-shadow: 0 4px 12px rgba(0, 31, 63, 0.2);
+            display: inline-flex;
+            align-items: center;
+            gap: 0.6rem;
+        }
+
+        .btn-restart:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 16px rgba(0, 31, 63, 0.3);
+        }
+
+        /* Animations */
+        @keyframes slideUp {
+            from {
+                transform: translateY(20px);
+                opacity: 0;
+            }
+
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        /* Footer */
+        .main-footer {
+            background-color: #0a0a0a;
+            color: white;
+            margin-top: 6rem;
+            padding: 4rem 2rem 2rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 3rem;
+            padding-bottom: 3rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .footer-section h3 {
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin-bottom: 1.25rem;
+            color: white;
+            opacity: 0.9;
+        }
+
+        .footer-section p {
+            font-size: 0.95rem;
+            line-height: 1.7;
+            color: #cbd5e1;
+        }
+
+        .footer-section a {
+            color: white;
+            text-decoration: none;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+            padding-bottom: 1px;
+            transition: var(--transition);
+        }
+
+        .footer-section a:hover {
+            color: white;
+            border-color: white;
+        }
+
+        .footer-bottom {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding-top: 2rem;
+            text-align: center;
+            font-size: 0.9rem;
+            color: #94a3b8;
+        }
+
+        /* Alert notifications */
+        .alert-toast {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            background: var(--bg-surface);
+            border: 1px solid var(--border-color);
+            box-shadow: var(--shadow-lg);
+            padding: 1rem 1.5rem;
+            border-radius: var(--radius-md);
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            z-index: 1000;
+            transform: translateY(100px);
+            opacity: 0;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        .alert-toast.show {
+            transform: translateY(0);
+            opacity: 1;
+        }
+
+        .alert-toast.info {
+            border-left: 4px solid var(--unab-blue-light);
+        }
+
+        .alert-toast.success {
+            border-left: 4px solid var(--success-color);
+        }
+
+        /* Responsive Layout */
+        @media (max-width: 990px) {
+            .app-container {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+                margin-top: 1.5rem;
+            }
+
+            .selector-panel {
+                position: static;
+                width: 100%;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .header-container {
+                flex-direction: column;
+                text-align: center;
+                padding: 0.5rem 0;
+            }
+
+            .header-actions {
+                width: 100%;
+                justify-content: center;
+                margin-top: 0.5rem;
+            }
+
+            .quiz-container {
+                padding: 1.5rem 1rem;
+            }
+
+            .quiz-q-text {
+                font-size: 1.15rem;
+            }
+
+            .results-stats-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Premium Header -->
+    <header class="main-header">
+        <div class="header-container">
+            <a href="index.html" class="brand-link" id="brand-home-link">
+                <img src="assets/logo.png" alt="UNAB Logo" class="logo"
+                    onerror="this.src='https://raw.githubusercontent.com/davidkressin/unab-notes-bank/main/assets/logo.png';">
+                <div class="header-text">
+                    <h1>Medicina UNAB</h1>
+                    <p>Banco de Apuntes & Evaluaciones</p>
+                </div>
+            </a>
+            <div class="header-actions">
+                <a href="index.html" class="back-btn">
+                    <i class="fas fa-arrow-left"></i> <span>Volver al Banco</span>
+                </a>
+                <button id="theme-toggle" class="theme-toggle" aria-label="Cambiar tema">
+                    <span>☀️</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Container -->
+    <div class="app-container">
+
+        <!-- Sidebar Selection Panel -->
+        <aside class="selector-panel">
+            <h2 class="panel-title">
+                <i class="fa-solid fa-graduation-cap"></i> Configuración
+            </h2>
+
+            <div class="form-section">
+                <label for="evaluation-dropdown">1. Selección de Evaluación</label>
+                <div class="custom-select-wrapper">
+                    <select id="evaluation-dropdown" class="custom-select">
+                        <option value="solemne_3">Solemne III (Hongos)</option>
+                        <option value="solemne_4" selected>Solemne IV (Virus y Parásitos)</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-section">
+                <label for="theme-dropdown">2. Temática de Estudio</label>
+                <div class="custom-select-wrapper">
+                    <select id="theme-dropdown" class="custom-select" disabled>
+                        <option value="">Cargando temáticas...</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-section">
+                <label for="indicator-dropdown">3. Indicador Académico</label>
+                <div class="custom-select-wrapper">
+                    <select id="indicator-dropdown" class="custom-select" disabled>
+                        <option value="">Selecciona una temática primero</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-section">
+                <label>4. Modo de Estudio</label>
+                <div class="mode-switch-container">
+                    <button class="mode-tab" data-mode="studio" id="tab-studio">
+                        <i class="fa-solid fa-book-open"></i> Estudio
+                    </button>
+                    <button class="mode-tab active" data-mode="challenge" id="tab-challenge">
+                        <i class="fa-solid fa-trophy"></i> Desafío
+                    </button>
+                </div>
+            </div>
+
+            <div class="info-card" id="info-box">
+                <i class="fa-solid fa-circle-info"></i>
+                <span><strong>Modo Desafío</strong>: Simula una prueba cronometrada de selección múltiple con retroalimentación interactiva paso a paso y puntuación final.</span>
+            </div>
+        </aside>
+
+        <!-- Main Workspace Area -->
+        <main class="workspace" id="main-workspace">
+
+            <!-- Waiting Screen (Default / Loading / Empty) -->
+            <div class="empty-state" id="initial-state">
+                <div class="empty-state-icon" id="status-icon">
+                    <i class="fa-solid fa-virus-covid"></i>
+                </div>
+                <h3 id="status-title">Iniciando simulador...</h3>
+                <p id="status-desc">Estamos cargando la base de datos de preguntas microbiológicas en tu navegador.</p>
+                <div class="indicators-grid" id="status-indicators" style="display:none;"></div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Alert / Notification Toast -->
+    <div class="alert-toast info" id="alert-toast">
+        <i class="fa-solid fa-circle-check" id="toast-icon"></i>
+        <span id="toast-text">Base de datos cargada.</span>
+    </div>
+
+    <!-- Premium Footer -->
+    <footer class="main-footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <p>Iniciativa de los Padrinos 2026.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Ayuda y Contacto</h3>
+                <p><a href="mailto:d.kressingonzlez@uandresbello.edu">d.kressingonzlez@uandresbello.edu</a></p>
+            </div>
+            <div class="footer-section">
+                <h3>Desarrollo</h3>
+                <p>Desarrollado por <a href="https://kressinandfuture.cl" target="_blank">Kressin & Future</a></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 UNAB - Banco de Apuntes Medicina. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- dbData will be loaded dynamically -->
+
+    <!-- Main Logic Script -->
+    <script>
+        // DOM Elements
+        const evaluationDropdown = document.getElementById('evaluation-dropdown');
+        const themeDropdown = document.getElementById('theme-dropdown');
+        const indicatorDropdown = document.getElementById('indicator-dropdown');
+        const tabStudio = document.getElementById('tab-studio');
+        const tabChallenge = document.getElementById('tab-challenge');
+        const mainWorkspace = document.getElementById('main-workspace');
+        const themeToggleBtn = document.getElementById('theme-toggle');
+        const alertToast = document.getElementById('alert-toast');
+        const toastText = document.getElementById('toast-text');
+        const toastIcon = document.getElementById('toast-icon');
+
+        // Application State
+        let selectedThemeIndex = null;
+        let selectedIndicatorIndex = null;
+        let activeMode = 'challenge'; // 'studio' or 'challenge'
+
+        // Quiz state variables
+        let quizQuestions = [];
+        let currentQuestionIdx = 0;
+        let userAnswers = []; // stores indices or letters chosen
+        let isQuestionAnswered = false;
+
+        // Toast Helper
+        function showToast(message, type = 'success') {
+            toastText.textContent = message;
+            alertToast.className = `alert-toast ${type}`;
+            if (type === 'success') {
+                toastIcon.className = 'fa-solid fa-circle-check';
+            } else if (type === 'error') {
+                toastIcon.className = 'fa-solid fa-circle-exclamation';
+            } else {
+                toastIcon.className = 'fa-solid fa-circle-info';
+            }
+            alertToast.classList.add('show');
+            setTimeout(() => {
+                alertToast.classList.remove('show');
+            }, 3000);
+        }
+
+        // Theme Toggle Logic
+        function updateThemeUI(theme) {
+            const span = themeToggleBtn.querySelector('span');
+            if (theme === 'dark') {
+                span.textContent = "🌙";
+            } else {
+                span.textContent = "☀️";
+            }
+        }
+
+        const savedTheme = localStorage.getItem('theme');
+        const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        const initialTheme = savedTheme || (systemPrefersDark ? 'dark' : 'light');
+
+        if (initialTheme === 'dark') {
+            document.documentElement.setAttribute('data-theme', 'dark');
+        }
+        updateThemeUI(initialTheme);
+
+        themeToggleBtn.onclick = () => {
+            const currentTheme = document.documentElement.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+
+            document.documentElement.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+            updateThemeUI(newTheme);
+        };
+
+        // Initialize selectors with pre-loaded database
+        function initSelectors(data) {
+            themeDropdown.disabled = false;
+            themeDropdown.innerHTML = '<option value="">-- Selecciona una temática --</option>';
+
+            data.forEach((themeObj, index) => {
+                const option = document.createElement('option');
+                option.value = index;
+                // Add custom icons to themes dynamically
+                const isFungal = themeObj.tematica.toLowerCase().includes('hongo') || themeObj.tematica.toLowerCase().includes('mico');
+                const icon = isFungal ? '🍄' : '🦠';
+                option.textContent = `${icon} ${themeObj.tematica}`;
+                themeDropdown.appendChild(option);
+            });
+
+            // Set up Dropdown change event
+            themeDropdown.onchange = (e) => {
+                const idx = e.target.value;
+                selectedThemeIndex = idx !== "" ? parseInt(idx) : null;
+                selectedIndicatorIndex = null;
+
+                // Reset indicator selector
+                indicatorDropdown.disabled = selectedThemeIndex === null;
+                indicatorDropdown.innerHTML = selectedThemeIndex !== null
+                    ? '<option value="">-- Selecciona un indicador --</option>'
+                    : '<option value="">Selecciona una temática primero</option>';
+
+                if (selectedThemeIndex !== null) {
+                    const indicators = data[selectedThemeIndex].indicadores;
+                    indicators.forEach((indObj, i) => {
+                        const opt = document.createElement('option');
+                        opt.value = i;
+                        const count = indObj.preguntas?.length || 0;
+                        opt.textContent = `${indObj.indicador.substring(0, 70)}... (${count} preg.)`;
+                        indicatorDropdown.appendChild(opt);
+                    });
+
+                    // Show theme summary dashboard in the main content area
+                    renderThemeDashboard(data[selectedThemeIndex]);
+                } else {
+                    renderWelcomeScreen();
+                }
+            };
+
+            indicatorDropdown.onchange = (e) => {
+                const idx = e.target.value;
+                selectedIndicatorIndex = idx !== "" ? parseInt(idx) : null;
+                triggerWorkspaceLoad();
+            };
+
+            // Setup mode tabs
+            const tabs = [tabStudio, tabChallenge];
+            tabs.forEach(tab => {
+                tab.onclick = () => {
+                    tabs.forEach(t => t.classList.remove('active'));
+                    tab.classList.add('active');
+                    activeMode = tab.dataset.mode;
+
+                    // Update info block helper
+                    const infoBox = document.getElementById('info-box');
+                    if (activeMode === 'studio') {
+                        infoBox.innerHTML = '<i class="fa-solid fa-circle-info"></i> <span><strong>Modo Estudio</strong>: Puedes revisar todas las preguntas a tu ritmo, buscar palabras clave y expandir las justificaciones académicas de cada alternativa.</span>';
+                    } else {
+                        infoBox.innerHTML = '<i class="fa-solid fa-circle-info"></i> <span><strong>Modo Desafío</strong>: Simula una prueba cronometrada de selección múltiple con retroalimentación interactiva paso a paso y puntuación final.</span>';
+                    }
+
+                    triggerWorkspaceLoad();
+                };
+            });
+
+            // Render initial screen
+            renderWelcomeScreen();
+        }
+
+        // Render standard welcome/instructions dashboard
+        function renderWelcomeScreen() {
+            mainWorkspace.innerHTML = `
+                <div class="empty-state">
+                    <div class="empty-state-icon" style="color: var(--unab-blue-light)">
+                        <i class="fa-solid fa-clipboard-question"></i>
+                    </div>
+                    <h3>Simulador Clínico de Microbiología</h3>
+                    <p>Bienvenido al simulador oficial. Comienza seleccionando una temática y un indicador académico en el panel izquierdo para evaluar tus conocimientos médicos antes del Solemne.</p>
+                    
+                    <div class="indicators-grid" style="display: grid;">
+                        <h4 style="font-family:'Outfit', sans-serif; font-size:1.1rem; color:var(--text-primary); margin-bottom: 0.5rem; text-align:center;">Temáticas de Estudio Disponibles:</h4>
+                        ${dbData.map((tObj, idx) => {
+                const isFungal = tObj.tematica.toLowerCase().includes('hongo') || tObj.tematica.toLowerCase().includes('mico');
+                const iconClass = isFungal ? 'fa-solid fa-mushroom' : 'fa-solid fa-virus';
+                const numQuestions = tObj.indicadores.reduce((sum, ind) => sum + (ind.preguntas?.length || 0), 0);
+                return `
+                                <div class="indicator-card" onclick="document.getElementById('theme-dropdown').value = ${idx}; document.getElementById('theme-dropdown').dispatchEvent(new Event('change'));">
+                                    <div class="indicator-icon"><i class="${iconClass}"></i></div>
+                                    <div class="indicator-details">
+                                        <h4>${tObj.tematica}</h4>
+                                        <span>${tObj.indicadores.length} Indicadores</span>
+                                        <span>${numQuestions} Preguntas</span>
+                                    </div>
+                                    <i class="fa-solid fa-chevron-right" style="color:var(--text-muted); align-self:center;"></i>
+                                </div>
+                            `;
+            }).join('')}
+                    </div>
+                </div>
+            `;
+        }
+
+        // Render dashboard for a specific selected theme
+        function renderThemeDashboard(themeObj) {
+            const isFungal = themeObj.tematica.toLowerCase().includes('hongo') || themeObj.tematica.toLowerCase().includes('mico');
+            const iconClass = isFungal ? 'fa-solid fa-mushroom' : 'fa-solid fa-virus';
+
+            mainWorkspace.innerHTML = `
+                <div class="empty-state" style="padding: 3rem 2rem;">
+                    <div class="empty-state-icon" style="color: var(--unab-red)">
+                        <i class="${iconClass}"></i>
+                    </div>
+                    <span style="font-size:0.75rem; font-weight:800; text-transform:uppercase; color:var(--unab-red); letter-spacing:0.1em; margin-bottom: 0.5rem; display:block;">Temática Seleccionada</span>
+                    <h3 style="font-size: 1.45rem; max-width: 600px; margin: 0 auto 1.5rem auto;">${themeObj.tematica}</h3>
+                    <p>Ahora selecciona uno de los siguientes indicadores académicos para cargar las preguntas correspondientes:</p>
+
+                    <div class="indicators-grid" style="display: grid;">
+                        ${themeObj.indicadores.map((indObj, i) => {
+                const qCount = indObj.preguntas?.length || 0;
+                return `
+                                <div class="indicator-card" onclick="document.getElementById('indicator-dropdown').value = ${i}; document.getElementById('indicator-dropdown').dispatchEvent(new Event('change'));">
+                                    <div class="indicator-icon"><i class="fa-solid fa-dna"></i></div>
+                                    <div class="indicator-details">
+                                        <h4>${indObj.indicador}</h4>
+                                        <span>${qCount} Preguntas académicas</span>
+                                    </div>
+                                    <i class="fa-solid fa-chevron-right" style="color:var(--text-muted); align-self:center;"></i>
+                                </div>
+                            `;
+            }).join('')}
+                    </div>
+                </div>
+            `;
+        }
+
+        // Core controller to load the correct screen based on Mode & Selected indices
+        function triggerWorkspaceLoad() {
+            if (selectedThemeIndex === null || selectedIndicatorIndex === null) {
+                if (selectedThemeIndex !== null) {
+                    renderThemeDashboard(dbData[selectedThemeIndex]);
+                } else {
+                    renderWelcomeScreen();
+                }
+                return;
+            }
+
+            const indicatorObj = dbData[selectedThemeIndex].indicadores[selectedIndicatorIndex];
+            const questions = indicatorObj.preguntas || [];
+
+            if (questions.length === 0) {
+                mainWorkspace.innerHTML = `
+                    <div class="empty-state">
+                        <div class="empty-state-icon" style="color: var(--warning-color)">
+                            <i class="fa-solid fa-triangle-exclamation"></i>
+                        </div>
+                        <h3>Sin Preguntas Registradas</h3>
+                        <p>Este indicador ("${indicatorObj.indicador}") está estructurado pero no posee un banco de preguntas aún. Por favor selecciona otro indicador en el menú izquierdo.</p>
+                        <button class="btn-upload-trigger" onclick="document.getElementById('indicator-dropdown').focus()"><i class="fa-solid fa-arrow-left"></i> Cambiar Indicador</button>
+                    </div>
+                `;
+                return;
+            }
+
+            if (activeMode === 'studio') {
+                renderStudioMode(questions, indicatorObj.indicador);
+            } else {
+                startQuizMode(questions, indicatorObj.indicador);
+            }
+        }
+
+        // --- Studio Mode rendering and logic ---
+        function renderStudioMode(questions, titleText, filterQuery = "") {
+            // Apply filter if search query exists
+            let filtered = questions;
+            if (filterQuery.trim() !== "") {
+                const q = filterQuery.toLowerCase().trim();
+                filtered = questions.filter(item =>
+                    item.pregunta.toLowerCase().includes(q) ||
+                    item.justificacion.toLowerCase().includes(q) ||
+                    Object.values(item.alternativas).some(alt => alt.toLowerCase().includes(q))
+                );
+            }
+
+            let htmlContent = `
+                <div class="studio-header">
+                    <div class="title-bar">
+                        <h2>Modo Estudio: Repaso General</h2>
+                        <p>${titleText}</p>
+                    </div>
+                    <div class="studio-controls">
+                        <div class="search-wrapper">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <input type="text" id="q-search" class="search-input" placeholder="Buscar microorganismo, estructura, toxina..." value="${filterQuery}">
+                        </div>
+                        <div class="stats-badge">
+                            <i class="fa-solid fa-clipboard-list"></i> ${filtered.length} de ${questions.length} preguntas
+                        </div>
+                    </div>
+                </div>
+            `;
+
+            if (filtered.length === 0) {
+                htmlContent += `
+                    <div class="empty-state" style="padding: 3rem 2rem;">
+                        <i class="fa-solid fa-ban" style="font-size: 2.5rem; color: var(--text-muted); margin-bottom: 1rem;"></i>
+                        <h3>Sin resultados para tu búsqueda</h3>
+                        <p>Intenta buscando otros conceptos como "Candida", "Aspergillus", "VRS" o "membrana".</p>
+                    </div>
+                `;
+            } else {
+                filtered.forEach((item, index) => {
+                    htmlContent += `
+                        <div class="question-card-studio">
+                            <span class="q-number-badge">PREGUNTA ${item.id}</span>
+                            <h4 class="q-text">${item.pregunta}</h4>
+                            
+                            <ul class="options-list">
+                                ${Object.keys(item.alternativas).map(key => {
+                        const optionText = item.alternativas[key];
+                        const isCorrect = key === item.respuesta;
+                        return `
+                                        <li class="option-item-studio ${isCorrect ? 'correct' : ''}">
+                                            <span class="option-prefix-studio">${key.toUpperCase()}</span>
+                                            <span>${optionText}</span>
+                                            ${isCorrect ? '<i class="fa-solid fa-circle-check" style="margin-left:auto;"></i>' : ''}
+                                        </li>
+                                    `;
+                    }).join('')}
+                            </ul>
+
+                            <div class="reveal-action-container">
+                                <button class="btn-reveal" onclick="toggleRevealBlock(this)">
+                                    <i class="fa-solid fa-eye"></i> Ver Explicación Médica
+                                </button>
+                                <div class="revealed-content">
+                                    <h5><i class="fa-solid fa-stethoscope"></i> Justificación de la Clave:</h5>
+                                    <p>${item.justificacion}</p>
+                                </div>
+                            </div>
+                        </div>
+                    `;
+                });
+            }
+
+            mainWorkspace.innerHTML = htmlContent;
+
+            // Hook search event
+            const searchInput = document.getElementById('q-search');
+            searchInput.oninput = (e) => {
+                renderStudioMode(questions, titleText, e.target.value);
+                // Keep cursor at the end of text
+                const input = document.getElementById('q-search');
+                input.focus();
+            };
+        }
+
+        function toggleRevealBlock(btn) {
+            const block = btn.nextElementSibling;
+            const isHidden = window.getComputedStyle(block).display === 'none';
+            if (isHidden) {
+                block.style.display = 'block';
+                btn.innerHTML = '<i class="fa-solid fa-eye-slash"></i> Ocultar Explicación';
+            } else {
+                block.style.display = 'none';
+                btn.innerHTML = '<i class="fa-solid fa-eye"></i> Ver Explicación Médica';
+            }
+        }
+
+        // --- Challenge (Quiz) Mode rendering and logic ---
+        function startQuizMode(questions, titleText) {
+            quizQuestions = [...questions];
+            currentQuestionIdx = 0;
+            userAnswers = new Array(quizQuestions.length).fill(null);
+            renderQuizQuestion(titleText);
+        }
+
+        function renderQuizQuestion(titleText) {
+            const qObj = quizQuestions[currentQuestionIdx];
+            const progressPercent = ((currentQuestionIdx) / quizQuestions.length) * 100;
+            isQuestionAnswered = false;
+
+            mainWorkspace.innerHTML = `
+                <div class="quiz-container">
+                    <!-- Progress Bar -->
+                    <div class="quiz-progress-section">
+                        <div class="progress-meta">
+                            <span>Solemne 3 - Microbiología</span>
+                            <span>Pregunta ${currentQuestionIdx + 1} de ${quizQuestions.length}</span>
+                        </div>
+                        <div class="progress-track">
+                            <div class="progress-fill" style="width: ${progressPercent}%;"></div>
+                        </div>
+                    </div>
+
+                    <!-- Question text -->
+                    <div class="quiz-q-box">
+                        <span class="quiz-q-num">PREGUNTA ${qObj.id}</span>
+                        <h3 class="quiz-q-text">${qObj.pregunta}</h3>
+                    </div>
+
+                    <!-- Options list buttons -->
+                    <div class="quiz-options-list" id="quiz-options-box">
+                        ${Object.keys(qObj.alternativas).map(key => {
+                return `
+                                <button class="quiz-option-btn" data-key="${key}" onclick="selectQuizOption(this)">
+                                    <span class="option-prefix-quiz">${key.toUpperCase()}</span>
+                                    <span>${qObj.alternativas[key]}</span>
+                                </button>
+                            `;
+            }).join('')}
+                    </div>
+
+                    <!-- Sliding Feedback Block -->
+                    <div class="quiz-feedback-drawer" id="feedback-drawer">
+                        <h4 class="feedback-title" id="feedback-title">
+                            <i class="fa-solid fa-circle-check"></i> ¡Excelente! Respuesta Correcta
+                        </h4>
+                        <p class="feedback-body" id="feedback-body">
+                            Aquí se despliega la justificación fisiopatológica / metabólica de la respuesta.
+                        </p>
+                    </div>
+
+                    <!-- Navigation and Actions -->
+                    <div class="quiz-actions">
+                        <button class="btn-quiz-action" id="btn-quiz-submit" disabled onclick="submitQuizAnswer()">
+                            Comprobar Respuesta <i class="fa-solid fa-paper-plane"></i>
+                        </button>
+                    </div>
+                </div>
+            `;
+        }
+
+        // Toggle select visual state
+        function selectQuizOption(btn) {
+            if (isQuestionAnswered) return;
+
+            const box = document.getElementById('quiz-options-box');
+            box.querySelectorAll('.quiz-option-btn').forEach(b => b.classList.remove('selected'));
+            btn.classList.add('selected');
+
+            // Enable check button
+            document.getElementById('btn-quiz-submit').disabled = false;
+        }
+
+        // Validate choice and display immediate feedback
+        function submitQuizAnswer() {
+            if (isQuestionAnswered) return;
+
+            const box = document.getElementById('quiz-options-box');
+            const selectedBtn = box.querySelector('.quiz-option-btn.selected');
+            if (!selectedBtn) return;
+
+            const chosenKey = selectedBtn.dataset.key;
+            const qObj = quizQuestions[currentQuestionIdx];
+            const isCorrect = chosenKey === qObj.respuesta;
+
+            // Lock input
+            isQuestionAnswered = true;
+            userAnswers[currentQuestionIdx] = {
+                questionId: qObj.id,
+                pregunta: qObj.pregunta,
+                chosen: chosenKey,
+                chosenText: qObj.alternativas[chosenKey],
+                correctKey: qObj.respuesta,
+                correctText: qObj.alternativas[qObj.respuesta],
+                justification: qObj.justificacion,
+                isCorrect: isCorrect
+            };
+
+            // Color option buttons
+            box.querySelectorAll('.quiz-option-btn').forEach(btn => {
+                btn.disabled = true;
+                const btnKey = btn.dataset.key;
+                if (btnKey === qObj.respuesta) {
+                    btn.classList.add('correct');
+                } else if (btnKey === chosenKey) {
+                    btn.classList.add('wrong');
+                }
+            });
+
+            // Display slide in feedback drawer
+            const drawer = document.getElementById('feedback-drawer');
+            const fTitle = document.getElementById('feedback-title');
+            const fBody = document.getElementById('feedback-body');
+
+            drawer.style.display = 'block';
+            fBody.textContent = qObj.justificacion;
+
+            if (isCorrect) {
+                drawer.className = 'quiz-feedback-drawer correct';
+                fTitle.innerHTML = '<i class="fa-solid fa-circle-check"></i> ¡Excelente! Respuesta Correcta';
+            } else {
+                drawer.className = 'quiz-feedback-drawer wrong';
+                fTitle.innerHTML = `<i class="fa-solid fa-circle-xmark"></i> Respuesta Incorrecta (Clave: ${qObj.respuesta.toUpperCase()})`;
+            }
+
+            // Change button behavior to "Next" or "Finish"
+            const submitBtn = document.getElementById('btn-quiz-submit');
+            const isLast = currentQuestionIdx === quizQuestions.length - 1;
+
+            if (isLast) {
+                submitBtn.innerHTML = 'Ver Puntuación Final <i class="fa-solid fa-chart-pie"></i>';
+                submitBtn.onclick = () => showQuizResults();
+            } else {
+                submitBtn.innerHTML = 'Siguiente Pregunta <i class="fa-solid fa-arrow-right"></i>';
+                submitBtn.onclick = () => {
+                    currentQuestionIdx++;
+                    renderQuizQuestion(dbData[selectedThemeIndex].indicadores[selectedIndicatorIndex].indicador);
+                };
+            }
+        }
+
+        // Compile results screen
+        function showQuizResults() {
+            const correctCount = userAnswers.filter(a => a && a.isCorrect).length;
+            const totalCount = quizQuestions.length;
+            const scorePercent = Math.round((correctCount / totalCount) * 100);
+
+            // Compute circular gauge animation offsets (circumference: 408.4)
+            const circumference = 408.4;
+            const offset = circumference - (scorePercent / 100) * circumference;
+
+            // Gamified medical rank titles
+            let rank = "";
+            let rankDesc = "";
+            if (scorePercent === 100) {
+                rank = "Catedrático en Infectología";
+                rankDesc = "¡Puntuación perfecta! Has demostrado un dominio absoluto de la microbiología clínica. Estás más que listo para el Solemne.";
+            } else if (scorePercent >= 80) {
+                rank = "Médico Residente Distinguido";
+                rankDesc = "¡Excelente nivel! Posees un sólido razonamiento fisiopatológico y metabólico sobre bacterias, hongos y virus.";
+            } else if (scorePercent >= 60) {
+                rank = "Interno de Medicina";
+                rankDesc = "Aprobado con éxito. Tienes los conceptos claros, pero te sugerimos revisar las justificaciones de las preguntas falladas para asegurar un mejor desempeño.";
+            } else {
+                rank = "Estudiante en Práctica";
+                rankDesc = "Se aconseja repasar la materia. Revisa en el Modo Estudio los factores de patogenicidad y la farmacología fúngica/viral antes de intentarlo nuevamente.";
+            }
+
+            let resultsHtml = `
+                <div class="results-panel">
+                    <span style="font-size:0.75rem; font-weight:800; text-transform:uppercase; color:var(--unab-blue-light); letter-spacing:0.1em; margin-bottom: 0.5rem; display:block;">Evaluación Finalizada</span>
+                    
+                    <div class="results-badge-container">
+                        <svg class="circle-progress-svg">
+                            <circle class="circle-bg" cx="70" cy="70" r="65"></circle>
+                            <circle class="circle-value" id="circle-progress" cx="70" cy="70" r="65"></circle>
+                        </svg>
+                        <div class="results-score-text">${scorePercent}<span>%</span></div>
+                    </div>
+
+                    <h2 class="results-rank">${rank}</h2>
+                    <p class="results-desc">${rankDesc}</p>
+
+                    <!-- Stats boxes -->
+                    <div class="results-stats-grid">
+                        <div class="stat-box">
+                            <span>Preguntas</span>
+                            <strong>${totalCount}</strong>
+                        </div>
+                        <div class="stat-box success">
+                            <span>Correctas</span>
+                            <strong>${correctCount}</strong>
+                        </div>
+                        <div class="stat-box error">
+                            <span>Falladas</span>
+                            <strong>${totalCount - correctCount}</strong>
+                        </div>
+                    </div>
+
+                    <button class="btn-restart" onclick="triggerWorkspaceLoad()">
+                        Repetir Autoevaluación <i class="fa-solid fa-rotate-right"></i>
+                    </button>
+                </div>
+            `;
+
+            // Append a breakdown of incorrect questions for active learning
+            const failedQuestions = userAnswers.filter(a => a && !a.isCorrect);
+            if (failedQuestions.length > 0) {
+                resultsHtml += `
+                    <div class="studio-header" style="margin-top:2.5rem; border-left: 4px solid var(--error-color);">
+                        <h3 style="font-family:'Outfit', sans-serif; font-size:1.15rem; color:var(--text-primary);">
+                            <i class="fa-solid fa-stethoscope" style="color:var(--error-color); margin-right:0.5rem;"></i> Preguntas para Reforzar Conocimientos:
+                        </h3>
+                        <p style="font-size:0.85rem; color:var(--text-muted);">Haz click en el botón de justificación para comprender por qué fallaste y corregir el error conceptual.</p>
+                    </div>
+
+                    ${failedQuestions.map(ans => {
+                    return `
+                            <div class="question-card-studio" style="border-left: 4px solid var(--error-color);">
+                                <span class="q-number-badge" style="background-color: var(--error-color); color: white;">FALLADA (PREG. ${ans.questionId})</span>
+                                <h4 class="q-text" style="margin-top: 1rem;">${ans.pregunta}</h4>
+                                
+                                <p style="font-size:0.9rem; margin-bottom: 0.5rem;">
+                                    <strong style="color:var(--error-color);"><i class="fa-solid fa-xmark"></i> Tu Respuesta:</strong> ${ans.chosen.toUpperCase()}) ${ans.chosenText}
+                                </p>
+                                <p style="font-size:0.9rem; margin-bottom: 1.25rem;">
+                                    <strong style="color:var(--success-color);"><i class="fa-solid fa-check"></i> Respuesta Correcta:</strong> ${ans.correctKey.toUpperCase()}) ${ans.correctText}
+                                </p>
+
+                                <div class="reveal-action-container">
+                                    <button class="btn-reveal" onclick="toggleRevealBlock(this)" style="border-color:var(--text-muted); color:var(--text-secondary);">
+                                        <i class="fa-solid fa-chevron-down"></i> Ver Justificación del Error
+                                    </button>
+                                    <div class="revealed-content">
+                                        <h5><i class="fa-solid fa-circle-info" style="color:var(--unab-blue-light)"></i> Explicación Docente:</h5>
+                                        <p>${ans.justification}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        `;
+                }).join('')}
+                `;
+            }
+
+            mainWorkspace.innerHTML = resultsHtml;
+
+            // Trigger progress circle animation shortly after rendering
+            setTimeout(() => {
+                const circleProgress = document.getElementById('circle-progress');
+                if (circleProgress) {
+                    circleProgress.style.strokeDashoffset = offset;
+                }
+            }, 100);
+        }
+
+        let dbData = [];
+
+        // Asynchronous function to fetch and load evaluation data
+        async function loadEvaluation(evaluationId) {
+            // Show loading state in the workspace
+            mainWorkspace.innerHTML = `
+                <div class="empty-state">
+                    <div class="empty-state-icon" style="color: var(--unab-blue-light)">
+                        <i class="fa-solid fa-spinner fa-spin"></i>
+                    </div>
+                    <h3>Cargando evaluación...</h3>
+                    <p>Estamos descargando el banco de preguntas desde el servidor.</p>
+                </div>
+            `;
+            
+            // Disable dropdowns while loading
+            themeDropdown.disabled = true;
+            themeDropdown.innerHTML = '<option value="">Cargando temáticas...</option>';
+            indicatorDropdown.disabled = true;
+            indicatorDropdown.innerHTML = '<option value="">Selecciona una temática primero</option>';
+            evaluationDropdown.disabled = true;
+
+            try {
+                const response = await fetch(`tests/${evaluationId}_microbiologia.json`);
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                dbData = await response.json();
+                
+                // Re-enable controls
+                evaluationDropdown.disabled = false;
+                
+                // Reset selections and initialize selectors
+                selectedThemeIndex = null;
+                selectedIndicatorIndex = null;
+                initSelectors(dbData);
+                
+                showToast("Evaluación cargada con éxito.");
+            } catch (error) {
+                console.error("Error al cargar la evaluación:", error);
+                evaluationDropdown.disabled = false;
+                themeDropdown.innerHTML = '<option value="">Error de carga</option>';
+                
+                mainWorkspace.innerHTML = `
+                    <div class="empty-state">
+                        <div class="empty-state-icon" style="color: var(--error-color)">
+                            <i class="fa-solid fa-triangle-exclamation"></i>
+                        </div>
+                        <h3>Error al Cargar la Evaluación</h3>
+                        <p>No se pudo descargar el banco de preguntas (CORS o error de red).</p>
+                        <p style="font-size:0.85rem; color:var(--text-muted); max-width:450px; margin: 0.5rem auto 1.5rem auto;">
+                            Si estás abriendo este archivo localmente mediante doble clic, los navegadores bloquean la carga de archivos externos por seguridad. 
+                            Por favor ejecuta un servidor local o súbelo a GitHub Pages para practicar.
+                        </p>
+                        <button class="btn-restart" onclick="loadEvaluation('${evaluationId}')">
+                            <i class="fa-solid fa-rotate-right"></i> Reintentar Carga
+                        </button>
+                    </div>
+                `;
+                showToast("Error de conexión al cargar el banco de preguntas.", "error");
+            }
+        }
+
+        // Run application on window load
+        window.onload = () => {
+            // Bind evaluation selection change event
+            evaluationDropdown.onchange = (e) => {
+                const val = e.target.value;
+                if (val) {
+                    loadEvaluation(val);
+                }
+            };
+            
+            // Load the default selected evaluation
+            loadEvaluation(evaluationDropdown.value);
+        };
+    </script>
+</body>
+
+</html>

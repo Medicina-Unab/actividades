@@ -1,0 +1,1642 @@
+[
+    {
+        "tematica": "Generalidades de Hongos y patogenia fúngica",
+        "indicadores": [
+            {
+                "indicador": "Comprender las bases biológicas, estructurales y metabólicas de los hongos para diferenciarlos de otros microorganismos y células hospederas",
+                "preguntas": [
+                    {
+                        "id": "1",
+                        "pregunta": "¿Qué componente de la membrana plasmática fúngica es el análogo funcional del colesterol en las células animales?",
+                        "alternativas": {
+                            "a": "Quitina",
+                            "b": "Ergosterol",
+                            "c": "Glucano",
+                            "d": "Manano",
+                            "e": "Fosfolípidos"
+                        },
+                        "respuesta": "b",
+                        "justificacion": "Los hongos poseen ergosterol en lugar de colesterol para otorgar estructura y modular la fluidez de su membrana [1, 2]."
+                    },
+                    {
+                        "id": "2",
+                        "pregunta": "¿Cuál es el polímero principal de la pared celular que diferencia a los hongos de las bacterias y células humanas?",
+                        "alternativas": {
+                            "a": "Peptidoglicano",
+                            "b": "Celulosa",
+                            "c": "Quitina",
+                            "d": "Glucógeno",
+                            "e": "Colágeno"
+                        },
+                        "respuesta": "c",
+                        "justificacion": "La pared celular fúngica es rica en polisacáridos estructurales como la quitina, un polímero de N-acetil-D-glucosamina [3, 4]."
+                    },
+                    {
+                        "id": "3",
+                        "pregunta": "En cuanto a su nutrición, ¿cómo obtienen los hongos sus nutrientes del medio ambiente?",
+                        "alternativas": {
+                            "a": "Fotosíntesis",
+                            "b": "Fagocitosis",
+                            "c": "Quimiosíntesis",
+                            "d": "Absorción tras digestión externa",
+                            "e": "Ingestión directa"
+                        },
+                        "respuesta": "d",
+                        "justificacion": "Los hongos son heterótrofos que liberan enzimas líticas para descomponer materia orgánica compleja y luego absorber los nutrientes solubles [5, 6]."
+                    },
+                    {
+                        "id": "4",
+                        "pregunta": "¿Cómo se define la fase teleomórfica en el ciclo de vida de un hongo?",
+                        "alternativas": {
+                            "a": "Fase de reproducción asexual",
+                            "b": "Fase de crecimiento vegetativo",
+                            "c": "Fase de gemación",
+                            "d": "Fase de reproducción sexual",
+                            "e": "Fase de latencia"
+                        },
+                        "respuesta": "d",
+                        "justificacion": "La modalidad reproductiva sexual de los hongos se denomina fase telomorfa [7]."
+                    },
+                    {
+                        "id": "5",
+                        "pregunta": "¿Qué estructura morfológica caracteriza a los mohos como organismos pluricelulares?",
+                        "alternativas": {
+                            "a": "Blastoconidios",
+                            "b": "Hifas",
+                            "c": "Cápsula",
+                            "d": "Pseudohifas",
+                            "e": "Células gemantes"
+                        },
+                        "respuesta": "b",
+                        "justificacion": "Los mohos crecen formando hifas, que son filamentos tubulares ramificados que en conjunto forman el micelio [8, 9]."
+                    },
+                    {
+                        "id": "6",
+                        "pregunta": "Desde el punto de vista metabólico, ¿cómo se clasifican las levaduras debido a su capacidad de crecer con o sin oxígeno?",
+                        "alternativas": {
+                            "a": "Aerobios obligados",
+                            "b": "Anaerobios estrictos",
+                            "c": "Microaerofílicos",
+                            "d": "Anaerobios facultativos",
+                            "e": "Capnófilos"
+                        },
+                        "respuesta": "d",
+                        "justificacion": "A diferencia de muchos mohos que son aerobios obligados, las levaduras son anaerobios facultativos [9, 10]."
+                    },
+                    {
+                        "id": "7",
+                        "pregunta": "¿Cuál es la principal diferencia estructural entre las hifas cenocíticas y las hifas septadas?",
+                        "alternativas": {
+                            "a": "La presencia de quitina en la pared",
+                            "b": "La presencia de tabiques o septos divisorios",
+                            "c": "La capacidad de formar esporas",
+                            "d": "El número de mitocondrias",
+                            "e": "La velocidad de crecimiento apical"
+                        },
+                        "respuesta": "b",
+                        "justificacion": "Las hifas septadas poseen tabiques, mientras que las cenocíticas (aseptadas) carecen de ellos, dejando los organelos libres [6]."
+                    },
+                    {
+                        "id": "8",
+                        "pregunta": "¿Qué tipo de hongo puede alternar entre una forma unicelular y una filamentosa según el ambiente?",
+                        "alternativas": {
+                            "a": "Hongo levaduriforme",
+                            "b": "Hongo filamentoso estricto",
+                            "c": "Hongo dimórfico",
+                            "d": "Hongo xerófilo",
+                            "e": "Hongo saprófito"
+                        },
+                        "respuesta": "c",
+                        "justificacion": "Los hongos dimórficos tienen la capacidad de cambiar su morfología entre levadura y hifa dependiendo de condiciones como la temperatura [11, 12]."
+                    },
+                    {
+                        "id": "9",
+                        "pregunta": "¿Qué componente de la pared celular es exclusivo de la fase de levadura en algunos ascomicetos?",
+                        "alternativas": {
+                            "a": "Quitina-glucano",
+                            "b": "Glucano-manano",
+                            "c": "Peptidoglicano",
+                            "d": "Lignina",
+                            "e": "Ácido teicoico"
+                        },
+                        "respuesta": "b",
+                        "justificacion": "En los ascomicetos, el polímero principal de la pared en fase de levadura son los glucanos-mananos [4]."
+                    },
+                    {
+                        "id": "10",
+                        "pregunta": "¿Cuál es la función principal de los hongos saprófitos en el ecosistema?",
+                        "alternativas": {
+                            "a": "Parasitar animales",
+                            "b": "Realizar fijación de nitrógeno",
+                            "c": "Descomponer materia orgánica muerta",
+                            "d": "Producir oxígeno por fotosíntesis",
+                            "e": "Infectar cultivos agrícolas"
+                        },
+                        "respuesta": "c",
+                        "justificacion": "La función primordial de los hongos saprófitos es descomponer sustratos orgánicos para reciclar nutrientes básicos [5, 13]."
+                    }
+                ]
+            },
+            {
+                "indicador": "Relaciona las estructuras fúngicas con su rol en la patogenicidad",
+                "preguntas": [
+                    {
+                        "id": "1",
+                        "pregunta": "¿Qué estructura de Cryptococcus neoformans es considerada su principal factor de virulencia por protegerlo contra la fagocitosis?",
+                        "alternativas": {
+                            "a": "Hifa",
+                            "b": "Cápsula de polisacáridos",
+                            "c": "Capa de Rodlets",
+                            "d": "Biofilm",
+                            "e": "Tubo germinativo"
+                        },
+                        "respuesta": "b",
+                        "justificacion": "La cápsula compuesta por glucuronoxilomananos permite a la levadura evadir la respuesta inmune al impedir que sea engullida por los fagocitos [1-4]."
+                    },
+                    {
+                        "id": "2",
+                        "pregunta": "En Candida albicans, ¿qué transición morfológica es fundamental para el proceso de invasión de los tejidos del hospedero?",
+                        "alternativas": {
+                            "a": "De hifa a espora",
+                            "b": "De espora a conidio",
+                            "c": "De levadura a hifa",
+                            "d": "De micelio a seta",
+                            "e": "De levadura a cápsula"
+                        },
+                        "respuesta": "c",
+                        "justificacion": "La transición de levadura a su forma de hifa permite al hongo penetrar activamente el epitelio mediante fuerza física y secreción de enzimas [3, 5-7]."
+                    },
+                    {
+                        "id": "3",
+                        "pregunta": "¿Qué mecanismo utiliza Aspergillus sp. en sus conidios para enmascarar los PAMPs y evitar el reconocimiento inicial del sistema inmune?",
+                        "alternativas": {
+                            "a": "Capa de proteínas hidrofóbicas (Rodlets)",
+                            "b": "Producción de toxina NSP4",
+                            "c": "Formación de esporangiosporas",
+                            "d": "Secreción de quitina sintasa",
+                            "e": "Uso de caderinas del hospedero"
+                        },
+                        "respuesta": "a",
+                        "justificacion": "Las esporas de Aspergillus poseen una capa de proteínas llamadas 'rodlets' que actúan como un escudo (PAMP shielding), impidiendo que las células inmunes detecten sus patrones moleculares [4, 8]."
+                    },
+                    {
+                        "id": "4",
+                        "pregunta": "¿Cuál es la función principal de las adhesinas localizadas en la superficie de la pared celular fúngica?",
+                        "alternativas": {
+                            "a": "Degradar lípidos de la membrana celular",
+                            "b": "Permitir la fijación del hongo a los tejidos u objetos inertes",
+                            "c": "Neutralizar la acción de los anticuerpos",
+                            "d": "Facilitar la formación de ascosporas",
+                            "e": "Aumentar la resistencia a la lisis osmótica"
+                        },
+                        "respuesta": "b",
+                        "justificacion": "Las adhesinas son proteínas que permiten al hongo colonizar superficies y evitar ser eliminado por mecanismos físicos del huésped [7, 9]."
+                    },
+                    {
+                        "id": "5",
+                        "pregunta": "¿Cómo contribuye la formación de biopelículas en dispositivos médicos (como catéteres) a la supervivencia del hongo?",
+                        "alternativas": {
+                            "a": "Aumenta la sensibilidad a los azoles",
+                            "b": "Induce la muerte por apoptosis de macrófagos",
+                            "c": "Genera una comunidad organizada resistente a antifúngicos y al sistema inmune",
+                            "d": "Acelera la división por fisión binaria",
+                            "e": "Impide la penetración del tubo germinativo"
+                        },
+                        "respuesta": "c",
+                        "justificacion": "Los biofilms protegen a hongos como Candida de las defensas del huésped y de los fármacos, siendo una causa común de infecciones intrahospitalarias [1, 3, 10]."
+                    },
+                    {
+                        "id": "6",
+                        "pregunta": "¿Qué enzimas secreta el hongo para degradar activamente las proteínas y fosfolípidos de las células del huésped?",
+                        "alternativas": {
+                            "a": "Rodlets y mananos",
+                            "b": "Glucano sintasas",
+                            "c": "Proteinasas (Saps) y fosfolipasas (PL)",
+                            "d": "Caspasas e interleucinas",
+                            "e": "Ergosterol desaturasa"
+                        },
+                        "respuesta": "c",
+                        "justificacion": "Las enzimas líticas como las Saps y PL facilitan la invasión tisular al destruir los componentes estructurales de las células humanas y obtener nutrientes [7, 11]."
+                    },
+                    {
+                        "id": "7",
+                        "pregunta": "¿En qué consiste el mecanismo de evasión denominado 'PAMP masking' (enmascaramiento)?",
+                        "alternativas": {
+                            "a": "El hongo se recubre con moléculas del propio huésped como factores del complemento",
+                            "b": "El hongo corta sus propios PAMPs superficiales mediante enzimas",
+                            "c": "El hongo cambia de forma de hifa a levadura",
+                            "d": "El hongo inactiva los ribosomas celulares",
+                            "e": "El hongo sintetiza una pared de celulosa"
+                        },
+                        "respuesta": "a",
+                        "justificacion": "Al unirse a proteínas humanas, el hongo se vuelve 'invisible' al sistema inmune, el cual lo confunde con tejido propio [4]."
+                    },
+                    {
+                        "id": "8",
+                        "pregunta": "¿Qué estructura proyectada por la levadura de Candida albicans marca el inicio de la penetración activa en células epiteliales?",
+                        "alternativas": {
+                            "a": "Blastoconidio",
+                            "b": "Tubo germinativo",
+                            "c": "Artrospora",
+                            "d": "Septo",
+                            "e": "Vesícula terminal"
+                        },
+                        "respuesta": "b",
+                        "justificacion": "El tubo germinativo es una elongación inicial que utiliza fuerza física y enzimas para abrirse paso entre las uniones estrechas del epitelio [11, 12]."
+                    },
+                    {
+                        "id": "9",
+                        "pregunta": "En los hongos dimórficos térmicos como Histoplasma capsulatum, ¿cuál es la ventaja patogénica de adoptar la fase de levadura a 37°C?",
+                        "alternativas": {
+                            "a": "Facilitar la dispersión por el aire",
+                            "b": "Permitir la supervivencia intracelular tras la fagocitosis",
+                            "c": "Aumentar la resistencia a la humedad ambiental",
+                            "d": "Inhibir la producción de moco en el pulmón",
+                            "e": "Estimular la mitosis rápida en el suelo"
+                        },
+                        "respuesta": "b",
+                        "justificacion": "La fase de levadura es la forma parasitaria que permite al hongo adaptarse al ambiente interno del huésped y sobrevivir dentro de las células inmunes [3, 6, 13, 14]."
+                    },
+                    {
+                        "id": "10",
+                        "pregunta": "Mecánicamente, ¿cómo utilizan las hifas verdaderas su estructura para el daño tisular?",
+                        "alternativas": {
+                            "a": "Mediante la opsonización de neutrófilos",
+                            "b": "A través de la elongación progresiva y aplicación de fuerza física",
+                            "c": "Por la formación de ascosporas que explotan",
+                            "d": "Mediante el intercambio de señales por ARN viral",
+                            "e": "Por la neutralización del pH ácido estomacal"
+                        },
+                        "respuesta": "b",
+                        "justificacion": "El crecimiento apical de las hifas genera una presión mecánica que rompe las uniones celulares y facilita la progresión de la infección [3, 7, 11]."
+                    }
+                ]
+            },
+            {
+                "indicador": "Identifica los conceptos fundamentales y los mecanismos básicos de patogenicidad microbiana (fúngica) asociados al daño en el hospedero",
+                "preguntas": [
+                    {
+                        "id": "1",
+                        "pregunta": "¿Cuál es la diferencia fundamental entre el proceso de colonización y el de infección fúngica?",
+                        "alternativas": {
+                            "a": "La colonización ocurre solo en órganos internos, la infección en la piel.",
+                            "b": "La colonización implica daño tisular, la infección no genera síntomas.",
+                            "c": "La colonización no provoca inflamación ni daño, la infección conlleva invasión tisular y respuesta inflamatoria.",
+                            "d": "La colonización solo ocurre en pacientes con SIDA.",
+                            "e": "No existe diferencia, ambos términos son sinónimos en micología."
+                        },
+                        "respuesta": "c",
+                        "justificacion": "La colonización implica la multiplicación del hongo como microbiota normal sin causar daño, mientras que la infección se define por la invasión de tejidos y la generación de una respuesta inflamatoria clínica [1]."
+                    },
+                    {
+                        "id": "2",
+                        "pregunta": "¿Qué enzimas secretadas por los hongos son responsables de degradar activamente los componentes de las células del huésped para facilitar la invasión?",
+                        "alternativas": {
+                            "a": "Glucano sintasas y quitinasas",
+                            "b": "Proteinasas (Saps), fosfolipasas y lipasas",
+                            "c": "Caspasas e interleucinas",
+                            "d": "Hemaglutininas y neuraminidasas",
+                            "e": "Rodlets y mananoproteínas"
+                        },
+                        "respuesta": "b",
+                        "justificacion": "Los hongos secretan enzimas hidrolíticas como proteasas (Saps) y fosfolipasas (PL) que degradan proteínas y lípidos del hospedero, facilitando la penetración y obtención de nutrientes [2]."
+                    },
+                    {
+                        "id": "3",
+                        "pregunta": "Durante la invasión por hifas de Candida albicans, ¿qué complejo intracelular se activa en los macrófagos al detectar el peligro?",
+                        "alternativas": {
+                            "a": "Complejo de Golgi",
+                            "b": "Ribosoma 80S",
+                            "c": "Inflamasoma NLRP3",
+                            "d": "Cápside helicoidal",
+                            "e": "Tubo germinativo"
+                        },
+                        "respuesta": "c",
+                        "justificacion": "La penetración de las hifas es detectada por receptores PRR en los macrófagos, lo que gatilla la activación del complejo inflamatorio conocido como inflamasoma NLRP3 [3]."
+                    },
+                    {
+                        "id": "4",
+                        "pregunta": "¿Cuál es la función de la enzima caspasa 1 en la cascada inflamatoria frente a una micosis?",
+                        "alternativas": {
+                            "a": "Sintetizar quitina para la pared celular",
+                            "b": "Degradar los antibióticos del paciente",
+                            "c": "Activar a la Interleucina-1 (IL-1), una potente citoquina inflamatoria",
+                            "d": "Bloquear la entrada de interferón a la célula",
+                            "e": "Facilitar la formación de ascosporas"
+                        },
+                        "respuesta": "c",
+                        "justificacion": "Una vez activado el inflamasoma, este activa a la caspasa 1, cuya función crítica es procesar y activar a la IL-1, iniciando una respuesta inflamatoria masiva [3]."
+                    },
+                    {
+                        "id": "5",
+                        "pregunta": "¿Qué rol cumplen los linfocitos Th17 en la defensa inmunitaria contra los hongos?",
+                        "alternativas": {
+                            "a": "Producen anticuerpos neutralizantes de tipo IgG",
+                            "b": "Reclutan neutrófilos y estimulan la producción de defensinas en el epitelio",
+                            "c": "Inducen la tolerancia inmune para que el hongo colonice",
+                            "d": "Destruyen directamente las esporas mediante fagocitosis",
+                            "e": "Inactivan la síntesis de ergosterol en la membrana fúngica"
+                        },
+                        "respuesta": "b",
+                        "justificacion": "Los linfocitos Th17 liberan IL-17, que recluta neutrófilos para la fagocitosis, e IL-22, que estimula la liberación de péptidos antimicrobianos (defensinas) en las mucosas [3]."
+                    },
+                    {
+                        "id": "6",
+                        "pregunta": "¿En qué consiste el mecanismo de evasión denominado 'PAMP shaving' (afeitado)?",
+                        "alternativas": {
+                            "a": "El hongo se oculta dentro de los macrófagos sin replicarse.",
+                            "b": "El hongo corta y libera deliberadamente sus patrones moleculares superficiales para no ser detectado.",
+                            "c": "El hongo cambia su temperatura corporal para engañar al sistema inmune.",
+                            "d": "El hongo utiliza una cápsula para bloquear el acceso a la pared celular.",
+                            "e": "El hongo se recubre con factores del complemento humano."
+                        },
+                        "respuesta": "b",
+                        "justificacion": "El 'PAMP shaving' es un mecanismo donde el hongo utiliza enzimas para cortar y desprender sus propios PAMPs de la superficie, evitando que los receptores PRR de las células inmunes lo reconozcan [4]."
+                    },
+                    {
+                        "id": "7",
+                        "pregunta": "¿Cómo logra un hongo evadir la respuesta inmune mediante el mecanismo de 'degradación de moléculas inmunes'?",
+                        "alternativas": {
+                            "a": "Inhibiendo la mitosis de las células dendríticas.",
+                            "b": "Cerrando sus poros de membrana para evitar la entrada de agua.",
+                            "c": "Secretando enzimas que destruyen activamente factores del complemento o péptidos antimicrobianos.",
+                            "d": "Modificando el pH del tejido para inactivar a los linfocitos T.",
+                            "e": "Transformándose en una seta macroscópica no infecciosa."
+                        },
+                        "respuesta": "c",
+                        "justificacion": "Además de esconderse, algunos hongos secretan enzimas que destruyen directamente las herramientas del sistema inmunitario, como las defensinas o componentes del complemento, antes de que lo dañen [4]."
+                    },
+                    {
+                        "id": "8",
+                        "pregunta": "¿Qué característica permite a los hongos oportunistas causar daño principalmente en huéspedes vulnerables?",
+                        "alternativas": {
+                            "a": "Su capacidad de realizar fotosíntesis en ausencia de luz.",
+                            "b": "Que solo infectan a través de la picadura de mosquitos Aedes.",
+                            "c": "Aprovechan la debilidad del sistema inmune (SIDA, diabetes) o desequilibrios en la microbiota normal.",
+                            "d": "Su genoma segmentado que les permite crear nuevas cepas pandémicas anualmente.",
+                            "e": "Que no poseen pared celular y son invisibles al microscopio óptico."
+                        },
+                        "respuesta": "c",
+                        "justificacion": "Los patógenos oportunistas, como Candida o Aspergillus, adquieren relevancia clínica cuando el huésped presenta inmunocompromiso o factores predisponentes que rompen el equilibrio de tolerancia [5, 6]."
+                    },
+                    {
+                        "id": "9",
+                        "pregunta": "¿Qué mecanismo utiliza el hongo para el 'enmascaramiento' (masking) al recubrirse con moléculas del huésped?",
+                        "alternativas": {
+                            "a": "Se envuelve en una capa de proteínas hidrofóbicas llamadas rodlets.",
+                            "b": "Se une a factores del complemento humano para volverse 'invisible' y parecer tejido propio.",
+                            "c": "Libera toxinas que destruyen los receptores TCR de los linfocitos.",
+                            "d": "Cambia de color mediante el uso de pigmentos como la melanina.",
+                            "e": "Fragmenta sus hifas para diseminarse por la sangre."
+                        },
+                        "respuesta": "b",
+                        "justificacion": "Al unirse a proteínas del hospedero, como los factores del complemento, el hongo se 'viste' con moléculas humanas, confundiendo al sistema inmune para que no lo ataque [7]."
+                    },
+                    {
+                        "id": "10",
+                        "pregunta": "En el contexto de la inmunidad adaptativa, ¿cuál es la respuesta celular considerada 'ideal' para el control de una infección fúngica?",
+                        "alternativas": {
+                            "a": "Respuesta Th2 mediada por IL-4.",
+                            "b": "Respuesta mediada por linfocitos T reguladores (TReg).",
+                            "c": "Respuesta Th1, que potencia la capacidad fagocítica de macrófagos y neutrófilos.",
+                            "d": "Producción masiva de moco en el epitelio respiratorio.",
+                            "e": "Activación de la vía del interferón tipo I contra ARN viral."
+                        },
+                        "respuesta": "c",
+                        "justificacion": "La respuesta TH1 es la ideal porque libera citoquinas como IFN-gamma y TNF, que potencian enormemente la capacidad destructiva de los fagocitos contra el hongo [8]."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "tematica": "Micosis superficiales y profundas",
+        "indicadores": [
+            {
+                "indicador": "Comprende los mecanismos de acción de los antifúngicos y su aplicación clínica",
+                "preguntas": [
+                    {
+                        "id": "1",
+                        "pregunta": "¿Cuál es el mecanismo de acción de los antifúngicos poliénicos como la Anfotericina B?",
+                        "alternativas": {
+                            "a": "Inhiben la síntesis de la pared celular",
+                            "b": "Se unen al ergosterol de la membrana provocando poros y fuga de electrolitos",
+                            "c": "Bloquean la síntesis de ácidos nucleicos",
+                            "d": "Disrompen los microtúbulos durante la mitosis",
+                            "e": "Inhiben la enzima 14-α-demetilasa"
+                        },
+                        "respuesta": "b",
+                        "justificacion": "Los polienos actúan directamente sobre la membrana plasmática uniéndose al ergosterol, lo que genera un daño directo y la muerte celular [1, 2]."
+                    },
+                    {
+                        "id": "2",
+                        "pregunta": "¿Qué enzima específica bloquean los antifúngicos del grupo de los azoles para impedir la síntesis de ergosterol?",
+                        "alternativas": {
+                            "a": "Escualeno epoxidasa",
+                            "b": "Glucano sintasa",
+                            "c": "14-α-demetilasa",
+                            "d": "Quitina sintasa",
+                            "e": "ARN polimerasa"
+                        },
+                        "respuesta": "c",
+                        "justificacion": "Los azoles actúan inhibiendo enzimáticamente la vía metabólica del ergosterol, específicamente bloqueando la 14-α-demetilasa [2]."
+                    },
+                    {
+                        "id": "3",
+                        "pregunta": "¿Cuál de los siguientes fármacos es una equinocandina que inhibe la síntesis de β-(1→3)-glucanos en la pared celular?",
+                        "alternativas": {
+                            "a": "Fluconazol",
+                            "b": "Anfotericina B",
+                            "c": "Terbinafina",
+                            "d": "Caspofungina",
+                            "e": "Griseofulvina"
+                        },
+                        "respuesta": "d",
+                        "justificacion": "La caspofungina es una equinocandina que inhibe la enzima glucano sintasa, atacando un componente exclusivo de la pared fúngica [1, 2]."
+                    },
+                    {
+                        "id": "4",
+                        "pregunta": "¿Para qué tipo de micosis se indica preferentemente el uso de terbinafina (alilamina)?",
+                        "alternativas": {
+                            "a": "Criptococosis meníngea",
+                            "b": "Dermatofitosis (tiñas) de piel, pelo y uñas",
+                            "c": "Histoplasmosis diseminada",
+                            "d": "Aspergilosis pulmonar invasiva",
+                            "e": "Candidiasis sistémica intrahospitalaria"
+                        },
+                        "respuesta": "b",
+                        "justificacion": "La terbinafina inhibe la escualeno epoxidasa y es ampliamente utilizada para tratar infecciones por dermatofitos [2, 3]."
+                    },
+                    {
+                        "id": "5",
+                        "pregunta": "¿Cuál es la principal diferencia en la aplicación clínica entre los imidazoles y los triazoles?",
+                        "alternativas": {
+                            "a": "Los imidazoles son para virus y los triazoles para hongos",
+                            "b": "Los imidazoles se usan por vía parenteral y los triazoles tópicamente",
+                            "c": "Los imidazoles son principalmente de uso tópico y los triazoles para infecciones sistémicas",
+                            "d": "No existe diferencia, ambos se usan indistintamente",
+                            "e": "Los imidazoles atacan la pared celular y los triazoles la membrana"
+                        },
+                        "respuesta": "c",
+                        "justificacion": "Debido a su toxicidad sistémica, los imidazoles suelen ser tópicos, mientras que los triazoles tienen mejor estabilidad y selectividad para uso sistémico [2]."
+                    },
+                    {
+                        "id": "6",
+                        "pregunta": "Ante un cuadro de Aspergilosis invasiva, ¿cuál es el fármaco de elección (triazol de segunda generación) mencionado en los apuntes?",
+                        "alternativas": {
+                            "a": "Fluconazol",
+                            "b": "Voriconazol",
+                            "c": "Nistatina",
+                            "d": "Griseofulvina",
+                            "e": "Yoduro de Potasio"
+                        },
+                        "respuesta": "b",
+                        "justificacion": "El voriconazol es un triazol de segunda generación indicado específicamente por su eficacia contra el género Aspergillus [2]."
+                    },
+                    {
+                        "id": "7",
+                        "pregunta": "¿Qué agente antifúngico actúa disrompiendo los microtúbulos e inhibiendo la mitosis del hongo?",
+                        "alternativas": {
+                            "a": "Flucitosina",
+                            "b": "Ketoconazol",
+                            "c": "Griseofulvina",
+                            "d": "Micafungina",
+                            "e": "Anidulafungina"
+                        },
+                        "respuesta": "c",
+                        "justificacion": "La griseofulvina es un inhibidor de procesos intracelulares que altera la mitosis fúngica al interferir con los microtúbulos [2, 4]."
+                    },
+                    {
+                        "id": "8",
+                        "pregunta": "¿Cuál es la aplicación clínica específica del Yoduro de Potasio según el material de estudio?",
+                        "alternativas": {
+                            "a": "Tratamiento de la onicomicosis",
+                            "b": "Profilaxis para SIDA",
+                            "c": "Tratamiento de la esporotricosis cutánea",
+                            "d": "Erradicación de Candida intestinal",
+                            "e": "Desinfección de catéteres"
+                        },
+                        "respuesta": "c",
+                        "justificacion": "El yoduro de potasio se indica específicamente para la esporotricosis, aunque puede causar efectos secundarios como hipertrofia de glándulas salivales [5]."
+                    },
+                    {
+                        "id": "9",
+                        "pregunta": "¿Qué fármaco se utiliza por vía oral para erradicar levaduras del tracto gastrointestinal en pacientes con candidiasis?",
+                        "alternativas": {
+                            "a": "Anfotericina B",
+                            "b": "Nistatina",
+                            "c": "Ácido salicílico",
+                            "d": "Nikomicina",
+                            "e": "Sordarinas"
+                        },
+                        "respuesta": "b",
+                        "justificacion": "La nistatina es un polieno utilizado frecuentemente por vía oral para eliminar la presencia de levaduras en el intestino [2, 6]."
+                    },
+                    {
+                        "id": "10",
+                        "pregunta": "¿Cuál de estos antifúngicos interfiere con la síntesis de ácidos nucleicos (ADN/ARN)?",
+                        "alternativas": {
+                            "a": "Flucitosina (5-Fluorocitosina)",
+                            "b": "Clotrimazol",
+                            "c": "Terbinafina",
+                            "d": "Itreconazol",
+                            "e": "Equinocandinas"
+                        },
+                        "respuesta": "a",
+                        "justificacion": "La flucitosina es un inhibidor de procesos intracelulares que bloquea específicamente la síntesis de ácidos nucleicos del hongo [2, 4]."
+                    }
+                ]
+            },
+            {
+                "indicador": "Diferencia los cuadros clínicos asociados a micosis superficiales, profundas y oportunistas",
+                "preguntas": [
+                    {
+                        "id": "1",
+                        "pregunta": "¿Cuál es la principal característica clínica que define a las micosis superficiales?",
+                        "alternativas": {
+                            "a": "Provocan invasión profunda de órganos vitales",
+                            "b": "Suelen constituir problemas estéticos de fácil diagnóstico",
+                            "c": "Se adquieren exclusivamente por picadura de insectos",
+                            "d": "Causan meningitis fulminante en personas sanas",
+                            "e": "No afectan la piel, solo las mucosas internas"
+                        },
+                        "respuesta": "b",
+                        "justificacion": "Las micosis superficiales colonizan las capas más externas de la piel y mucosas, presentándose a menudo como una preocupación estética sin invadir tejidos profundos [1]."
+                    },
+                    {
+                        "id": "2",
+                        "pregunta": "¿Qué nombre genérico reciben las manifestaciones clínicas de las micosis cutáneas que afectan piel, pelo y uñas?",
+                        "alternativas": {
+                            "a": "Cromoblastomicosis",
+                            "b": "Tiñas (Tinea)",
+                            "c": "Histoplasmosis",
+                            "d": "Cigomicosis",
+                            "e": "Aspergiloma"
+                        },
+                        "respuesta": "b",
+                        "justificacion": "Las dermatofitosis o micosis cutáneas se denominan comúnmente Tiñas, y su nombre específico depende de la localización (ej. Tinea pedis en los pies) [2]."
+                    },
+                    {
+                        "id": "3",
+                        "pregunta": "¿Cómo se adquieren habitualmente las micosis subcutáneas como la esporotricosis?",
+                        "alternativas": {
+                            "a": "Por inhalación de esporas en ambientes cerrados",
+                            "b": "Por ingesta de setas venenosas",
+                            "c": "Por implantación traumática del hongo (heridas o pinchazos)",
+                            "d": "A través del contacto sexual",
+                            "e": "Por desequilibrios en la microbiota intestinal"
+                        },
+                        "respuesta": "c",
+                        "justificacion": "Estas micosis se producen por la introducción del hongo en tejidos profundos a través de traumatismos cutáneos con vegetación o madera contaminada [1, 3]."
+                    },
+                    {
+                        "id": "4",
+                        "pregunta": "¿Cuál es el foco primario de infección en las micosis sistémicas o profundas?",
+                        "alternativas": {
+                            "a": "La piel",
+                            "b": "El tracto urinario",
+                            "c": "El pulmón",
+                            "d": "El sistema nervioso central",
+                            "e": "El hígado"
+                        },
+                        "respuesta": "c",
+                        "justificacion": "Las micosis sistémicas se inician generalmente por la inhalación de conidios, por lo que el pulmón es el primer sitio de colonización [4, 5]."
+                    },
+                    {
+                        "id": "5",
+                        "pregunta": "¿En qué grupo de pacientes adquieren mayor relevancia clínica los hongos oportunistas?",
+                        "alternativas": {
+                            "a": "Deportistas de alto rendimiento",
+                            "b": "Pacientes inmunocomprometidos (SIDA, diabetes, trasplantes)",
+                            "c": "Personas que viven en climas templados",
+                            "d": "Individuos con buena higiene personal",
+                            "e": "Adultos jóvenes sin patologías de base"
+                        },
+                        "respuesta": "b",
+                        "justificacion": "Los hongos oportunistas aprovechan la debilidad del sistema inmune o el uso de tratamientos invasivos para causar infecciones graves [6, 7]."
+                    },
+                    {
+                        "id": "6",
+                        "pregunta": "¿Qué cuadro clínico grave es una complicación frecuente de la diseminación de Cryptococcus neoformans?",
+                        "alternativas": {
+                            "a": "Tiña corporis",
+                            "b": "Pitiriasis versicolor",
+                            "c": "Criptococosis meníngea (meningitis)",
+                            "d": "Esofagitis",
+                            "e": "Onicomicosis"
+                        },
+                        "respuesta": "c",
+                        "justificacion": "Tras el foco pulmonar, el Cryptococcus tiene tropismo por el sistema nervioso central, provocando meningitis, lo cual empeora el pronóstico del paciente [8]."
+                    },
+                    {
+                        "id": "7",
+                        "pregunta": "La presencia de placas blancas en la lengua y mucosa bucal (muguet) es una manifestación característica de:",
+                        "alternativas": {
+                            "a": "Aspergilosis invasiva",
+                            "b": "Histoplasmosis diseminada",
+                            "c": "Candidiasis oral",
+                            "d": "Esporotricosis",
+                            "e": "Cigomicosis"
+                        },
+                        "respuesta": "c",
+                        "justificacion": "La candidiasis oral o muguet se manifiesta con placas blanquecinas y es la forma más frecuente de candidiasis mucocutánea [9]."
+                    },
+                    {
+                        "id": "8",
+                        "pregunta": "¿Qué síntoma centinela suele alertar sobre una posible infección por SIDA en pacientes adultos?",
+                        "alternativas": {
+                            "a": "Tiña pedis recurrente",
+                            "b": "Candidiasis oral persistente",
+                            "c": "Alergia al polen",
+                            "d": "Caspa (Dermatitis seborreica)",
+                            "e": "Pie de atleta"
+                        },
+                        "respuesta": "b",
+                        "justificacion": "La candidiasis oral se considera un 'signo centinela' en pacientes con SIDA, indicando un compromiso importante del sistema inmune [9, 10]."
+                    },
+                    {
+                        "id": "9",
+                        "pregunta": "¿Qué es un aspergiloma según las descripciones de las manifestaciones clínicas?",
+                        "alternativas": {
+                            "a": "Una infección superficial de la uña",
+                            "b": "Un cúmulo de hongos que coloniza cavidades o cicatrices pulmonares previas",
+                            "c": "Una toxina liberada por Candida en el intestino",
+                            "d": "Un nódulo subcutáneo causado por un pinchazo",
+                            "e": "Una erupción cutánea circular"
+                        },
+                        "respuesta": "b",
+                        "justificacion": "El aspergiloma es una masa fúngica que se instala en espacios pulmonares preexistentes, como cicatrices de tuberculosis o abscesos antiguos [Class 8, imagen descriptiva]."
+                    },
+                    {
+                        "id": "10",
+                        "pregunta": "¿Qué manifestación clínica caracteriza a la esporotricosis linfocutánea?",
+                        "alternativas": {
+                            "a": "Fiebre alta y tos con sangre",
+                            "b": "Lesión ulcerosa inicial seguida de nódulos subcutáneos en el trayecto linfático",
+                            "c": "Descamación intensa entre los dedos de los pies",
+                            "d": "Manchas claras en la espalda que no pican",
+                            "e": "Pérdida total del cabello en parches"
+                        },
+                        "respuesta": "b",
+                        "justificacion": "La esporotricosis suele presentarse como una úlcera en el sitio de entrada y una cadena de nódulos indoloros que siguen los vasos linfáticos [11]."
+                    }
+                ]
+            },
+            {
+                "indicador": "Integra los mecanismos de patogenia fúngica, la respuesta inmunitaria y los factores epidemiológicos para categorizar y fundamentar la sospecha clínica de las diversas micosis",
+                "preguntas": [
+                    {
+                        "id": "1",
+                        "pregunta": "Un paciente con SIDA presenta cefalea intensa y signos de meningitis. El examen de líquido cefalorraquídeo con tinta china revela levaduras encapsuladas. ¿Qué combinación de factores explica mejor la patogenia en este caso?",
+                        "alternativas": {
+                            "a": "Uso de antibióticos previos y formación de biopelículas en el SNC.",
+                            "b": "Inmunosupresión severa y presencia de una cápsula que evade la fagocitosis.",
+                            "c": "Contacto con gatos infectados y secreción de toxinas neurotóxicas.",
+                            "d": "Exposición a climas tropicales y producción masiva de artrosporas.",
+                            "e": "Inhalación de conidios con rodlets que destruyen neuronas."
+                        },
+                        "respuesta": "b",
+                        "justificacion": "En Cryptococcus neoformans, la cápsula es un factor de virulencia crítico que permite evadir el sistema inmune (fagocitosis), lo cual es letal en pacientes con inmunidad celular comprometida (SIDA) [1-3]."
+                    },
+                    {
+                        "id": "2",
+                        "pregunta": "Un arqueólogo que exploró cuevas con murciélagos desarrolla una neumonía aguda. Se sospecha Histoplasmosis. ¿Cuál es el mecanismo biológico que permite al hongo adaptarse y causar daño sistémico?",
+                        "alternativas": {
+                            "a": "La secreción de aflatoxinas que inhiben la mitosis pulmonar.",
+                            "b": "El dimorfismo térmico, pasando de moho ambiental a levadura intracelular a 37°C.",
+                            "c": "La formación de hifas cenocíticas que perforan los alvéolos mediante fuerza física.",
+                            "d": "El enmascaramiento con factores del complemento para parecer microbiota normal.",
+                            "e": "La producción de biopelículas en el epitelio respiratorio superior."
+                        },
+                        "respuesta": "b",
+                        "justificacion": "Histoplasma capsulatum es un patógeno primario dimórfico que transita a una forma de levadura intracelular al ser inhalado, permitiéndole sobrevivir dentro de las células del huésped [4-6]."
+                    },
+                    {
+                        "id": "3",
+                        "pregunta": "¿Por qué la respuesta inmunitaria de tipo Th1 se considera la 'ideal' para el control de la mayoría de las infecciones fúngicas profundas?",
+                        "alternativas": {
+                            "a": "Porque produce IL-4 que activa a los linfocitos B para crear anticuerpos.",
+                            "b": "Porque libera IL-10 que frena la inflamación destructiva.",
+                            "c": "Porque libera IFN-gamma y TNF, potenciando la capacidad destructiva de macrófagos y neutrófilos.",
+                            "d": "Porque induce la tolerancia inmune para que el hongo actúe como comensal.",
+                            "e": "Porque genera una barrera de moco que impide la adherencia fúngica."
+                        },
+                        "respuesta": "c",
+                        "justificacion": "La respuesta TH1 es la protectora ideal porque activa las células efectoras (fagocitos) mediante citoquinas proinflamatorias potentes para destruir al hongo [7]."
+                    },
+                    {
+                        "id": "4",
+                        "pregunta": "En el contexto de infecciones intrahospitalarias asociadas al uso de catéteres, ¿qué factor de virulencia de Candida albicans fundamenta su alta resistencia a los tratamientos y persistencia clínica?",
+                        "alternativas": {
+                            "a": "La producción de ascosporas de alta resistencia térmica.",
+                            "b": "El mecanismo de 'PAMP shaving' que destruye los antibióticos.",
+                            "c": "La formación de biopelículas organizadas sobre materiales inertes.",
+                            "d": "La secreción de yoduro de potasio hacia la sangre del paciente.",
+                            "e": "Su capacidad de realizar fotosíntesis dentro del torrente sanguíneo."
+                        },
+                        "respuesta": "c",
+                        "justificacion": "Las biopelículas son comunidades organizadas que protegen a Candida de los antifúngicos y del sistema inmune, siendo una causa principal de candidiasis sistémica en hospitales [1, 8, 9]."
+                    },
+                    {
+                        "id": "5",
+                        "pregunta": "Un jardinero presenta nódulos subcutáneos indoloros que siguen el trayecto linfático del brazo tras un pinchazo con espinas. ¿A qué categoría de micosis pertenece este cuadro y cuál es su vía de adquisición?",
+                        "alternativas": {
+                            "a": "Micosis superficial por contacto directo con esporas.",
+                            "b": "Micosis cutánea (tiña) por degradación de queratina.",
+                            "c": "Micosis subcutánea por implantación traumática del hongo.",
+                            "d": "Micosis sistémica por inhalación de conidios ambientales.",
+                            "e": "Micosis oportunista por desequilibrio de la microbiota normal."
+                        },
+                        "respuesta": "c",
+                        "justificacion": "La esporotricosis es una micosis subcutánea que se adquiere típicamente por heridas o traumatismos con material vegetal contaminado [10-12]."
+                    },
+                    {
+                        "id": "6",
+                        "pregunta": "Durante la invasión tisular por Aspergillus, el hongo utiliza una capa de proteínas hidrofóbicas (rodlets) para:",
+                        "alternativas": {
+                            "a": "Digerir externamente el colágeno del huésped.",
+                            "b": "Enmascarar sus PAMPs y evitar el reconocimiento por los receptores PRR.",
+                            "c": "Unirse a los receptores de las células NK para inducir su muerte.",
+                            "d": "Facilitar la formación de gemas en condiciones de 25°C.",
+                            "e": "Aumentar la fluidez de la membrana plasmática fúngica."
+                        },
+                        "respuesta": "b",
+                        "justificacion": "El 'PAMP shielding' (escudamiento) mediante rodlets es un mecanismo de evasión donde el hongo bloquea el acceso físico de las células inmunes a sus patrones moleculares [13]."
+                    },
+                    {
+                        "id": "7",
+                        "pregunta": "¿Qué citoquinas liberadas por los linfocitos Th17 son cruciales para el reclutamiento de neutrófilos y la producción de defensinas en las mucosas frente a Candida?",
+                        "alternativas": {
+                            "a": "IL-4 e IL-5",
+                            "b": "IL-10 y TGF-beta",
+                            "c": "IL-17 e IL-22",
+                            "d": "IFN-alfa e IFN-beta",
+                            "e": "Histamina y heparina"
+                        },
+                        "respuesta": "c",
+                        "justificacion": "Los linfocitos Th17 producen IL-17 (recluta neutrófilos) e IL-22 (estimula péptidos antimicrobianos) como respuesta de defensa en superficies mucosas [7, 14]."
+                    },
+                    {
+                        "id": "8",
+                        "pregunta": "Desde un enfoque epidemiológico, ¿por qué el hongo Candida auris ha sido clasificado por la OMS como de 'Prioridad Crítica'?",
+                        "alternativas": {
+                            "a": "Debido a que solo infecta a personas jóvenes y sanas.",
+                            "b": "Por su alta transmisibilidad en el aire y baja mortalidad.",
+                            "c": "Por su frecuente multirresistencia a antifúngicos y alta mortalidad en pacientes vulnerables.",
+                            "d": "Porque se cura espontáneamente sin necesidad de tratamiento farmacológico.",
+                            "e": "Debido a que se encuentra exclusivamente en setas venenosas de climas fríos."
+                        },
+                        "respuesta": "c",
+                        "justificacion": "C. auris es una amenaza de prioridad crítica debido a su perfil de resistencia y el impacto sanitario que genera en entornos hospitalarios a nivel mundial [2, 15]."
+                    },
+                    {
+                        "id": "9",
+                        "pregunta": "¿Cuál es la función enzimática de la caspasa 1 en la respuesta inflamatoria frente a una micosis invasiva?",
+                        "alternativas": {
+                            "a": "Destruir activamente los anticuerpos IgG del huésped.",
+                            "b": "Procesar y activar a la Interleucina-1 (IL-1), gatillando una respuesta en cadena.",
+                            "c": "Sintetizar ergosterol para reparar la membrana fúngica.",
+                            "d": "Frenar la degranulación de los neutrófilos para evitar el daño colateral.",
+                            "e": "Convertir las hifas en levaduras para facilitar la fagocitosis."
+                        },
+                        "respuesta": "b",
+                        "justificacion": "La activación de la caspasa 1 a través del inflamasoma es el paso clave para liberar la potente citoquina inflamatoria IL-1 ante la detección de peligro fúngico [14]."
+                    },
+                    {
+                        "id": "10",
+                        "pregunta": "Un paciente con tuberculosis tratada presenta tos con sangre y una masa en una antigua cavidad pulmonar visible en radiografía. ¿Qué diagnóstico integraría mejor estos antecedentes?",
+                        "alternativas": {
+                            "a": "Histoplasmosis diseminada por exposición a aves.",
+                            "b": "Aspergiloma, por colonización fúngica de una cicatriz pulmonar previa.",
+                            "c": "Tiña corporis por deficiencia de linfocitos Th17.",
+                            "d": "Criptococosis meníngea por diseminación hematógena.",
+                            "e": "Candidiasis esofágica como signo centinela de SIDA."
+                        },
+                        "respuesta": "b",
+                        "justificacion": "El aspergiloma es un cúmulo de hongos que coloniza cavidades o cicatrices resultantes de enfermedades pasadas como la tuberculosis [16]."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "tematica": "Estructura y replicación viral",
+        "indicadores": [
+            {
+                "indicador": "Identifica los conceptos fundamentales y los mecanismos básicos de patogenicidad microbiana (viral) asociados al daño en el hospedero",
+                "preguntas": [
+                    {
+                        "id": "1",
+                        "pregunta": "¿Cómo se define el 'efecto citopatológico' (ECP) en el contexto de una infección viral?",
+                        "alternativas": {
+                            "a": "Es la capacidad del virus de mutar para evadir vacunas.",
+                            "b": "Es el tiempo que transcurre desde la infección hasta la aparición de síntomas.",
+                            "c": "Es la alteración morfológica y patológica de las células infectadas, observable al microscopio.",
+                            "d": "Es la unión del virus a los anticuerpos del hospedero.",
+                            "e": "Es el proceso de integración del ADN viral al genoma celular."
+                        },
+                        "respuesta": "c",
+                        "justificacion": "El efecto citopático se refiere a los cambios visibles en la estructura celular causados por la replicación viral [1]."
+                    },
+                    {
+                        "id": "2",
+                        "pregunta": "¿Qué mecanismo patogénico caracteriza la infección por el Virus Respiratorio Sincicial (VRS) en las células del hospedero?",
+                        "alternativas": {
+                            "a": "Lisis celular explosiva mediada por virus desnudos.",
+                            "b": "Fusión de múltiples membranas celulares creando células gigantes multinucleadas.",
+                            "c": "Transformación oncogénica de los queratinocitos.",
+                            "d": "Producción de la toxina NSP4 que inunda los alvéolos.",
+                            "e": "Bloqueo total de la síntesis de ARN mensajero celular."
+                        },
+                        "respuesta": "b",
+                        "justificacion": "El VRS induce la formación de sincitios, que son masas celulares gigantes resultantes de la fusión de membranas [1, 2]."
+                    },
+                    {
+                        "id": "3",
+                        "pregunta": "¿Qué estructura o componente del Rotavirus actúa como una 'toxina viral' para inducir diarrea secretora en el intestino?",
+                        "alternativas": {
+                            "a": "La proteína de superficie VP7.",
+                            "b": "La cápside icosaédrica de tres capas.",
+                            "c": "La proteína no estructural NSP4.",
+                            "d": "El genoma de ARN de doble cadena segmentado.",
+                            "e": "La enzima polimerasa viral (RdRp)."
+                        },
+                        "respuesta": "c",
+                        "justificacion": "La proteína NSP4 del Rotavirus funciona como una enterotoxina que daña las uniones estrechas e induce la secreción de líquidos [3, 4]."
+                    },
+                    {
+                        "id": "4",
+                        "pregunta": "En la patogenia de la Rabia, ¿cuál es el hallazgo histopatológico característico (cuerpo de inclusión) en las neuronas del cerebelo?",
+                        "alternativas": {
+                            "a": "Cuerpos de inclusión intranucleares de Adenovirus.",
+                            "b": "Sincitios gigantes.",
+                            "c": "Cuerpos de Negri.",
+                            "d": "Placas de amiloide.",
+                            "e": "Peplómeros citoplasmáticos."
+                        },
+                        "respuesta": "c",
+                        "justificacion": "Los Cuerpos de Negri son agregados masivos de proteínas y componentes del virus de la rabia observables en el interior de las neuronas [1, 5]."
+                    },
+                    {
+                        "id": "5",
+                        "pregunta": "¿Cuál es la causa principal de la fuga de plasma sanguíneo y el edema pulmonar en el Síndrome Cardiopulmonar por Hantavirus (SCPH)?",
+                        "alternativas": {
+                            "a": "La lisis directa de los neumocitos tipo II por el virus.",
+                            "b": "La obstrucción de los bronquios por moco hialino.",
+                            "c": "Una respuesta inmune exagerada que provoca la pérdida de uniones estrechas en células endoteliales.",
+                            "d": "La desactivación de la bomba sodio-potasio por la proteína Gn.",
+                            "e": "La perforación mecánica de los capilares por la forma de bala del virus."
+                        },
+                        "respuesta": "c",
+                        "justificacion": "La tormenta de citoquinas generada por la respuesta inmune causa la permeabilidad capilar y la inundación de los alvéolos [6]."
+                    },
+                    {
+                        "id": "6",
+                        "pregunta": "El concepto de 'tropismo viral' se fundamenta principalmente en:",
+                        "alternativas": {
+                            "a": "La velocidad de replicación del genoma en el citoplasma.",
+                            "b": "La resistencia del virión a detergentes y alcoholes.",
+                            "c": "La interacción específica entre proteínas virales (antireceptores) y receptores en la superficie celular.",
+                            "d": "La temperatura ambiente en la que se encuentra el hospedero.",
+                            "e": "El número de segmentos que componen el ARN viral."
+                        },
+                        "respuesta": "c",
+                        "justificacion": "El tropismo es la afinidad biológica basada en la unión específica 'llave-cerradura' entre el virus y los receptores de la célula blanco [7, 8]."
+                    },
+                    {
+                        "id": "7",
+                        "pregunta": "¿Qué diferencia a una infección lítica de una infección persistente de tipo latente?",
+                        "alternativas": {
+                            "a": "La lítica no produce viriones, la latente sí.",
+                            "b": "La lítica destruye la célula hospedera, mientras que en la latente el virus permanece 'dormido' sin actividad aparente.",
+                            "c": "La lítica solo ocurre en virus con ADN, la latente en virus ARN.",
+                            "d": "La lítica dura años, la latente solo días.",
+                            "e": "No hay diferencia, son dos nombres para el mismo proceso."
+                        },
+                        "respuesta": "b",
+                        "justificacion": "La infección citolítica resulta en muerte celular, mientras que la latencia implica persistencia viral sin producción inmediata de virus ni daño aparente [1]."
+                    },
+                    {
+                        "id": "8",
+                        "pregunta": "¿Por qué el SARS-CoV-2 se categoriza como un virus 'pantrópico'?",
+                        "alternativas": {
+                            "a": "Porque solo infecta el epitelio respiratorio superior.",
+                            "b": "Porque tiene la capacidad de invadir múltiples sistemas (respiratorio, vascular, gastrointestinal).",
+                            "c": "Porque se transmite exclusivamente de animales a humanos.",
+                            "d": "Porque su genoma no puede ser decodificado por los ribosomas humanos.",
+                            "e": "Porque es altamente resistente a la desecación ambiental."
+                        },
+                        "respuesta": "b",
+                        "justificacion": "A diferencia de virus monotrópicos, el SARS-CoV-2 invade diversos órganos y sistemas en el cuerpo [9, 10]."
+                    },
+                    {
+                        "id": "9",
+                        "pregunta": "¿Cuál es el mecanismo por el cual el Virus Papiloma Humano (VPH) causa daño a largo plazo en el hospedero?",
+                        "alternativas": {
+                            "a": "Formación de cuerpos de Negri en el núcleo.",
+                            "b": "Lisis masiva de linfocitos T CD4.",
+                            "c": "Transformación celular (oncogénesis) al alterar el ciclo celular normal.",
+                            "d": "Producción de hemorragias por picadura de mosquito.",
+                            "e": "Inhibición de la respuesta de interferón tipo I."
+                        },
+                        "respuesta": "c",
+                        "justificacion": "El VPH es un ejemplo clásico de virus capaz de provocar crecimiento tumoral descontrolado o inmortalización celular [1]."
+                    },
+                    {
+                        "id": "10",
+                        "pregunta": "¿Qué fase de la enfermedad viral corresponde al periodo donde el virus se multiplica localmente pero el paciente aún no presenta síntomas?",
+                        "alternativas": {
+                            "a": "Fase clínica.",
+                            "b": "Fase de convalecencia.",
+                            "c": "Fase de incubación.",
+                            "d": "Fase de eclipse.",
+                            "e": "Fase de maduración."
+                        },
+                        "respuesta": "c",
+                        "justificacion": "La fase de incubación es asintomática y precede a la fase clínica donde aparecen los signos de la enfermedad [11]."
+                    }
+                ]
+            },
+            {
+                "indicador": "Relaciona los componentes moleculares y estructurales de los virus con su mecanismo de daño celular tisular y su vía de diseminación",
+                "preguntas": [
+                    {
+                        "id": "1",
+                        "pregunta": "¿Qué componente estructural de los virus con envoltura es fundamental para el reconocimiento de la célula hospedera y, al ser destruido por jabones, inactiva al virión?",
+                        "alternativas": {
+                            "a": "Cápside icosaédrica",
+                            "b": "Peplómeros (proteínas Spike)",
+                            "c": "Genoma fragmentado",
+                            "d": "Cuerpos de inclusión",
+                            "e": "ARN polimerasa viral"
+                        },
+                        "respuesta": "b",
+                        "justificacion": "Las proteínas de espícula o peplómeros se encuentran en la envoltura lipídica y son los antirreceptores que se unen a la célula; si la envoltura se disuelve, el virus pierde estas proteínas y su capacidad infecciosa [1, 2]."
+                    },
+                    {
+                        "id": "2",
+                        "pregunta": "En el virus de la Influenza, ¿qué función molecular cumple la Neuraminidasa (N) en el proceso de diseminación viral?",
+                        "alternativas": {
+                            "a": "Permite la entrada del virus por endocitosis",
+                            "b": "Forma poros en la membrana celular",
+                            "c": "Facilita la liberación de los viriones recién formados desde el receptor celular para invadir nuevas células",
+                            "d": "Encapsula el genoma de ARN",
+                            "e": "Sintetiza ARNm a partir de la hebra negativa"
+                        },
+                        "respuesta": "c",
+                        "justificacion": "La neuraminidasa es una enzima de superficie que rompe la unión con el receptor celular, permitiendo que el virus se libere y propague la infección [3, 4]."
+                    },
+                    {
+                        "id": "3",
+                        "pregunta": "¿Cuál es el componente molecular del Rotavirus que actúa como una 'enterotoxina viral' induciendo diarrea secretora antes de la muerte celular?",
+                        "alternativas": {
+                            "a": "Proteína de superficie VP7",
+                            "b": "Proteína de superficie VP4",
+                            "c": "Proteína no estructural NSP4",
+                            "d": "Cápside de doble capa",
+                            "e": "Genoma de ADN ds"
+                        },
+                        "respuesta": "c",
+                        "justificacion": "La proteína NSP4 del rotavirus funciona como una toxina que altera el equilibrio de electrolitos y daña las uniones estrechas de los enterocitos, provocando diarrea [5, 6]."
+                    },
+                    {
+                        "id": "4",
+                        "pregunta": "¿Qué característica estructural permite a virus como el Norovirus y Rhinovirus ser transmitidos eficientemente por la vía fecal-oral o fómites resistentes?",
+                        "alternativas": {
+                            "a": "La presencia de una envoltura lipídica laxa",
+                            "b": "La ausencia de envoltura (virus desnudos), lo que les otorga estabilidad frente a ácidos y detergentes",
+                            "c": "Su simetría helicoidal",
+                            "d": "Su genoma segmentado de 11 fragmentos",
+                            "e": "La producción de sincitios en el intestino"
+                        },
+                        "respuesta": "b",
+                        "justificacion": "Los virus desnudos son muy estables ambientalmente y sobreviven a condiciones adversas como el pH del tracto gastrointestinal, facilitando su propagación [1, 7]."
+                    },
+                    {
+                        "id": "5",
+                        "pregunta": "En la patogenia del Virus Respiratorio Sincicial (VRS), ¿qué efecto citopático característico resulta de la fusión de membranas celulares mediada por proteínas virales?",
+                        "alternativas": {
+                            "a": "Lisis celular explosiva",
+                            "b": "Formación de cuerpos de Negri",
+                            "c": "Formación de sincitios (células gigantes multinucleadas)",
+                            "d": "Transformación oncogénica",
+                            "e": "Inmortalización celular"
+                        },
+                        "respuesta": "c",
+                        "justificacion": "El VRS induce la fusión de múltiples membranas celulares adyacentes, creando masas citoplasmáticas gigantes llamadas sincitios [2, 8]."
+                    },
+                    {
+                        "id": "6",
+                        "pregunta": "¿Qué molécula de la superficie del virus de la Rabia se une a los receptores de acetilcolina y NCAM para iniciar su diseminación neural hacia el SNC?",
+                        "alternativas": {
+                            "a": "Proteína de matriz M",
+                            "b": "Glicoproteína G",
+                            "c": "Nucleoproteína N",
+                            "d": "ARN polimerasa L",
+                            "e": "Peplómero VP1"
+                        },
+                        "respuesta": "b",
+                        "justificacion": "La glicoproteína G del virus de la rabia permite la unión específica a receptores en el músculo y neuronas, iniciando su transporte axonal retrógrado [9, 10]."
+                    },
+                    {
+                        "id": "7",
+                        "pregunta": "En el caso del Hantavirus, ¿cuál es el mecanismo de daño tisular que provoca la inundación de los alvéolos (edema pulmonar)?",
+                        "alternativas": {
+                            "a": "Lisis directa de los neumocitos por la cápside viral",
+                            "b": "Obstrucción mecánica por agregados de proteínas Gn/Gc",
+                            "c": "Respuesta inmune exagerada que causa la pérdida de uniones estrechas en las células endoteliales",
+                            "d": "Producción de toxinas que degradan el surfactante pulmonar",
+                            "e": "Fragmentación del genoma viral en el espacio extracelular"
+                        },
+                        "respuesta": "c",
+                        "justificacion": "El daño no es por lisis directa, sino por una respuesta inmune masiva (tormenta de citoquinas) que aumenta la permeabilidad capilar y causa fuga de plasma [11]."
+                    },
+                    {
+                        "id": "8",
+                        "pregunta": "La 'Hemaglutinina' (H) del virus de la Influenza es un componente molecular clave para:",
+                        "alternativas": {
+                            "a": "El desnudamiento de la cápside en el citoplasma",
+                            "b": "La unión o adsorción del virus al receptor de la célula hospedera",
+                            "c": "La síntesis de nuevas hebras de ARN negativo",
+                            "d": "La formación de canales de protones M2",
+                            "e": "La digestión de la capa de moco respiratorio"
+                        },
+                        "respuesta": "b",
+                        "justificacion": "La hemaglutinina es el componente encargado del reconocimiento y unión inicial del virus a la célula blanco [3, 12]."
+                    },
+                    {
+                        "id": "9",
+                        "pregunta": "¿Cómo se define la vía de diseminación 'viremia secundaria' en la patogenia viral?",
+                        "alternativas": {
+                            "a": "Multiplicación inicial en el sitio de entrada",
+                            "b": "Transporte del virus a través de los axones neuronales",
+                            "c": "Inundación masiva de la sangre con virus tras su amplificación en órganos primarios como el bazo o hígado",
+                            "d": "Eliminación del virus a través de las heces",
+                            "e": "Paso del virus de la madre al feto"
+                        },
+                        "respuesta": "c",
+                        "justificacion": "La viremia secundaria ocurre cuando el virus, tras multiplicarse en órganos internos, vuelve a inundar la sangre en grandes cantidades para alcanzar su órgano blanco final [13, 14]."
+                    },
+                    {
+                        "id": "10",
+                        "pregunta": "¿Qué componente estructural de los Adenovirus les permite causar tanto infecciones respiratorias como gastroenteritis y conjuntivitis (pantropismo limitado)?",
+                        "alternativas": {
+                            "a": "Su envoltura lipídica altamente sensible",
+                            "b": "Sus fibras o proyecciones de la cápside que actúan como antirreceptores para diversos tejidos",
+                            "c": "Su genoma de ARN de sentido positivo",
+                            "d": "La producción de la toxina NSP4",
+                            "e": "La capacidad de formar sincitios en las mucosas"
+                        },
+                        "respuesta": "b",
+                        "justificacion": "Los adenovirus son virus desnudos cuyas fibras de la cápside les otorgan tropismo por el tracto respiratorio, gastrointestinal, urinario y ojos [15, 16]."
+                    }
+                ]
+            },
+            {
+                "indicador": "Analiza los ciclos de replicación viral (virus DNA, RNA y retrovirus) en relación con la clínica y el diagnóstico",
+                "preguntas": [
+                    {
+                        "id": "1",
+                        "pregunta": "¿En qué compartimento celular llevan a cabo su replicación la mayoría de los virus con genoma de ADN, como los Adenovirus y Herpesvirus?",
+                        "alternativas": {
+                            "a": "Citoplasma",
+                            "b": "Ribosomas",
+                            "c": "Núcleo",
+                            "d": "Aparato de Golgi",
+                            "e": "Lisosomas"
+                        },
+                        "respuesta": "c",
+                        "justificacion": "A diferencia de la mayoría de los virus ARN, los virus de ADN suelen migrar al núcleo celular para utilizar las polimerasas del hospedero y replicar su genoma [1, 2]."
+                    },
+                    {
+                        "id": "2",
+                        "pregunta": "¿Qué proceso define al ciclo lisogénico de replicación, fundamental en algunas infecciones persistentes?",
+                        "alternativas": {
+                            "a": "La lisis inmediata de la célula hospedera",
+                            "b": "La integración del ADN viral al genoma celular en forma de profago",
+                            "c": "La liberación de viriones por gemación continua",
+                            "d": "El bloqueo de la síntesis de proteínas celulares",
+                            "e": "La formación masiva de sincitios"
+                        },
+                        "respuesta": "b",
+                        "justificacion": "En el ciclo lisogénico, el material genético viral se integra al cromosoma de la célula hospedera, replicándose junto con ella sin causar muerte celular inmediata [3]."
+                    },
+                    {
+                        "id": "3",
+                        "pregunta": "Durante el ciclo replicativo, ¿cómo se denomina al periodo en el que no es posible detectar partículas virales infecciosas porque el genoma se está desnudando y multiplicando internamente?",
+                        "alternativas": {
+                            "a": "Fase clínica",
+                            "b": "Viremia secundaria",
+                            "c": "Periodo de eclipse",
+                            "d": "Fase de maduración",
+                            "e": "Fase de adsorción"
+                        },
+                        "respuesta": "c",
+                        "justificacion": "El periodo de eclipse es la fase donde el virus pierde su envoltura y su genoma está dentro de la célula, por lo que no se pueden detectar viriones completos [3]."
+                    },
+                    {
+                        "id": "4",
+                        "pregunta": "Para que un virus de ARN de sentido negativo (Grupo V), como la Influenza o la Rabia, pueda sintetizar sus proteínas, ¿qué paso enzimático previo debe realizar obligatoriamente?",
+                        "alternativas": {
+                            "a": "Ser traducido directamente por los ribosomas",
+                            "b": "Usar la transcriptasa inversa para convertirse en ADN",
+                            "c": "Utilizar una ARN polimerasa para sintetizar una hebra de ARNm positivo",
+                            "d": "Integrarse al genoma nuclear del hospedero",
+                            "e": "Fragmentar su genoma en 11 segmentos"
+                        },
+                        "respuesta": "c",
+                        "justificacion": "Los virus ARN (-) no son mensajeros; requieren portar o sintetizar una ARN polimerasa para crear una hebra complementaria positiva (ARNm) que la célula pueda traducir [1, 4]."
+                    },
+                    {
+                        "id": "5",
+                        "pregunta": "En el diagnóstico del Virus Respiratorio Sincicial (VRS), ¿qué hallazgo en el cultivo celular es indicativo de su replicación activa?",
+                        "alternativas": {
+                            "a": "Cuerpos de Negri en el citoplasma",
+                            "b": "Lisis explosiva de todas las células",
+                            "c": "Formación de sincitios (células gigantes multinucleadas)",
+                            "d": "Transformación oncogénica",
+                            "e": "Integración del profago"
+                        },
+                        "respuesta": "c",
+                        "justificacion": "El VRS tiene la capacidad característica de inducir la fusión de membranas celulares adyacentes, formando masas citoplasmáticas gigantes llamadas sincitios [5, 6]."
+                    },
+                    {
+                        "id": "6",
+                        "pregunta": "¿Por qué el diagnóstico clínico de Rotavirus se basa frecuentemente en la detección rápida de antígenos (ELISA/Inmunocromatografía) en heces?",
+                        "alternativas": {
+                            "a": "Porque el virus no posee material genético detectable",
+                            "b": "Debido a la excreción viral masiva (trillones de partículas por mL) durante la fase de replicación intestinal",
+                            "c": "Porque los anticuerpos IgM aparecen antes de la infección",
+                            "d": "Porque es un virus ADN muy difícil de amplificar",
+                            "e": "Porque el virus solo replica en la sangre"
+                        },
+                        "respuesta": "b",
+                        "justificacion": "Las personas infectadas con Rotavirus eliminan una carga viral extremadamente alta en las heces, lo que facilita la detección directa de proteínas estructurales (como VP4 y VP7) [7, 8]."
+                    },
+                    {
+                        "id": "7",
+                        "pregunta": "En relación con las etapas de la enfermedad viral, ¿qué ocurre durante la fase de incubación?",
+                        "alternativas": {
+                            "a": "El paciente presenta los síntomas más graves",
+                            "b": "El virus se multiplica localmente en el sitio de entrada y el paciente es asintomático",
+                            "c": "Se produce la eliminación total del virus (convalecencia)",
+                            "d": "Ocurre la inundación masiva de la sangre (viremia secundaria)",
+                            "e": "Se detectan niveles máximos de anticuerpos IgG"
+                        },
+                        "respuesta": "b",
+                        "justificacion": "La incubación es el periodo inicial asintomático donde el virus comienza su replicación en el tejido de entrada [9, 10]."
+                    },
+                    {
+                        "id": "8",
+                        "pregunta": "Los Retrovirus (como el VIH) se clasifican en el Grupo VI de Baltimore. ¿Cuál es su mecanismo distintivo de replicación genómica?",
+                        "alternativas": {
+                            "a": "Replicación de ADN ds en el citoplasma",
+                            "b": "Uso de la enzima transcriptasa inversa para pasar de ARN ss(+) a ADN ds e integrarse al huésped",
+                            "c": "Traducción directa de su ARN positivo sin pasar por ADN",
+                            "d": "Fragmentación del genoma en 8 segmentos de ARN negativo",
+                            "e": "Uso exclusivo de polimerasas de ARN dependientes de ARN celulares"
+                        },
+                        "respuesta": "b",
+                        "justificacion": "Los retrovirus poseen un genoma ARN ss+ pero utilizan la transcriptasa inversa para generar ADN, el cual se integra permanentemente en el genoma de la célula [1, 4, 11]."
+                    },
+                    {
+                        "id": "9",
+                        "pregunta": "¿Qué característica del ciclo de replicación del virus Influenza A explica la aparición de cepas con potencial pandémico mediante el mecanismo de 'Antigenic Shift'?",
+                        "alternativas": {
+                            "a": "Su simetría icosaédrica",
+                            "b": "Su capacidad de replicarse en climas fríos",
+                            "c": "Su genoma segmentado que permite el reordenamiento de genes durante una coinfección",
+                            "d": "La lisis explosiva de neumocitos",
+                            "e": "La producción de la toxina NSP4"
+                        },
+                        "respuesta": "c",
+                        "justificacion": "Al tener un genoma dividido en 8 segmentos, si dos virus diferentes infectan la misma célula, los segmentos pueden mezclarse creando un virus híbrido totalmente nuevo para el sistema inmune humano [12, 13]."
+                    },
+                    {
+                        "id": "10",
+                        "pregunta": "En el caso del Hantavirus, ¿por qué el diagnóstico estándar se basa en la serología (IgM/IgG) en lugar de la detección de carga viral en sangre?",
+                        "alternativas": {
+                            "a": "Porque el virus no tiene proteínas de superficie",
+                            "b": "Porque la viremia es transitoria y el virus no replica en la sangre, sino en el endotelio vascular",
+                            "c": "Porque los anticuerpos matan al virus antes de que llegue al pulmón",
+                            "d": "Debido a que el virus es un parásito extracelular",
+                            "e": "Porque el hantavirus solo posee ADN de cadena simple"
+                        },
+                        "respuesta": "b",
+                        "justificacion": "Dado que la viremia del Hantavirus es fugaz y su objetivo son las células de los vasos sanguíneos, es difícil captar el ARN viral en sangre, siendo más fiable detectar la respuesta inmune del paciente [14]."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "tematica": "Infecciones virales respiratorias y digestivas",
+        "indicadores": [
+            {
+                "indicador": "Analizar los fundamentos y la utilidad clínica de las pruebas microbiológicas y bioquímicas para el diagnóstico etiológico de infecciones virales respiratorias y digestivas",
+                "preguntas": [
+                    {
+                        "id": "1",
+                        "pregunta": "¿Cuál es el método de diagnóstico rápido de elección para la detección del Virus Respiratorio Sincicial (VRS) en lactantes según los apuntes?",
+                        "alternativas": {
+                            "a": "Detección de anticuerpos IgG en suero",
+                            "b": "Detección directa de antígenos en aspirados nasales",
+                            "c": "Observación de cuerpos de Negri en neuronas",
+                            "d": "Detección de la toxina NSP4 en heces",
+                            "e": "Secuenciación genómica masiva"
+                        },
+                        "respuesta": "b",
+                        "justificacion": "Para el VRS, mientras que el cultivo celular permite ver sincitios, el diagnóstico rápido y habitual en clínica se realiza mediante la detección directa del antígeno viral en muestras de aspirado nasal [1]."
+                    },
+                    {
+                        "id": "2",
+                        "pregunta": "En el diagnóstico de Rotavirus, ¿cuál es la utilidad clínica principal del método RT-PCR en comparación con las pruebas de ELISA?",
+                        "alternativas": {
+                            "a": "Es el único método capaz de detectar el virus en heces",
+                            "b": "Permite la identificación visual en forma de rueda",
+                            "c": "Ofrece mayor sensibilidad y permite la genotipificación para estudios epidemiológicos",
+                            "d": "Es un método más económico y rápido de uso habitual",
+                            "e": "Se utiliza para medir los niveles de IgA materna"
+                        },
+                        "respuesta": "c",
+                        "justificacion": "Aunque el ELISA y la inmunocromatografía son los métodos de uso habitual, la RT-PCR destaca por su mayor sensibilidad y su capacidad de genotipificar las cepas circulantes [2]."
+                    },
+                    {
+                        "id": "3",
+                        "pregunta": "¿Por qué el diagnóstico estándar del Síndrome Cardiopulmonar por Hantavirus (SCPH) se fundamenta en la serología y no en la detección de ARN viral en sangre?",
+                        "alternativas": {
+                            "a": "Porque el virus no posee genoma de ARN",
+                            "b": "Debido a que la viremia es transitoria y el virus no replica activamente en la sangre",
+                            "c": "Porque el virus solo infecta a los roedores y no al hombre",
+                            "d": "Porque el ARN viral se destruye inmediatamente al contacto con el aire",
+                            "e": "Porque la serología es el único método capaz de detectar la proteína VP1"
+                        },
+                        "respuesta": "b",
+                        "justificacion": "Dado que el hantavirus tiene como objetivo principal las células endoteliales y su presencia en sangre es fugaz, el ARN viral no suele detectarse regularmente, por lo que el diagnóstico se basa en anticuerpos IgM e IgG [3]."
+                    },
+                    {
+                        "id": "4",
+                        "pregunta": "¿Qué marcadores bioquímicos son mencionados como claves para identificar el daño tisular en un paciente con sospecha de Hantavirus?",
+                        "alternativas": {
+                            "a": "Glucosa y Creatinina",
+                            "b": "Hemoglobina y Hematocrito",
+                            "c": "AST (Aspartato aminotransferasa) y LDH (Lactato deshidrogenasa)",
+                            "d": "Bilirrubina e Insulina",
+                            "e": "Colesterol y Triglicéridos"
+                        },
+                        "respuesta": "c",
+                        "justificacion": "Las pruebas de laboratorio para el SCPH identifican a la AST y la LDH como marcadores bioquímicos significativos del daño tisular causado por la infección [4]."
+                    },
+                    {
+                        "id": "5",
+                        "pregunta": "¿Cuál es la técnica de diagnóstico recomendada para Norovirus debido a su alta sensibilidad y especificidad?",
+                        "alternativas": {
+                            "a": "Cultivo en agar Sabouraud",
+                            "b": "RT-PCR en tiempo real",
+                            "c": "Tinción de Gram en vómito",
+                            "d": "Búsqueda de células gigantes multinucleadas",
+                            "e": "Test de látex para proteínas de envoltura"
+                        },
+                        "respuesta": "b",
+                        "justificacion": "La RT-PCR en tiempo real es el estándar para Norovirus, permitiendo estimar la carga viral en muestras recolectadas idealmente entre 2 y 3 días tras el inicio de los síntomas [5]."
+                    },
+                    {
+                        "id": "6",
+                        "pregunta": "Al analizar un caso de gastroenteritis infantil, la presencia de qué hallazgo clínico sugeriría descartar al Rotavirus como agente causal único?",
+                        "alternativas": {
+                            "a": "Vómitos frecuentes",
+                            "b": "Fiebre leve",
+                            "c": "Diarrea acuosa abundante",
+                            "d": "Presencia de sangre abundante en las heces",
+                            "e": "Deshidratación moderada"
+                        },
+                        "respuesta": "d",
+                        "justificacion": "El rotavirus causa típicamente diarrea acuosa; la presencia de sangre abundante en las deposiciones es un signo que sugiere la participación de otros agentes etiológicos [6]."
+                    },
+                    {
+                        "id": "7",
+                        "pregunta": "¿Qué característica de los Adenovirus serotipos 40 y 41 es relevante para el diagnóstico diferencial de infecciones digestivas en lactantes?",
+                        "alternativas": {
+                            "a": "Son la principal causa de resfriado común",
+                            "b": "Son virus envueltos altamente sensibles al jabón",
+                            "c": "Son la segunda causa de gastroenteritis aguda en niños pequeños",
+                            "d": "Solo se transmiten por la picadura de mosquitos",
+                            "e": "Producen la toxina NSP4 de forma masiva"
+                        },
+                        "respuesta": "c",
+                        "justificacion": "Dentro de la amplia variedad de serotipos de Adenovirus, los tipos 40 y 41 tienen un tropismo gastrointestinal específico, siendo responsables de una gran parte de las gastroenteritis infantiles [7, 8]."
+                    },
+                    {
+                        "id": "8",
+                        "pregunta": "¿En qué consiste la subclasificación del virus Influenza que permite identificar cepas específicas como la H1N1?",
+                        "alternativas": {
+                            "a": "En la medición del tamaño de la cápside icosaédrica",
+                            "b": "En la identificación de variantes de los antígenos de superficie Hemaglutinina y Neuraminidasa",
+                            "c": "En la observación del número de sincitios en cultivo",
+                            "d": "En la detección de la proteína no estructural VF1",
+                            "e": "En la respuesta del virus al tratamiento con éter"
+                        },
+                        "respuesta": "b",
+                        "justificacion": "La subclasificación de la Influenza se basa en las glicoproteínas de superficie: existen 16 variantes de hemaglutinina (H) y 9 de neuraminidasa (N), cuya combinación define la cepa (ej. H1N1) [9]."
+                    },
+                    {
+                        "id": "9",
+                        "pregunta": "¿Cuál es el fundamento biológico del uso de anticuerpos IgM para el diagnóstico del virus Zika?",
+                        "alternativas": {
+                            "a": "Detectar la presencia de mosquitos Aedes en la sangre",
+                            "b": "Confirmar la infección reciente, diferenciándola de otros flavivirus como el dengue",
+                            "c": "Medir la capacidad del virus de cruzar la placenta",
+                            "d": "Identificar si el virus tiene genoma de ADN o ARN",
+                            "e": "Evaluar la resistencia del virus al paracetamol"
+                        },
+                        "respuesta": "b",
+                        "justificacion": "El diagnóstico de Zika requiere confirmación por RT-PCR o la detección de anticuerpos IgM, lo cual es crucial para diferenciarlo clínicamente de infecciones similares como el dengue [10, 11]."
+                    },
+                    {
+                        "id": "10",
+                        "pregunta": "En un análisis histopatológico de tejido pulmonar, la observación de 'inclusiones intranucleares grandes y difusas' es un hallazgo indicativo de qué infección viral?",
+                        "alternativas": {
+                            "a": "Virus de la Rabia",
+                            "b": "Rotavirus",
+                            "c": "Adenovirus (tipo 7)",
+                            "d": "Norovirus",
+                            "e": "Rhinovirus"
+                        },
+                        "respuesta": "c",
+                        "justificacion": "Las inclusiones intranucleares visibles al microscopio son un efecto citopático característico de la replicación de Adenovirus en las células del epitelio alveolar [7]."
+                    }
+                ]
+            },
+            {
+                "indicador": "Diferencia los cuadros clínicos asociados a infecciones virales respiratorias y digestivas, considerando sus mecanismos de patogenicidad y transmisión",
+                "preguntas": [
+                    {
+                        "id": "1",
+                        "pregunta": "¿Qué cuadro clínico respiratorio grave es característico del Virus Respiratorio Sincicial (VRS) en lactantes menores de un año?",
+                        "alternativas": {
+                            "a": "Diarrea secretora por toxina NSP4",
+                            "b": "Bronquiolitis con sibilancias espiratorias y tos intensa",
+                            "c": "Cistitis hemorrágica aguda",
+                            "d": "Conjuntivitis por piscinas mal cloradas",
+                            "e": "Fiebre hemorrágica con síndrome renal"
+                        },
+                        "respuesta": "b",
+                        "justificacion": "El VRS es la causa principal de bronquiolitis (inflamación y moco en bronquios) en lactantes, pudiendo derivar en neumonía con alta mortalidad en menores de 4 meses [1]."
+                    },
+                    {
+                        "id": "2",
+                        "pregunta": "¿Cuál es el mecanismo de patogenicidad del Rotavirus que explica la inducción de diarrea antes de que ocurra la muerte celular?",
+                        "alternativas": {
+                            "a": "Formación de sincitios en el epitelio alveolar",
+                            "b": "Producción de la proteína no estructural NSP4, que actúa como una enterotoxina",
+                            "c": "Invasión de macrófagos y diseminación al bazo",
+                            "d": "Fusión de membranas celulares mediada por la proteína Spike",
+                            "e": "Bloqueo de la síntesis de ARN mensajero por la proteína M2"
+                        },
+                        "respuesta": "b",
+                        "justificacion": "La proteína NSP4 del Rotavirus funciona como una toxina viral que daña las uniones estrechas e induce la secreción de líquidos y electrolitos [2, 3]."
+                    },
+                    {
+                        "id": "3",
+                        "pregunta": "Un paciente presenta fiebre de inicio abrupto, mialgias intensas y fatiga, pero sin rinitis ni tos. Ante el antecedente de limpieza de bodegas, se sospecha de Hantavirus. ¿En qué fase clínica se encuentra?",
+                        "alternativas": {
+                            "a": "Fase de convalecencia",
+                            "b": "Fase cardiopulmonar crítica",
+                            "c": "Fase prodrómica o inicial",
+                            "d": "Fase de eclipse viral",
+                            "e": "Fase lítica intestinal"
+                        },
+                        "respuesta": "c",
+                        "justificacion": "La fase prodrómica del síndrome cardiopulmonar por hantavirus (SCPH) dura de 3 a 6 días y se caracteriza por fiebre y mialgias, destacando la ausencia de síntomas respiratorios altos iniciales [4, 5]."
+                    },
+                    {
+                        "id": "4",
+                        "pregunta": "¿Qué característica de la transmisión del Rhinovirus explica por qué es la causa más común del resfriado común?",
+                        "alternativas": {
+                            "a": "Se transmite exclusivamente por la picadura de mosquitos Aedes",
+                            "b": "El virus es muy resistente y se transmite por contacto directo, fómites y aerosoles",
+                            "c": "Requiere la ingestión de alimentos contaminados con heces",
+                            "d": "Solo se contagia a través de mordeduras de roedores",
+                            "e": "Es un virus envuelto que muere rápidamente al aire seco"
+                        },
+                        "respuesta": "b",
+                        "justificacion": "El Rhinovirus es un virus desnudo y resistente que puede transmitirse tanto por aerosoles (hasta 4 metros) como por manos o superficies contaminadas [6, 7]."
+                    },
+                    {
+                        "id": "5",
+                        "pregunta": "¿Qué virus gastrointestinal se asocia frecuentemente a brotes masivos en entornos cerrados como cruceros, escuelas y hospitales debido a su alta carga de excreción?",
+                        "alternativas": {
+                            "a": "Virus de la Influenza A",
+                            "b": "Norovirus",
+                            "c": "Hantavirus",
+                            "d": "Virus Respiratorio Sincicial",
+                            "e": "Zika"
+                        },
+                        "respuesta": "b",
+                        "justificacion": "El Norovirus causa brotes frecuentes en centros sanitarios y colectividades; las personas infectadas eliminan miles de millones de partículas por gramo de heces o vómito [8, 9]."
+                    },
+                    {
+                        "id": "6",
+                        "pregunta": "Diferenciando los cuadros clínicos de Influenza, ¿cuál es un síntoma distintivo de la enfermedad en adultos en comparación con el resfriado común?",
+                        "alternativas": {
+                            "a": "Picazón nasal y estornudos frecuentes",
+                            "b": "Mucosidad transparente abundante",
+                            "c": "Compromiso de la salud en forma súbita con fiebre alta y anorexia",
+                            "d": "Ardor leve de garganta sin fiebre",
+                            "e": "Presencia de sangre en las heces"
+                        },
+                        "respuesta": "c",
+                        "justificacion": "A diferencia del resfriado común (Rhinovirus), la Influenza compromete la salud del paciente de forma súbita, con fiebre alta, dolor muscular y malestar generalizado [10]."
+                    },
+                    {
+                        "id": "7",
+                        "pregunta": "¿Cuál es la vía de transmisión principal de los virus que causan gastroenteritis como el Rotavirus y el Adenovirus tipos 40/41?",
+                        "alternativas": {
+                            "a": "Vía conjuntival en piscinas",
+                            "b": "Vía fecal-oral (mano-boca o alimentos contaminados)",
+                            "c": "Inhalación de excreciones de mamíferos",
+                            "d": "Transmisión sexual confirmada",
+                            "e": "Mordedura de animales infectados"
+                        },
+                        "respuesta": "b",
+                        "justificacion": "El contacto directo fecal-oral es la vía más importante para los virus gastrointestinales, facilitada por su estabilidad en el ambiente [11, 12]."
+                    },
+                    {
+                        "id": "8",
+                        "pregunta": "¿Qué hallazgo clínico en un cuadro de diarrea infantil sugeriría que el agente causal NO es Rotavirus?",
+                        "alternativas": {
+                            "a": "Fiebre leve",
+                            "b": "Vómitos",
+                            "c": "Diarrea con sangre abundante",
+                            "d": "Diarrea acuosa",
+                            "e": "Deshidratación"
+                        },
+                        "respuesta": "c",
+                        "justificacion": "El Rotavirus causa típicamente diarrea acuosa; la presencia de sangre abundante sugiere la participación de otros agentes etiológicos [13]."
+                    },
+                    {
+                        "id": "9",
+                        "pregunta": "En cuanto a los mecanismos de daño, ¿qué diferencia al SARS-CoV-2 de otros coronavirus respiratorios benignos?",
+                        "alternativas": {
+                            "a": "Solo infecta la mucosa nasal",
+                            "b": "Es un virus desnudo resistente al jabón",
+                            "c": "Es pantrópico e induce una respuesta masiva de citoquinas pro-inflamatorias",
+                            "d": "Su genoma de ADN se integra en el núcleo celular",
+                            "e": "Se replica exclusivamente a temperaturas menores a 33°C"
+                        },
+                        "respuesta": "c",
+                        "justificacion": "El SARS-CoV-2 tiene características particulares como ser pantrópico (invade múltiples sistemas) e inducir una respuesta inmunitaria exagerada [6, 14]."
+                    },
+                    {
+                        "id": "10",
+                        "pregunta": "¿Qué complicación patogénica ocurre en la fase cardiopulmonar del Hantavirus debido a la respuesta inmune exagerada?",
+                        "alternativas": {
+                            "a": "Formación de cuerpos de Negri en el cerebro",
+                            "b": "Pérdida de uniones estrechas en células endoteliales y edema pulmonar",
+                            "c": "Inmortalización celular y crecimiento tumoral",
+                            "d": "Lisis explosiva de los enterocitos",
+                            "e": "Bloqueo de los receptores de acetilcolina"
+                        },
+                        "respuesta": "b",
+                        "justificacion": "La tormenta de citoquinas en la infección por Hantavirus provoca que se pierdan las uniones estrechas vasculares, causando fuga de plasma hacia los alvéolos [5]."
+                    }
+                ]
+            },
+            {
+                "indicador": "Aplica estrategias de prevención y manejo terapéutico fundamentado",
+                "preguntas": [
+                    {
+                        "id": "1",
+                        "pregunta": "¿Qué grupo de fármacos para la Influenza actúa inhibiendo específicamente la proteína M2 para evitar el desnudamiento de la cápside?",
+                        "alternativas": {
+                            "a": "Oseltamivir y Zanamivir",
+                            "b": "Ribavirina y Sofosbuvir",
+                            "c": "Amantadina y Rimantadina",
+                            "d": "Aspirina y AINEs",
+                            "e": "Nirsevimab"
+                        },
+                        "respuesta": "c",
+                        "justificacion": "La Amantadina y Rimantadina se unen a la proteína M2 del virus Influenza tipo A, bloqueando la etapa de descapsidación [1]."
+                    },
+                    {
+                        "id": "2",
+                        "pregunta": "Para la prevención del Virus Respiratorio Sincicial (VRS) en lactantes de alto riesgo, ¿cuál es la estrategia de inmunización pasiva recomendada?",
+                        "alternativas": {
+                            "a": "Vacunación anual con virus atenuados",
+                            "b": "Administración del anticuerpo monoclonal Nirsevimab",
+                            "c": "Tratamiento preventivo con nistatina oral",
+                            "d": "Uso de mascarillas N95 en recién nacidos",
+                            "e": "Cloración excesiva del agua potable"
+                        },
+                        "respuesta": "b",
+                        "justificacion": "El Nirsevimab es un anticuerpo monoclonal que brinda protección inmediata contra el VRS en lactantes vulnerables [2]."
+                    },
+                    {
+                        "id": "3",
+                        "pregunta": "¿Cuál es el manejo terapéutico de primera línea indicado para la gastroenteritis aguda por Rotavirus según los apuntes?",
+                        "alternativas": {
+                            "a": "Antibióticos de amplio espectro",
+                            "b": "Sales de rehidratación oral",
+                            "c": "Administración de corticoides sistémicos",
+                            "d": "Nistatina por vía parenteral",
+                            "e": "Codeína en niños menores de 2 años"
+                        },
+                        "respuesta": "b",
+                        "justificacion": "El tratamiento principal para el Rotavirus se centra en prevenir la deshidratación mediante sales de rehidratación oral [3]."
+                    },
+                    {
+                        "id": "4",
+                        "pregunta": "Ante un cuadro grave de Síndrome Cardiopulmonar por Hantavirus (SCPH) en Chile, ¿cuál de las siguientes medidas forma parte del manejo de soporte intensivo?",
+                        "alternativas": {
+                            "a": "Uso de aspirina para bajar la fiebre",
+                            "b": "Oxigenación por Membrana Extracorpórea (ECMO)",
+                            "c": "Tratamiento con antifúngicos poliénicos",
+                            "d": "Aplicación de queratolíticos tópicos",
+                            "e": "Vacunación inmediata post-exposición"
+                        },
+                        "respuesta": "b",
+                        "justificacion": "El manejo actual para casos críticos de Hantavirus en Chile incluye ventilación mecánica y el uso de ECMO para soporte circulatorio y respiratorio [4]."
+                    },
+                    {
+                        "id": "5",
+                        "pregunta": "¿Por qué se recomienda evitar los AINEs (como ibuprofeno) en el manejo inicial del virus Zika hasta descartar Dengue?",
+                        "alternativas": {
+                            "a": "Porque inactivan el efecto del acetaminofén",
+                            "b": "Debido al riesgo de hemorragia asociado al Dengue",
+                            "c": "Porque los AINEs favorecen la replicación en neuronas",
+                            "d": "Debido a que causan microcefalia en adultos",
+                            "e": "Porque inhiben la respuesta de interferón tipo II"
+                        },
+                        "respuesta": "b",
+                        "justificacion": "En zonas donde circula el Dengue, se debe evitar el uso de AINEs por el riesgo de complicaciones hemorrágicas, prefiriendo el acetaminofén para el dolor y fiebre [5]."
+                    },
+                    {
+                        "id": "6",
+                        "pregunta": "¿Cuál es el fármaco antifúngico de elección (triazol de segunda generación) para el tratamiento de la Aspergilosis invasiva?",
+                        "alternativas": {
+                            "a": "Fluconazol",
+                            "b": "Nistatina",
+                            "c": "Voriconazol",
+                            "d": "Terbinafina",
+                            "e": "Griseofulvina"
+                        },
+                        "respuesta": "c",
+                        "justificacion": "El Voriconazol es el tratamiento estándar para Aspergillus debido a su alta eficacia y especificidad contra este moho [6]."
+                    },
+                    {
+                        "id": "7",
+                        "pregunta": "Para el manejo de la Esporotricosis cutánea, además de los azoles como el Itraconazol, ¿qué otro agente se menciona específicamente en los apuntes?",
+                        "alternativas": {
+                            "a": "Hipoclorito de sodio",
+                            "b": "Yoduro de potasio",
+                            "c": "Ácido salicílico",
+                            "d": "Flucitosina",
+                            "e": "Cloroquina"
+                        },
+                        "respuesta": "b",
+                        "justificacion": "El yoduro de potasio es un tratamiento clásico para la esporotricosis, aunque se asocia a efectos secundarios como hipertrofia de glándulas salivales [7]."
+                    },
+                    {
+                        "id": "8",
+                        "pregunta": "¿Cuál es la estrategia terapéutica para erradicar levaduras del género Candida del tracto intestinal?",
+                        "alternativas": {
+                            "a": "Caspofungina intravenosa por 6 meses",
+                            "b": "Uso de nistatina por vía oral",
+                            "c": "Cloración del agua de consumo",
+                            "d": "Aplicación de clotrimazol tópico en el abdomen",
+                            "e": "Tratamiento con ribavirina"
+                        },
+                        "respuesta": "b",
+                        "justificacion": "La nistatina oral es el antifúngico de elección para eliminar la colonización excesiva de Candida en el intestino [8]."
+                    },
+                    {
+                        "id": "9",
+                        "pregunta": "¿Qué medida preventiva es fundamental para evitar brotes de Norovirus en instituciones cerradas como hospitales o cruceros?",
+                        "alternativas": {
+                            "a": "Vacunación masiva con la cepa P1A",
+                            "b": "Lavado de manos con agua y jabón por al menos 20 segundos",
+                            "c": "Uso profiláctico de oseltamivir en el personal",
+                            "d": "Eliminación de criaderos de mosquitos Aedes",
+                            "e": "Administración de vitamina C a los huéspedes"
+                        },
+                        "respuesta": "b",
+                        "justificacion": "Dada la resistencia del Norovirus, el lavado de manos vigoroso con agua y jabón es la medida de control más efectiva [9]."
+                    },
+                    {
+                        "id": "10",
+                        "pregunta": "En el manejo terapéutico de las micosis sistémicas por Cryptococcus neoformans, ¿qué vía de administración es necesaria debido a la gravedad del cuadro?",
+                        "alternativas": {
+                            "a": "Vía tópica (cremas)",
+                            "b": "Vía inhalatoria",
+                            "c": "Vía parenteral (intravenosa)",
+                            "d": "Uso de parches transdérmicos",
+                            "e": "Gotas oculares"
+                        },
+                        "respuesta": "c",
+                        "justificacion": "Para micosis sistémicas y profundas como la criptococosis, se requiere tratamiento antifúngico por vía parenteral (ej. Anfotericina B) [10]."
+                    }
+                ]
+            }
+        ]
+    }
+]
